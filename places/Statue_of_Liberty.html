@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statue of Liberty - Visitor Guide</title>
+    <link href="../7wonders.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../kindora-logo.ico" />
+    <link href="../common_nav_footer.css" rel="stylesheet" />
+    <style>
+      #nav1 {
+        height: 16%;
+      }
+      .image-heading {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        background: #003366;
+        color: white;
+        margin-top: 10%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h3 {
+        color: #1e40af;
+        margin-bottom: 10px;
+      }
+      .book-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 28px;
+        background: linear-gradient(135deg, #ffcc00, #ff9900);
+        color: #003366;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .book-btn:hover {
+        background: linear-gradient(135deg, #ffd633, #ffb84d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      }
+      .book-btn:active {
+        transform: scale(0.97);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="../home.html" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="../asia.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div></a
+            >
+            <a data-href="../europe.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div></a
+            >
+            <a data-href="../africa.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div></a
+            >
+            <a data-href="../north_america.html"
+              ><div class="image-wrapper1">
+                <img
+                  src="../web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div></a
+            >
+            <a data-href="../south_america.html"
+              ><div class="image-wrapper1">
+                <img src="../7 wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div></a
+            >
+            <a data-href="../australia.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div></a
+            >
+            <a data-href="../antarctica.html"
+              ><div class="image-wrapper1">
+                <img
+                  src="../web images/banner/antarctica.jpeg"
+                  alt="Antarctica"
+                />
+                <div class="overlay-text">Antarctica</div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="../explore.html">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.html">Things to do</a>
+        <a class="a1 dropbtn" href="../booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="../home.html">Home</a>
+        <a href="../login.php">Login/Register</a>
+        <a href="../booking.php">Book Your Trips</a>
+        <a href="../mytrips.html">My Trips</a>
+        <a href="../aboutus.html">About</a>
+        <a href="../contactus.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="image-heading">Statue of Liberty - New York, USA</div>
+    <img src="../places/Statue of Liberty.jpeg" alt="Statue of Liberty" />
+
+    <section>
+      <h3>Introduction:</h3>
+      <p>
+        The Statue of Liberty, gifted by France in 1886, is one of the most
+        iconic symbols of freedom and democracy. Located on Liberty Island in
+        New York Harbor, it welcomes millions of visitors each year.
+      </p>
+    </section>
+
+    <section>
+      <h3>Overview / History:</h3>
+      <p>
+        Designed by French sculptor Frédéric Auguste Bartholdi and built by
+        Gustave Eiffel, the statue commemorates the centennial of American
+        independence. It became a UNESCO World Heritage Site in 1984.
+      </p>
+    </section>
+
+    <section>
+      <h3>Architecture & Design:</h3>
+      <p>
+        Standing at 93 meters (305 feet) including its pedestal, the statue is
+        made of copper sheets over a steel framework. The torch represents
+        enlightenment, while the broken chains at her feet symbolize freedom.
+      </p>
+    </section>
+
+    <section>
+      <h3>Cultural Significance:</h3>
+      <p>
+        The Statue of Liberty is a universal symbol of freedom, democracy, and
+        hope for immigrants arriving in the United States. It remains one of the
+        most visited landmarks in America.
+      </p>
+    </section>
+
+    <section>
+      <h3>Things to Do:</h3>
+      <ul>
+        <li>Take a ferry to Liberty Island and Ellis Island.</li>
+        <li>Climb to the crown for panoramic views of Manhattan.</li>
+        <li>Visit the Statue of Liberty Museum.</li>
+        <li>Explore nearby Battery Park in Lower Manhattan.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>How to Reach:</h3>
+      <p>
+        Nearest airport: John F. Kennedy International Airport (JFK) or Newark
+        Liberty International Airport.<br />
+        Ferries depart from Battery Park (NYC) and Liberty State Park (NJ).
+      </p>
+    </section>
+
+    <section>
+      <h3>Tourist Information:</h3>
+      <p><strong>Location:</strong> Liberty Island, New York Harbor, USA</p>
+      <p><strong>Best time to visit:</strong> April to October</p>
+      <p>
+        <strong>Entry fee:</strong> Ferry tickets range from $24–30 (extra for
+        pedestal/crown access)
+      </p>
+      <p>
+        <strong>Nearby attractions:</strong> Ellis Island, Battery Park, One
+        World Trade Center
+      </p>
+      <a href="../booking.php" class="book-btn">Book Now</a>
+    </section>
+
+    <section>
+      <h3>Visitor Tips:</h3>
+      <p>
+        Book ferry tickets in advance, especially for crown access. Arrive early
+        to avoid long queues. Bring water and sunscreen during summer visits.
+      </p>
+    </section>
+
+    <section>
+      <h3>360° View of Statue of Liberty – USA</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1698765432100!6m8!1m7!1sCAoSLEFGMVFpcE9tczdjdXhPUFN2ZVRQdVhweUpWSWdnbnBlSVNzcXlQNmJSMmVm!2m2!1d40.689249!2d-74.044500!3f0!4f0!5f0.7820865974627469"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />Explore,
+            travel, and create unforgettable memories with us.
+          </p>
+        </div>
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="../explore.html">Places to Go</a></li>
+            <li><a href="#">Things to Do</a></li>
+            <li><a href="../booking.php">Plan Your Trip</a></li>
+            <li><a href="../contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="../icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"
+              ><img src="../icons/instagram.jpeg" alt="Instagram"
+            /></a>
+            <a href="#"><img src="../icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+    <script src="../common_nav_footer.js"></script>
+  </body>
+</html>

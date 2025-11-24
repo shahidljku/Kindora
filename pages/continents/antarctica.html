@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antarctica - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source
+          src="continents videos/antarctica_intro.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.php" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.php">
+              <div class="image-wrapper1">
+                <img src="7 wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.php">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+        <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login/Register</a>
+        <a href="booking.php">Book Your Trips</a>
+        <a href="mytrips.php">My Trips</a>
+        <a href="aboutus.php">About</a>
+        <a href="contactus.php">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. Antarctic Peninsula -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'antarctic-peninsula')"
+      >
+        <div class="video-card" data-video="01 - Antarctic Peninsula.webm">
+          <img
+            src="continents/images/antarctica images/1.avif"
+            alt="Antarctic Peninsula"
+          />
+          <div class="card-content">
+            <h3>Antarctic Peninsula</h3>
+            <p>
+              Most accessible region, penguin colonies, dramatic landscapes, and
+              gateway to Antarctica.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Antarctic Peninsula')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'antarctic-peninsula')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. South Shetland Islands -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'south-shetland-islands')"
+      >
+        <div class="video-card" data-video="02 - South Shetland Islands.webm">
+          <img
+            src="continents/images/antarctica images/2.avif"
+            alt="South Shetland Islands"
+          />
+          <div class="card-content">
+            <h3>South Shetland Islands</h3>
+            <p>
+              Warmer climate, abundant wildlife, volcanic activity, and first
+              Antarctic stop.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'South Shetland Islands')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'south-shetland-islands')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Deception Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'deception-island')"
+      >
+        <div class="video-card" data-video="03 - Deception Island.webm">
+          <img
+            src="continents/images/antarctica images/3.avif"
+            alt="Deception Island"
+          />
+          <div class="card-content">
+            <h3>Deception Island</h3>
+            <p>
+              Active volcano, horseshoe-shaped caldera, geothermal beaches, and
+              unique landscape.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag mountains">Mountains</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Deception Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'deception-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Port Lockroy -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'port-lockroy')"
+      >
+        <div class="video-card" data-video="04 - Port Lockroy.webm">
+          <img
+            src="continents/images/antarctica images/4.avif"
+            alt="Port Lockroy"
+          />
+          <div class="card-content">
+            <h3>Port Lockroy</h3>
+            <p>
+              Historic British base, museum and post office, gentoo penguin
+              colonies, and Antarctic heritage.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Port Lockroy')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'port-lockroy')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Lemaire Channel -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'lemaire-channel')"
+      >
+        <div class="video-card" data-video="05 - Lemaire Channel.webm">
+          <img
+            src="continents/images/antarctica images/5.avif"
+            alt="Lemaire Channel"
+          />
+          <div class="card-content">
+            <h3>Lemaire Channel</h3>
+            <p>
+              Kodak Gap, dramatic cliffs, iceberg-flanked passage, and
+              breathtaking scenery.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Lemaire Channel')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'lemaire-channel')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Paradise Harbor -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'paradise-harbor')"
+      >
+        <div class="video-card" data-video="06 - Paradise Harbor.webm">
+          <img
+            src="continents/images/antarctica images/6.avif"
+            alt="Paradise Harbor"
+          />
+          <div class="card-content">
+            <h3>Paradise Harbor</h3>
+            <p>
+              Glacial calving, blue icebergs, wildlife on ice floes, and
+              pristine Antarctic bay.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Paradise Harbor')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'paradise-harbor')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Drake Passage -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'drake-passage')"
+      >
+        <div class="video-card" data-video="07 - Drake Passage.webm">
+          <img
+            src="continents/images/antarctica images/7.avif"
+            alt="Drake Passage"
+          />
+          <div class="card-content">
+            <h3>Drake Passage</h3>
+            <p>
+              Roughest sea crossing, convergence of oceans, albatross sightings,
+              and Antarctic gateway.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Drake Passage')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'drake-passage')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. South Georgia Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'south-georgia')"
+      >
+        <div class="video-card" data-video="08 - South Georgia.webm">
+          <img
+            src="continents/images/antarctica images/8.avif"
+            alt="South Georgia Island"
+          />
+          <div class="card-content">
+            <h3>South Georgia Island</h3>
+            <p>
+              Galapagos of Antarctic, king penguins, elephant seals, and
+              biodiversity hotspot.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'South Georgia Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'south-georgia')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. McMurdo Station -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'mcmurdo-station')"
+      >
+        <div class="video-card" data-video="09 - McMurdo Station.webm">
+          <img
+            src="continents/images/antarctica images/9.avif"
+            alt="McMurdo Station"
+          />
+          <div class="card-content">
+            <h3>McMurdo Station</h3>
+            <p>
+              Largest Antarctic community, research hub, scientific facilities,
+              and logistics center.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'McMurdo Station')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'mcmurdo-station')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Ross Sea -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'ross-sea')">
+        <div class="video-card" data-video="10 - Ross Sea.webm">
+          <img
+            src="continents/images/antarctica images/10.avif"
+            alt="Ross Sea"
+          />
+          <div class="card-content">
+            <h3>Ross Sea</h3>
+            <p>
+              Pristine marine ecosystem, emperor penguins, Ross Ice Shelf, and
+              remote wilderness.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Ross Sea')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'ross-sea')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 11. South Pole -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'south-pole')">
+        <div class="video-card" data-video="11 - South Pole.webm">
+          <img
+            src="continents/images/antarctica images/11.avif"
+            alt="South Pole"
+          />
+          <div class="card-content">
+            <h3>South Pole</h3>
+            <p>
+              Geographic South Pole, Amundsen-Scott Station, ceremonial pole,
+              and ultimate destination.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'South Pole')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'south-pole')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. King George Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'king-george-island')"
+      >
+        <div class="video-card" data-video="12 - King George Island.webm">
+          <img
+            src="continents/images/antarctica images/12.avif"
+            alt="King George Island"
+          />
+          <div class="card-content">
+            <h3>King George Island</h3>
+            <p>
+              Multiple research stations, international presence, chinstrap
+              penguins, and scientific cooperation.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'King George Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'king-george-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Weddell Sea -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'weddell-sea')">
+        <div class="video-card" data-video="13 - Weddell Sea.webm">
+          <img
+            src="continents/images/antarctica images/13.avif"
+            alt="Weddell Sea"
+          />
+          <div class="card-content">
+            <h3>Weddell Sea</h3>
+            <p>
+              Emperor penguin colonies, tabular icebergs, pristine ice
+              conditions, and Shackleton history.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Weddell Sea')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'weddell-sea')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Antarctic Circle -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'antarctic-circle')"
+      >
+        <div class="video-card" data-video="14 - Antarctic Circle.webm">
+          <img
+            src="continents/images/antarctica images/14.avif"
+            alt="Antarctic Circle"
+          />
+          <div class="card-content">
+            <h3>Antarctic Circle</h3>
+            <p>
+              66°33'S latitude, midnight sun, exclusive crossing experience, and
+              polar achievement.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Antarctic Circle')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'antarctic-circle')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Elephant Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'elephant-island')"
+      >
+        <div class="video-card" data-video="15 - Elephant Island.webm">
+          <img
+            src="continents/images/antarctica images/15.avif"
+            alt="Elephant Island"
+          />
+          <div class="card-content">
+            <h3>Elephant Island</h3>
+            <p>
+              Shackleton's survival story, chinstrap penguins, dramatic cliffs,
+              and exploration history.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Elephant Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'elephant-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Palmer Station -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'palmer-station')"
+      >
+        <div class="video-card" data-video="16 - Palmer Station.webm">
+          <img
+            src="continents/images/antarctica images/16.avif"
+            alt="Palmer Station"
+          />
+          <div class="card-content">
+            <h3>Palmer Station</h3>
+            <p>
+              US research station, marine research, Adelie penguins, and
+              Antarctic Peninsula location.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Palmer Station')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'palmer-station')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Livingston Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'livingston-island')"
+      >
+        <div class="video-card" data-video="17 - Livingston Island.webm">
+          <img
+            src="continents/images/antarctica images/17.avif"
+            alt="Livingston Island"
+          />
+          <div class="card-content">
+            <h3>Livingston Island</h3>
+            <p>
+              Research stations, fur seals, glacial landscapes, and South
+              Shetlands location.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Livingston Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'livingston-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Paulet Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'paulet-island')"
+      >
+        <div class="video-card" data-video="18 - Paulet Island.webm">
+          <img
+            src="continents/images/antarctica images/18.avif"
+            alt="Paulet Island"
+          />
+          <div class="card-content">
+            <h3>Paulet Island</h3>
+            <p>
+              Adelie penguin colony, volcanic origin, stone hut ruins, and
+              historic expeditions.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Paulet Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'paulet-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Cuverville Island -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'cuverville-island')"
+      >
+        <div class="video-card" data-video="19 - Cuverville Island.webm">
+          <img
+            src="continents/images/antarctica images/19.avif"
+            alt="Cuverville Island"
+          />
+          <div class="card-content">
+            <h3>Cuverville Island</h3>
+            <p>
+              Largest gentoo penguin colony, scenic mountains, pristine snow
+              fields, and wildlife viewing.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cuverville Island')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'cuverville-island')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/antarctica images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect Antarctic
+              adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- ALL POPUPS START HERE -->
+
+    <!-- Popup 1: Antarctic Peninsula -->
+    <div
+      id="details-antarctic-peninsula"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Antarctic Peninsula</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('antarctic-peninsula')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (Antarctic summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Wildlife viewing, zodiac landings, photography</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-2000 (expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Most accessible Antarctic region, book early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Penguin colonies, dramatic landscapes, research stations</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Antarctic Peninsula'); closeDetails('antarctic-peninsula')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: South Shetland Islands -->
+    <div
+      id="details-south-shetland-islands"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>South Shetland Islands</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('south-shetland-islands')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (milder Antarctic weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Wildlife observation, volcanic sites, research station
+                visits</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1800 (expedition cruise packages)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>First Antarctic stop, warmer than mainland</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Chinstrap penguins, fur seals, volcanic activity</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'South Shetland Islands'); closeDetails('south-shetland-islands')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Deception Island -->
+    <div
+      id="details-deception-island"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Deception Island</h4>
+          <button class="close-btn" onclick="closeDetails('deception-island')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (warmest period)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Volcanic exploration, geothermal beaches, ship sailing into
+                caldera</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$900-2000 (specialized volcanic tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>One of few places to sail into an active volcano</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Neptune's Bellows entrance, steaming beaches, chinstrap
+                penguins</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Deception Island'); closeDetails('deception-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: Port Lockroy -->
+    <div id="details-port-lockroy" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Port Lockroy</h4>
+          <button class="close-btn" onclick="closeDetails('port-lockroy')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (operational season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Museum visits, post office, penguin observation</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1600 (included in peninsula cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Send postcards from world's southernmost post office</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Historic British base, gentoo penguins, Antarctic museum</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Port Lockroy'); closeDetails('port-lockroy')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Lemaire Channel -->
+    <div
+      id="details-lemaire-channel"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Lemaire Channel</h4>
+          <button class="close-btn" onclick="closeDetails('lemaire-channel')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (best ice conditions)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Scenic sailing, photography, iceberg viewing</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$900-2000 (luxury cruise experiences)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Nicknamed Kodak Gap for stunning photos</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Dramatic cliffs, narrow passage, pristine icebergs</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Lemaire Channel'); closeDetails('lemaire-channel')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Paradise Harbor -->
+    <div
+      id="details-paradise-harbor"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Paradise Harbor</h4>
+          <button class="close-btn" onclick="closeDetails('paradise-harbor')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (calving season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Glacier watching, iceberg photography, wildlife spotting</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1800 (scenic cruise routes)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Best for glacier calving and blue icebergs</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Glacial calving, pristine bay, seals on ice floes</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Paradise Harbor'); closeDetails('paradise-harbor')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Drake Passage -->
+    <div id="details-drake-passage" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Drake Passage</h4>
+          <button class="close-btn" onclick="closeDetails('drake-passage')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (Antarctic cruise season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Seabird watching, ocean crossing experience</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$600-1500 (part of expedition cruise)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Prepare for rough seas, bring seasickness medication</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Albatross sightings, ocean convergence, rite of passage</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Drake Passage'); closeDetails('drake-passage')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: South Georgia -->
+    <div id="details-south-georgia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>South Georgia Island</h4>
+          <button class="close-btn" onclick="closeDetails('south-georgia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (king penguin season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >King penguin colonies, elephant seals, Shackleton history</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$1200-3000 (extended expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Biodiversity hotspot, requires extended cruise</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >100,000+ king penguins, Shackleton's grave, pristine
+                wilderness</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'South Georgia Island'); closeDetails('south-georgia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: McMurdo Station -->
+    <div
+      id="details-mcmurdo-station"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>McMurdo Station</h4>
+          <button class="close-btn" onclick="closeDetails('mcmurdo-station')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - February (research season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Research facility tours, scientific operations</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$2000-5000 (specialized research tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Largest Antarctic community, limited tourist access</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Scientific research hub, 1200 residents in summer</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'McMurdo Station'); closeDetails('mcmurdo-station')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Ross Sea -->
+    <div id="details-ross-sea" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Ross Sea</h4>
+          <button class="close-btn" onclick="closeDetails('ross-sea')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (ice-free period)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Emperor penguin viewing, pristine marine ecosystem</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$1500-4000 (remote expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Most pristine Antarctic ecosystem, limited access</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Ross Ice Shelf, emperor penguins, untouched wilderness</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Ross Sea'); closeDetails('ross-sea')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: South Pole -->
+    <div id="details-south-pole" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>South Pole</h4>
+          <button class="close-btn" onclick="closeDetails('south-pole')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - January (Antarctic summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Geographic South Pole visit, Amundsen-Scott Station</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50,000+ (exclusive fly-in expeditions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Ultimate Antarctic destination, extremely expensive</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Geographic South Pole, ceremonial pole, research station</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'South Pole'); closeDetails('south-pole')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: King George Island -->
+    <div
+      id="details-king-george-island"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>King George Island</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('king-george-island')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (research station season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Multiple research stations, international cooperation</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1800 (South Shetlands cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Most research stations on one island</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >International scientific cooperation, chinstrap penguins</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'King George Island'); closeDetails('king-george-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Weddell Sea -->
+    <div id="details-weddell-sea" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Weddell Sea</h4>
+          <button class="close-btn" onclick="closeDetails('weddell-sea')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - January (brief ice-free period)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Emperor penguin colonies, massive tabular icebergs</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$1500-3500 (specialized expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Shackleton's Endurance expedition site</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Emperor penguins, pristine ice conditions, exploration
+                history</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Weddell Sea'); closeDetails('weddell-sea')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Antarctic Circle -->
+    <div
+      id="details-antarctic-circle"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Antarctic Circle</h4>
+          <button class="close-btn" onclick="closeDetails('antarctic-circle')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - January (midnight sun)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Circle crossing ceremony, midnight sun experience</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$1200-2500 (extended peninsula cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>66°33'S latitude, exclusive achievement</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Midnight sun, crossing ceremony, polar achievement</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Antarctic Circle'); closeDetails('antarctic-circle')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Elephant Island -->
+    <div
+      id="details-elephant-island"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Elephant Island</h4>
+          <button class="close-btn" onclick="closeDetails('elephant-island')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (best landing conditions)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Shackleton history, chinstrap penguin colonies</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$1000-2200 (historical expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Shackleton's crew survival site</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Survival story, dramatic cliffs, penguin colonies</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Elephant Island'); closeDetails('elephant-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Palmer Station -->
+    <div
+      id="details-palmer-station"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Palmer Station</h4>
+          <button class="close-btn" onclick="closeDetails('palmer-station')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (research season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Marine research facility, Adelie penguin studies</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$900-2000 (research-focused tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>US Antarctic research station</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Marine research, Adelie penguins, scientific operations</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Palmer Station'); closeDetails('palmer-station')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Livingston Island -->
+    <div
+      id="details-livingston-island"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Livingston Island</h4>
+          <button class="close-btn" onclick="closeDetails('livingston-island')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (accessible season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Research stations, Antarctic fur seals, glacial
+                landscapes</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1700 (South Shetlands expeditions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Multiple international research facilities</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Research cooperation, fur seals, glaciers</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Livingston Island'); closeDetails('livingston-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Paulet Island -->
+    <div id="details-paulet-island" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Paulet Island</h4>
+          <button class="close-btn" onclick="closeDetails('paulet-island')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February (penguin breeding season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Adelie penguin colony, historic stone hut</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$900-1800 (peninsula expedition cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>One of Antarctica's largest Adelie colonies</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >100,000+ Adelie penguins, volcanic origin, expedition
+                history</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Paulet Island'); closeDetails('paulet-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Cuverville Island -->
+    <div
+      id="details-cuverville-island"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cuverville Island</h4>
+          <button class="close-btn" onclick="closeDetails('cuverville-island')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (breeding season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Gentoo penguin observation, scenic mountain views</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$800-1800 (peninsula cruise programs)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Largest gentoo penguin colony on Antarctic Peninsula</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Massive gentoo colony, pristine snow fields, mountain
+                backdrop</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cuverville Island'); closeDetails('cuverville-island')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+      document.querySelector(".cta-btn").addEventListener("click", () => {
+        document.getElementById("popular").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

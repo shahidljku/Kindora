@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South America - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source
+          src="continents videos/south_america_intro.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.html" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.html">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.html">
+              <div class="image-wrapper1">
+                <img src="7wonders/7_wonders/Machu Picchu.jpeg" />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.html">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.html">Things to do</a>
+        <a class="a1 dropbtn" href="booking.html">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login/Register</a>
+        <a href="booking.html">Book Your Trips</a>
+        <a href="mytrips.html">My Trips</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. Rio de Janeiro, Brazil -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'rio-de-janeiro')"
+      >
+        <div class="video-card" data-video="01 - Rio de Janeiro.webm">
+          <img
+            src="continents/images/south_america images/1.avif"
+            alt="Rio de Janeiro, Brazil"
+          />
+          <div class="card-content">
+            <h3>Rio de Janeiro, Brazil</h3>
+            <p>
+              Christ the Redeemer, Copacabana Beach, Sugarloaf Mountain, and
+              vibrant carnival culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Rio de Janeiro, Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'rio-de-janeiro')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Machu Picchu, Peru -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'machu-picchu')"
+      >
+        <div class="video-card" data-video="02 - Machu Picchu.webm">
+          <img
+            src="continents/images/south_america images/2.avif"
+            alt="Machu Picchu, Peru"
+          />
+          <div class="card-content">
+            <h3>Machu Picchu, Peru</h3>
+            <p>
+              Ancient Inca citadel, Sacred Valley, Inca Trail hiking, and
+              mystical mountain ruins.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Machu Picchu, Peru')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'machu-picchu')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Buenos Aires, Argentina -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'buenos-aires')"
+      >
+        <div class="video-card" data-video="03 - Buenos Aires.webm">
+          <img
+            src="continents/images/south_america images/3.avif"
+            alt="Buenos Aires, Argentina"
+          />
+          <div class="card-content">
+            <h3>Buenos Aires, Argentina</h3>
+            <p>
+              Tango dancing, European architecture, steakhouses, and passionate
+              football culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Buenos Aires, Argentina')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'buenos-aires')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. São Paulo, Brazil -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'sao-paulo')">
+        <div class="video-card" data-video="04 - Sao Paulo.webm">
+          <img
+            src="continents/images/south_america images/4.avif"
+            alt="São Paulo, Brazil"
+          />
+          <div class="card-content">
+            <h3>São Paulo, Brazil</h3>
+            <p>
+              Megacity energy, world-class museums, diverse cuisine, and vibrant
+              nightlife.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'São Paulo, Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'sao-paulo')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Patagonia, Argentina/Chile -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'patagonia')">
+        <div class="video-card" data-video="05 - Patagonia.webm">
+          <img
+            src="continents/images/south_america images/5.avif"
+            alt="Patagonia, Argentina/Chile"
+          />
+          <div class="card-content">
+            <h3>Patagonia, Argentina/Chile</h3>
+            <p>
+              Glaciers, dramatic landscapes, Torres del Paine, and pristine
+              wilderness.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Patagonia, Argentina/Chile')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'patagonia')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Lima, Peru -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'lima')">
+        <div class="video-card" data-video="06 - Lima.webm">
+          <img
+            src="continents/images/south_america images/6.avif"
+            alt="Lima, Peru"
+          />
+          <div class="card-content">
+            <h3>Lima, Peru</h3>
+            <p>
+              World-class gastronomy, colonial architecture, Pacific coastline,
+              and culinary innovation.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Lima, Peru')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'lima')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Cusco, Peru -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cusco')">
+        <div class="video-card" data-video="07 - Cusco.webm">
+          <img
+            src="continents/images/south_america images/7.avif"
+            alt="Cusco, Peru"
+          />
+          <div class="card-content">
+            <h3>Cusco, Peru</h3>
+            <p>
+              Gateway to Machu Picchu, Inca heritage, Sacred Valley, and Andean
+              culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cusco, Peru')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'cusco')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Santiago, Chile -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'santiago')">
+        <div class="video-card" data-video="08 - Santiago.webm">
+          <img
+            src="continents/images/south_america images/8.avif"
+            alt="Santiago, Chile"
+          />
+          <div class="card-content">
+            <h3>Santiago, Chile</h3>
+            <p>
+              Andes Mountains backdrop, wine regions, modern skyline, and
+              Chilean culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Santiago, Chile')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'santiago')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. Cartagena, Colombia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cartagena')">
+        <div class="video-card" data-video="09 - Cartagena.webm">
+          <img
+            src="continents/images/south_america images/9.avif"
+            alt="Cartagena, Colombia"
+          />
+          <div class="card-content">
+            <h3>Cartagena, Colombia</h3>
+            <p>
+              Colonial walled city, Caribbean coastline, colorful architecture,
+              and tropical vibes.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cartagena, Colombia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'cartagena')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Iguazu Falls, Argentina/Brazil -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'iguazu-falls')"
+      >
+        <div class="video-card" data-video="10 - Iguazu Falls.webm">
+          <img
+            src="continents/images/south_america images/10.avif"
+            alt="Iguazu Falls, Argentina/Brazil"
+          />
+          <div class="card-content">
+            <h3>Iguazu Falls, Argentina/Brazil</h3>
+            <p>
+              Spectacular waterfalls, rainforest walks, wildlife viewing, and
+              natural wonder.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Iguazu Falls, Argentina/Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'iguazu-falls')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 11. Amazon Rainforest, Brazil -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'amazon-rainforest')"
+      >
+        <div class="video-card" data-video="11 - Amazon Rainforest.webm">
+          <img
+            src="continents/images/south_america images/11.avif"
+            alt="Amazon Rainforest, Brazil"
+          />
+          <div class="card-content">
+            <h3>Amazon Rainforest, Brazil</h3>
+            <p>
+              Biodiversity hotspot, river cruises, indigenous culture, and
+              jungle adventures.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Amazon Rainforest, Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'amazon-rainforest')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Mendoza, Argentina -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'mendoza')">
+        <div class="video-card" data-video="12 - Mendoza.webm">
+          <img
+            src="continents/images/south_america images/12.avif"
+            alt="Mendoza, Argentina"
+          />
+          <div class="card-content">
+            <h3>Mendoza, Argentina</h3>
+            <p>
+              World-class wineries, Malbec tastings, Andes foothills, and wine
+              country charm.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Mendoza, Argentina')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'mendoza')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Quito, Ecuador -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'quito')">
+        <div class="video-card" data-video="13 - Quito.webm">
+          <img
+            src="continents/images/south_america images/13.avif"
+            alt="Quito, Ecuador"
+          />
+          <div class="card-content">
+            <h3>Quito, Ecuador</h3>
+            <p>
+              UNESCO World Heritage city, colonial architecture, equatorial
+              location, and Andean setting.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Quito, Ecuador')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'quito')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Galápagos Islands, Ecuador -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'galapagos')">
+        <div class="video-card" data-video="14 - Galapagos.webm">
+          <img
+            src="continents/images/south_america images/14.avif"
+            alt="Galápagos Islands, Ecuador"
+          />
+          <div class="card-content">
+            <h3>Galápagos Islands, Ecuador</h3>
+            <p>
+              Unique wildlife, Darwin's inspiration, snorkeling, and pristine
+              nature preserve.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Galápagos Islands, Ecuador')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'galapagos')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Bogotá, Colombia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'bogota')">
+        <div class="video-card" data-video="15 - Bogota.webm">
+          <img
+            src="continents/images/south_america images/15.avif"
+            alt="Bogotá, Colombia"
+          />
+          <div class="card-content">
+            <h3>Bogotá, Colombia</h3>
+            <p>
+              High-altitude capital, gold museums, La Candelaria district, and
+              Andean culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Bogotá, Colombia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'bogota')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Valparaíso, Chile -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'valparaiso')">
+        <div class="video-card" data-video="16 - Valparaiso.webm">
+          <img
+            src="continents/images/south_america images/16.avif"
+            alt="Valparaíso, Chile"
+          />
+          <div class="card-content">
+            <h3>Valparaíso, Chile</h3>
+            <p>
+              Colorful hillside houses, street art, historic funiculars, and
+              bohemian culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Valparaíso, Chile')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'valparaiso')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Montevideo, Uruguay -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'montevideo')">
+        <div class="video-card" data-video="17 - Montevideo.webm">
+          <img
+            src="continents/images/south_america images/17.avif"
+            alt="Montevideo, Uruguay"
+          />
+          <div class="card-content">
+            <h3>Montevideo, Uruguay</h3>
+            <p>
+              Relaxed coastal capital, colonial Old Town, tango culture, and Río
+              de la Plata views.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Montevideo, Uruguay')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'montevideo')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Salar de Uyuni, Bolivia -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'salar-de-uyuni')"
+      >
+        <div class="video-card" data-video="18 - Salar de Uyuni.webm">
+          <img
+            src="continents/images/south_america images/18.avif"
+            alt="Salar de Uyuni, Bolivia"
+          />
+          <div class="card-content">
+            <h3>Salar de Uyuni, Bolivia</h3>
+            <p>
+              World's largest salt flat, mirror effect, flamingo colonies, and
+              surreal landscapes.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Salar de Uyuni, Bolivia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'salar-de-uyuni')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. La Paz, Bolivia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'la-paz')">
+        <div class="video-card" data-video="19 - La Paz.webm">
+          <img
+            src="continents/images/south_america images/19.avif"
+            alt="La Paz, Bolivia"
+          />
+          <div class="card-content">
+            <h3>La Paz, Bolivia</h3>
+            <p>
+              World's highest capital, cable cars, indigenous markets, and
+              Altiplano culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'La Paz, Bolivia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'la-paz')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Arequipa, Peru -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'arequipa')">
+        <div class="video-card" data-video="20 - Arequipa.webm">
+          <img
+            src="continents/images/south_america images/20.avif"
+            alt="Arequipa, Peru"
+          />
+          <div class="card-content">
+            <h3>Arequipa, Peru</h3>
+            <p>
+              White City, volcanic architecture, Colca Canyon nearby, and
+              colonial Spanish heritage.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Arequipa, Peru')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'arequipa')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 21. Medellín, Colombia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'medellin')">
+        <div class="video-card" data-video="21 - Medellin.webm">
+          <img
+            src="continents/images/south_america images/21.avif"
+            alt="Medellín, Colombia"
+          />
+          <div class="card-content">
+            <h3>Medellín, Colombia</h3>
+            <p>
+              City of Eternal Spring, innovative transport, transformation
+              story, and paisa culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Medellín, Colombia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'medellin')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Ushuaia, Argentina -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'ushuaia')">
+        <div class="video-card" data-video="22 - Ushuaia.webm">
+          <img
+            src="continents/images/south_america images/22.avif"
+            alt="Ushuaia, Argentina"
+          />
+          <div class="card-content">
+            <h3>Ushuaia, Argentina</h3>
+            <p>
+              End of the World, Tierra del Fuego, Beagle Channel, and Antarctica
+              gateway.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Ushuaia, Argentina')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'ushuaia')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Salvador, Brazil -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'salvador')">
+        <div class="video-card" data-video="23 - Salvador.webm">
+          <img
+            src="continents/images/south_america images/23.avif"
+            alt="Salvador, Brazil"
+          />
+          <div class="card-content">
+            <h3>Salvador, Brazil</h3>
+            <p>
+              Afro-Brazilian culture, Pelourinho historic center, capoeira, and
+              colonial architecture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Salvador, Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'salvador')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 24. Atacama Desert, Chile -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'atacama-desert')"
+      >
+        <div class="video-card" data-video="24 - Atacama Desert.webm">
+          <img
+            src="continents/images/south_america images/24.avif"
+            alt="Atacama Desert, Chile"
+          />
+          <div class="card-content">
+            <h3>Atacama Desert, Chile</h3>
+            <p>
+              World's driest desert, stargazing, geysers, salt flats, and
+              otherworldly landscapes.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Atacama Desert, Chile')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'atacama-desert')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Punta del Este, Uruguay -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'punta-del-este')"
+      >
+        <div class="video-card" data-video="25 - Punta del Este.webm">
+          <img
+            src="continents/images/south_america images/25.avif"
+            alt="Punta del Este, Uruguay"
+          />
+          <div class="card-content">
+            <h3>Punta del Este, Uruguay</h3>
+            <p>
+              Luxury beach resort, glamorous nightlife, art galleries, and South
+              American Riviera.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Punta del Este, Uruguay')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'punta-del-este')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. Florianópolis, Brazil -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'florianopolis')"
+      >
+        <div class="video-card" data-video="26 - Florianopolis.webm">
+          <img
+            src="continents/images/south_america images/26.avif"
+            alt="Florianópolis, Brazil"
+          />
+          <div class="card-content">
+            <h3>Florianópolis, Brazil</h3>
+            <p>
+              Magic Island, pristine beaches, surfing culture, and southern
+              Brazilian charm.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Florianópolis, Brazil')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'florianopolis')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Caracas, Venezuela -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'caracas')">
+        <div class="video-card" data-video="27 - Caracas.webm">
+          <img
+            src="continents/images/south_america images/27.avif"
+            alt="Caracas, Venezuela"
+          />
+          <div class="card-content">
+            <h3>Caracas, Venezuela</h3>
+            <p>
+              Mountain valley capital, Avila National Park, colonial heritage,
+              and Venezuelan culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Caracas, Venezuela')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'caracas')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 28. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/south_america images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect South
+              American adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- ALL POPUPS START HERE -->
+
+    <!-- Popup 1: Rio de Janeiro -->
+    <div
+      id="details-rio-de-janeiro"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Rio de Janeiro, Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('rio-de-janeiro')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (summer), May - September (winter)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Beach activities, Christ the Redeemer, Sugarloaf Mountain</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-120 (beaches, attractions, nightlife)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Learn basic Portuguese, experience Carnival season</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Copacabana Beach, Christ statue, Santa Teresa
+                neighborhood</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Rio de Janeiro, Brazil'); closeDetails('rio-de-janeiro')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Machu Picchu -->
+    <div id="details-machu-picchu" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Machu Picchu, Peru</h4>
+          <button class="close-btn" onclick="closeDetails('machu-picchu')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Inca Trail hiking, ruins exploration, Sacred Valley tours</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$60-200 (permits, guides, accommodation)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Book permits months ahead, acclimatize in Cusco first</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Ancient Inca citadel, Huayna Picchu climb, Sacred Valley</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Machu Picchu, Peru'); closeDetails('machu-picchu')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Buenos Aires -->
+    <div id="details-buenos-aires" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Buenos Aires, Argentina</h4>
+          <button class="close-btn" onclick="closeDetails('buenos-aires')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Tango shows, steakhouse dining, neighborhood walks</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-100 (great value destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Learn tango basics, try authentic asado, explore by foot</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>La Boca, San Telmo, Recoleta Cemetery</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Buenos Aires, Argentina'); closeDetails('buenos-aires')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: São Paulo -->
+    <div id="details-sao-paulo" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>São Paulo, Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('sao-paulo')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - November (milder weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Museums, diverse cuisine, nightlife, cultural districts</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$35-90 (urban exploration, food scene)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Use subway system, explore different neighborhoods</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>MASP museum, Vila Madalena, Japanese district</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'São Paulo, Brazil'); closeDetails('sao-paulo')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Patagonia -->
+    <div id="details-patagonia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Patagonia, Argentina/Chile</h4>
+          <button class="close-btn" onclick="closeDetails('patagonia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (summer season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Hiking, glacier viewing, wildlife watching, photography</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-250 (remote location, outdoor gear)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Pack layers, book accommodations early, rent a car</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Torres del Paine, Perito Moreno Glacier, El Calafate</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Patagonia, Argentina/Chile'); closeDetails('patagonia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Lima -->
+    <div id="details-lima" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Lima, Peru</h4>
+          <button class="close-btn" onclick="closeDetails('lima')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - April (summer), May - October (dry)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Culinary tours, museums, Miraflores district, coastal
+                walks</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-80 (world-class food scene)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try ceviche, book top restaurants early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Historic center, Miraflores, world-class gastronomy</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Lima, Peru'); closeDetails('lima')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Cusco -->
+    <div id="details-cusco" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cusco, Peru</h4>
+          <button class="close-btn" onclick="closeDetails('cusco')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Sacred Valley tours, Inca ruins, traditional markets</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$35-90 (gateway to Machu Picchu)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Acclimatize to altitude, drink coca tea</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>San Blas neighborhood, Qorikancha, Sacred Valley</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cusco, Peru'); closeDetails('cusco')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Santiago -->
+    <div id="details-santiago" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Santiago, Chile</h4>
+          <button class="close-btn" onclick="closeDetails('santiago')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Wine tours, Andes day trips, cultural museums</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-130 (modern city, wine regions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit nearby wine valleys, take Andes day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Cerro San Cristóbal, wine regions, Andes backdrop</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Santiago, Chile'); closeDetails('santiago')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: Cartagena -->
+    <div id="details-cartagena" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cartagena, Colombia</h4>
+          <button class="close-btn" onclick="closeDetails('cartagena')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Walled city tours, beach relaxation, salsa dancing</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-110 (colonial charm, Caribbean coast)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Stay in Old Town, try Caribbean seafood</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Walled Old City, Castillo San Felipe, Rosario Islands</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cartagena, Colombia'); closeDetails('cartagena')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Iguazu Falls -->
+    <div id="details-iguazu-falls" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Iguazu Falls, Argentina/Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('iguazu-falls')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, August - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Waterfall viewing, boat tours, wildlife spotting</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-120 (park fees, accommodation)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit both Argentine and Brazilian sides</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Devil's Throat, boat rides, rainforest walks</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Iguazu Falls, Argentina/Brazil'); closeDetails('iguazu-falls')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Amazon Rainforest -->
+    <div
+      id="details-amazon-rainforest"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Amazon Rainforest, Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('amazon-rainforest')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - November (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>River cruises, wildlife viewing, indigenous visits</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-300 (eco-lodges, guided tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book eco-lodge packages, bring insect repellent</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Biodiversity, river dolphins, canopy walks</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Amazon Rainforest, Brazil'); closeDetails('amazon-rainforest')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Mendoza -->
+    <div id="details-mendoza" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Mendoza, Argentina</h4>
+          <button class="close-btn" onclick="closeDetails('mendoza')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May (harvest season), September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Wine tastings, vineyard tours, Andes activities</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$60-180 (wine country luxury)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit during harvest season, book winery tours</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Malbec tastings, Andes foothills, Aconcagua</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Mendoza, Argentina'); closeDetails('mendoza')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Quito -->
+    <div id="details-quito" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Quito, Ecuador</h4>
+          <button class="close-btn" onclick="closeDetails('quito')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - September (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Historic center tours, equatorial monument, markets</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-70 (high-altitude capital)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Acclimatize to altitude, explore Old Town</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Historic center, Middle of the World, TelefériQo</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Quito, Ecuador'); closeDetails('quito')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Galápagos -->
+    <div id="details-galapagos" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Galápagos Islands, Ecuador</h4>
+          <button class="close-btn" onclick="closeDetails('galapagos')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - May (warm), June - November (cool)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Wildlife viewing, snorkeling, island hopping</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$200-600 (protected ecosystem, cruises)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book naturalist cruises, follow park rules</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Giant tortoises, marine iguanas, Darwin's finches</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Galápagos Islands, Ecuador'); closeDetails('galapagos')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Bogotá -->
+    <div id="details-bogota" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Bogotá, Colombia</h4>
+          <button class="close-btn" onclick="closeDetails('bogota')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March, July - August</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Gold Museum, La Candelaria, Monserrate, cultural tours</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-70 (high-altitude capital)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Acclimatize to altitude, explore on foot</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Gold Museum, historic La Candelaria, Monserrate</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Bogotá, Colombia'); closeDetails('bogota')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Valparaíso -->
+    <div id="details-valparaiso" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Valparaíso, Chile</h4>
+          <button class="close-btn" onclick="closeDetails('valparaiso')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (warmer weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Street art tours, funicular rides, bohemian culture</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (artistic port city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take funiculars, explore different hills</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Colorful houses, street murals, historic funiculars</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Valparaíso, Chile'); closeDetails('valparaiso')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Montevideo -->
+    <div id="details-montevideo" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Montevideo, Uruguay</h4>
+          <button class="close-btn" onclick="closeDetails('montevideo')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (warm season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Old Town walks, tango culture, coastal promenades</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-100 (relaxed capital city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Explore Ciudad Vieja, try mate tea</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Plaza Independencia, Rambla waterfront, Mercado del
+                Puerto</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Montevideo, Uruguay'); closeDetails('montevideo')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Salar de Uyuni -->
+    <div
+      id="details-salar-de-uyuni"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Salar de Uyuni, Bolivia</h4>
+          <button class="close-btn" onclick="closeDetails('salar-de-uyuni')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (dry), January - April (mirror effect)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Salt flat tours, mirror photography, flamingo viewing</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (basic accommodation, tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Bring sunglasses, choose rainy season for mirror effect</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Mirror effect, Train Cemetery, flamingo colonies</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Salar de Uyuni, Bolivia'); closeDetails('salar-de-uyuni')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: La Paz -->
+    <div id="details-la-paz" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>La Paz, Bolivia</h4>
+          <button class="close-btn" onclick="closeDetails('la-paz')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Cable car rides, indigenous markets, museum visits</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$20-60 (world's highest capital)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Acclimatize gradually, take it slow initially</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Mi Teleférico cable cars, Witch Market, Valley of the
+                Moon</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'La Paz, Bolivia'); closeDetails('la-paz')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Arequipa -->
+    <div id="details-arequipa" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Arequipa, Peru</h4>
+          <button class="close-btn" onclick="closeDetails('arequipa')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - November (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>White City tours, Colca Canyon, volcanic landscapes</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (colonial charm, canyon tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Colca Canyon, see condor flights</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >White volcanic stone architecture, Colca Canyon, condors</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Arequipa, Peru'); closeDetails('arequipa')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: Medellín -->
+    <div id="details-medellin" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Medellín, Colombia</h4>
+          <button class="close-btn" onclick="closeDetails('medellin')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March, July - August</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Cable car rides, transformation tours, paisa culture</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-70 (spring-like weather year-round)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take metro cable, visit Comuna 13</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Metro Cable, Comuna 13, Botero Plaza</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Medellín, Colombia'); closeDetails('medellin')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Ushuaia -->
+    <div id="details-ushuaia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Ushuaia, Argentina</h4>
+          <button class="close-btn" onclick="closeDetails('ushuaia')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (summer), October - April</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Beagle Channel cruises, Tierra del Fuego, Antarctica
+                trips</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-200 (end of world location)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Gateway to Antarctica, book penguin tours</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Beagle Channel, Tierra del Fuego National Park</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Ushuaia, Argentina'); closeDetails('ushuaia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Salvador -->
+    <div id="details-salvador" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Salvador, Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('salvador')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>September - March (summer season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Pelourinho tours, capoeira shows, Afro-Brazilian culture</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (cultural immersion, historic sites)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Experience capoeira, try acarajé street food</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Pelourinho historic center, capoeira, colorful
+                architecture</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Salvador, Brazil'); closeDetails('salvador')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Atacama Desert -->
+    <div
+      id="details-atacama-desert"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Atacama Desert, Chile</h4>
+          <button class="close-btn" onclick="closeDetails('atacama-desert')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Stargazing, geyser tours, salt flats, desert landscapes</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-250 (desert lodges, astronomy tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Best stargazing on Earth, book astronomy tours</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Valle de la Luna, geysers, world's clearest skies</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Atacama Desert, Chile'); closeDetails('atacama-desert')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: Punta del Este -->
+    <div
+      id="details-punta-del-este"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Punta del Este, Uruguay</h4>
+          <button class="close-btn" onclick="closeDetails('punta-del-este')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (summer season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Beach activities, luxury shopping, art galleries,
+                nightlife</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-300 (luxury beach destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit during summer season, enjoy glamorous nightlife</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Luxury beaches, Casapueblo, high-end resorts</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Punta del Este, Uruguay'); closeDetails('punta-del-este')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: Florianópolis -->
+    <div id="details-florianopolis" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Florianópolis, Brazil</h4>
+          <button class="close-btn" onclick="closeDetails('florianopolis')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >December - March (summer), March - May (fewer crowds)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Beach activities, surfing, island hopping, nightlife</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-120 (island paradise, beach culture)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try different beaches, learn to surf</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>42 beaches, surfing culture, island setting</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Florianópolis, Brazil'); closeDetails('florianopolis')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Caracas -->
+    <div id="details-caracas" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Caracas, Venezuela</h4>
+          <button class="close-btn" onclick="closeDetails('caracas')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Avila National Park, museums, cable car rides</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-70 (check current travel advisories)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Check travel advisories, research safety updates</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Avila mountain, historic center, cable car</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Caracas, Venezuela'); closeDetails('caracas')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.html">Places to Go</a></li>
+            <li><a href="things_to_do.html">Things to Do</a></li>
+            <li><a href="booking.html">Plan Your Trip</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+      document.querySelector(".cta-btn").addEventListener("click", () => {
+        document.getElementById("popular").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script>
+      // Sidebar toggle function (must be global for onclick="toggleMenu()")
+      function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("open");
+      }
+    </script>
+
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

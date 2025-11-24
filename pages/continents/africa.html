@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Africa - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="continents videos/africa_intro.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.php" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="7wonders/7_wonders/Machu Picchu.jpeg"
+                  alt="South America"
+                />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.php">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+        <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login/Register</a>
+        <a href="booking.php">Book Your Trips</a>
+        <a href="mytrips.php">My Trips</a>
+        <a href="aboutus.php">About</a>
+        <a href="contactus.php">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. Cairo, Egypt -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cairo')">
+        <div class="video-card" data-video="01 - Cairo.webm">
+          <img
+            src="continents/images/africa images/1.avif"
+            alt="Cairo, Egypt"
+          />
+          <div class="card-content">
+            <h3>Cairo, Egypt</h3>
+            <p>
+              Great Pyramids of Giza, Sphinx, ancient Egyptian temples, and Nile
+              River cruises.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cairo, Egypt')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'cairo')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Marrakech, Morocco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'marrakech')">
+        <div class="video-card" data-video="02 - Marrakech.webm">
+          <img
+            src="continents/images/africa images/2.avif"
+            alt="Marrakech, Morocco"
+          />
+          <div class="card-content">
+            <h3>Marrakech, Morocco</h3>
+            <p>
+              Vibrant souks, Jemaa el-Fnaa square, Atlas Mountains, and
+              traditional riads.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Marrakech, Morocco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'marrakech')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Cape Town, South Africa -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cape-town')">
+        <div class="video-card" data-video="03 - Cape Town.webm">
+          <img
+            src="continents/images/africa images/3.avif"
+            alt="Cape Town, South Africa"
+          />
+          <div class="card-content">
+            <h3>Cape Town, South Africa</h3>
+            <p>
+              Table Mountain, wine estates, penguins at Boulders Beach, and
+              stunning coastlines.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cape Town, South Africa')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'cape-town')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Serengeti, Tanzania -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'serengeti')">
+        <div class="video-card" data-video="04 - Serengeti.webm">
+          <img
+            src="continents/images/africa images/4.avif"
+            alt="Serengeti, Tanzania"
+          />
+          <div class="card-content">
+            <h3>Serengeti, Tanzania</h3>
+            <p>
+              Great Migration, Big Five wildlife, endless savannas, and luxury
+              safari lodges.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Serengeti, Tanzania')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'serengeti')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Victoria Falls, Zambia/Zimbabwe -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'victoria-falls')"
+      >
+        <div class="video-card" data-video="05 - Victoria Falls.webm">
+          <img
+            src="continents/images/africa images/5.avif"
+            alt="Victoria Falls, Zambia/Zimbabwe"
+          />
+          <div class="card-content">
+            <h3>Victoria Falls, Zambia/Zimbabwe</h3>
+            <p>
+              Mighty waterfalls, bungee jumping, white-water rafting, and
+              helicopter flights.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Victoria Falls, Zambia/Zimbabwe')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'victoria-falls')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Zanzibar, Tanzania -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'zanzibar')">
+        <div class="video-card" data-video="06 - Zanzibar.webm">
+          <img
+            src="continents/images/africa images/6.avif"
+            alt="Zanzibar, Tanzania"
+          />
+          <div class="card-content">
+            <h3>Zanzibar, Tanzania</h3>
+            <p>
+              Pristine beaches, Stone Town heritage, spice plantations, and
+              turquoise waters.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Zanzibar, Tanzania')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'zanzibar')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Kruger National Park, South Africa -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'kruger')">
+        <div class="video-card" data-video="07 - Kruger.webm">
+          <img
+            src="continents/images/africa images/7.avif"
+            alt="Kruger National Park, South Africa"
+          />
+          <div class="card-content">
+            <h3>Kruger National Park, South Africa</h3>
+            <p>
+              Big Five safaris, diverse ecosystems, self-drive adventures, and
+              wildlife photography.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Kruger National Park, South Africa')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'kruger')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Casablanca, Morocco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'casablanca')">
+        <div class="video-card" data-video="08 - Casablanca.webm">
+          <img
+            src="continents/images/africa images/8.avif"
+            alt="Casablanca, Morocco"
+          />
+          <div class="card-content">
+            <h3>Casablanca, Morocco</h3>
+            <p>
+              Hassan II Mosque, art deco architecture, Atlantic coastline, and
+              modern Moroccan culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Casablanca, Morocco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'casablanca')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. Nairobi, Kenya -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'nairobi')">
+        <div class="video-card" data-video="09 - Nairobi.webm">
+          <img
+            src="continents/images/africa images/9.avif"
+            alt="Nairobi, Kenya"
+          />
+          <div class="card-content">
+            <h3>Nairobi, Kenya</h3>
+            <p>
+              Wildlife orphanages, urban national park, vibrant culture, and
+              gateway to safaris.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Nairobi, Kenya')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'nairobi')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Luxor, Egypt -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'luxor')">
+        <div class="video-card" data-video="10 - Luxor.webm">
+          <img
+            src="continents/images/africa images/10.avif"
+            alt="Luxor, Egypt"
+          />
+          <div class="card-content">
+            <h3>Luxor, Egypt</h3>
+            <p>
+              Valley of the Kings, Karnak Temple, ancient tombs, and hot air
+              balloon rides.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Luxor, Egypt')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'luxor')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 11. Fez, Morocco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'fez')">
+        <div class="video-card" data-video="11 - Fez.webm">
+          <img
+            src="continents/images/africa images/11.avif"
+            alt="Fez, Morocco"
+          />
+          <div class="card-content">
+            <h3>Fez, Morocco</h3>
+            <p>
+              Ancient medina, traditional crafts, Al Quaraouiyine University,
+              and authentic culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Fez, Morocco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'fez')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Masai Mara, Kenya -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'masai-mara')">
+        <div class="video-card" data-video="12 - Masai Mara.webm">
+          <img
+            src="continents/images/africa images/12.avif"
+            alt="Masai Mara, Kenya"
+          />
+          <div class="card-content">
+            <h3>Masai Mara, Kenya</h3>
+            <p>
+              Great Migration, Masai culture, balloon safaris, and abundant
+              wildlife.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Masai Mara, Kenya')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'masai-mara')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Sahara Desert, Morocco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'sahara')">
+        <div class="video-card" data-video="13 - Sahara.webm">
+          <img
+            src="continents/images/africa images/13.avif"
+            alt="Sahara Desert, Morocco"
+          />
+          <div class="card-content">
+            <h3>Sahara Desert, Morocco</h3>
+            <p>
+              Camel trekking, desert camps, sand dunes, and stargazing under
+              clear skies.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Sahara Desert, Morocco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'sahara')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Johannesburg, South Africa -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'johannesburg')"
+      >
+        <div class="video-card" data-video="14 - Johannesburg.webm">
+          <img
+            src="continents/images/africa images/14.avif"
+            alt="Johannesburg, South Africa"
+          />
+          <div class="card-content">
+            <h3>Johannesburg, South Africa</h3>
+            <p>
+              Apartheid Museum, Soweto tours, gold mine history, and vibrant
+              urban culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Johannesburg, South Africa')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'johannesburg')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Mount Kilimanjaro, Tanzania -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'kilimanjaro')">
+        <div class="video-card" data-video="15 - Kilimanjaro.webm">
+          <img
+            src="continents/images/africa images/15.avif"
+            alt="Mount Kilimanjaro, Tanzania"
+          />
+          <div class="card-content">
+            <h3>Mount Kilimanjaro, Tanzania</h3>
+            <p>
+              Africa's highest peak, challenging climbs, diverse ecosystems, and
+              stunning views.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Mount Kilimanjaro, Tanzania')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'kilimanjaro')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Ngorongoro Crater, Tanzania -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'ngorongoro')">
+        <div class="video-card" data-video="16 - Ngorongoro.webm">
+          <img
+            src="continents/images/africa images/16.avif"
+            alt="Ngorongoro Crater, Tanzania"
+          />
+          <div class="card-content">
+            <h3>Ngorongoro Crater, Tanzania</h3>
+            <p>
+              World's largest volcanic caldera, diverse wildlife, Masai culture,
+              and crater floor safaris.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Ngorongoro Crater, Tanzania')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'ngorongoro')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Sossusvlei, Namibia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'sossusvlei')">
+        <div class="video-card" data-video="17 - Sossusvlei.webm">
+          <img
+            src="continents/images/africa images/17.avif"
+            alt="Sossusvlei, Namibia"
+          />
+          <div class="card-content">
+            <h3>Sossusvlei, Namibia</h3>
+            <p>
+              Red sand dunes, dead tree landscapes, desert photography, and
+              stunning sunrises.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Sossusvlei, Namibia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'sossusvlei')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Okavango Delta, Botswana -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'okavango')">
+        <div class="video-card" data-video="18 - Okavango.webm">
+          <img
+            src="continents/images/africa images/18.avif"
+            alt="Okavango Delta, Botswana"
+          />
+          <div class="card-content">
+            <h3>Okavango Delta, Botswana</h3>
+            <p>
+              Mokoro canoe safaris, pristine wetlands, abundant wildlife, and
+              luxury camps.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Okavango Delta, Botswana')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'okavango')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Addis Ababa, Ethiopia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'addis-ababa')">
+        <div class="video-card" data-video="19 - Addis Ababa.webm">
+          <img
+            src="continents/images/africa images/19.avif"
+            alt="Addis Ababa, Ethiopia"
+          />
+          <div class="card-content">
+            <h3>Addis Ababa, Ethiopia</h3>
+            <p>
+              Ethiopian coffee culture, ancient churches, National Museum, and
+              highland culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Addis Ababa, Ethiopia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'addis-ababa')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Essaouira, Morocco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'essaouira')">
+        <div class="video-card" data-video="20 - Essaouira.webm">
+          <img
+            src="continents/images/africa images/20.avif"
+            alt="Essaouira, Morocco"
+          />
+          <div class="card-content">
+            <h3>Essaouira, Morocco</h3>
+            <p>
+              Coastal fortress city, Atlantic winds, surfing, and
+              Portuguese-influenced architecture.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Essaouira, Morocco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'essaouira')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 21. Kigali, Rwanda -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'kigali')">
+        <div class="video-card" data-video="21 - Kigali.webm">
+          <img
+            src="continents/images/africa images/21.avif"
+            alt="Kigali, Rwanda"
+          />
+          <div class="card-content">
+            <h3>Kigali, Rwanda</h3>
+            <p>
+              Genocide memorials, mountain gorilla treks, clean cities, and
+              remarkable recovery story.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Kigali, Rwanda')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'kigali')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Accra, Ghana -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'accra')">
+        <div class="video-card" data-video="22 - Accra.webm">
+          <img
+            src="continents/images/africa images/22.avif"
+            alt="Accra, Ghana"
+          />
+          <div class="card-content">
+            <h3>Accra, Ghana</h3>
+            <p>
+              Vibrant markets, colonial forts, Highlife music, and Gateway to
+              West Africa.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Accra, Ghana')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'accra')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Tunis, Tunisia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'tunis')">
+        <div class="video-card" data-video="23 - Tunis.webm">
+          <img
+            src="continents/images/africa images/23.avif"
+            alt="Tunis, Tunisia"
+          />
+          <div class="card-content">
+            <h3>Tunis, Tunisia</h3>
+            <p>
+              Ancient Carthage ruins, medina markets, Sidi Bou Said, and
+              Mediterranean culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Tunis, Tunisia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'tunis')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 24. Dakar, Senegal -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'dakar')">
+        <div class="video-card" data-video="24 - Dakar.webm">
+          <img
+            src="continents/images/africa images/24.avif"
+            alt="Dakar, Senegal"
+          />
+          <div class="card-content">
+            <h3>Dakar, Senegal</h3>
+            <p>
+              Gorée Island history, vibrant music scene, African Renaissance
+              Monument, and coastal beauty.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Dakar, Senegal')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'dakar')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Lagos, Nigeria -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'lagos')">
+        <div class="video-card" data-video="25 - Lagos.webm">
+          <img
+            src="continents/images/africa images/25.avif"
+            alt="Lagos, Nigeria"
+          />
+          <div class="card-content">
+            <h3>Lagos, Nigeria</h3>
+            <p>
+              Nollywood film industry, bustling markets, Lagos Island, and
+              energetic nightlife.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Lagos, Nigeria')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'lagos')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. Durban, South Africa -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'durban')">
+        <div class="video-card" data-video="26 - Durban.webm">
+          <img
+            src="continents/images/africa images/26.avif"
+            alt="Durban, South Africa"
+          />
+          <div class="card-content">
+            <h3>Durban, South Africa</h3>
+            <p>
+              Golden beaches, Indian culture, curry cuisine, and uShaka Marine
+              World.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Durban, South Africa')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'durban')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Alexandria, Egypt -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'alexandria')">
+        <div class="video-card" data-video="27 - Alexandria.webm">
+          <img
+            src="continents/images/africa images/27.avif"
+            alt="Alexandria, Egypt"
+          />
+          <div class="card-content">
+            <h3>Alexandria, Egypt</h3>
+            <p>
+              Ancient lighthouse site, Mediterranean coastline, Bibliotheca
+              Alexandrina, and Greek heritage.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Alexandria, Egypt')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'alexandria')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 28. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/africa images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect African
+              adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- ALL POPUPS START HERE -->
+
+    <!-- Popup 1: Cairo -->
+    <div id="details-cairo" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cairo, Egypt</h4>
+          <button class="close-btn" onclick="closeDetails('cairo')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (cooler weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Pyramids tours, Nile cruises, Egyptian Museum</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-60 (affordable destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Hire certified guides, bargain at markets</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Great Pyramids, Sphinx, Khan el-Khalili bazaar</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cairo, Egypt'); closeDetails('cairo')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Marrakech -->
+    <div id="details-marrakech" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Marrakech, Morocco</h4>
+          <button class="close-btn" onclick="closeDetails('marrakech')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Souks shopping, Atlas Mountains, riad stays</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (riads and local cuisine)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Stay in medina riads, try tagine</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Jemaa el-Fnaa, Majorelle Garden, Bahia Palace</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Marrakech, Morocco'); closeDetails('marrakech')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Cape Town -->
+    <div id="details-cape-town" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cape Town, South Africa</h4>
+          <button class="close-btn" onclick="closeDetails('cape-town')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (summer season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Table Mountain, wine tasting, penguin viewing</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-120 (mid-range to luxury)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take cable car early, visit Stellenbosch</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Table Mountain, V&A Waterfront, Cape of Good Hope</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cape Town, South Africa'); closeDetails('cape-town')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: Serengeti -->
+    <div id="details-serengeti" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Serengeti, Tanzania</h4>
+          <button class="close-btn" onclick="closeDetails('serengeti')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >June - October (dry season), January - March (calving)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Game drives, hot air balloons, Great Migration</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$200-800 (safari lodges and camps)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book migration timing, bring camera gear</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Great Migration, Big Five, endless plains</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Serengeti, Tanzania'); closeDetails('serengeti')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Victoria Falls -->
+    <div
+      id="details-victoria-falls"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Victoria Falls, Zambia/Zimbabwe</h4>
+          <button class="close-btn" onclick="closeDetails('victoria-falls')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >April - June (highest water), August - October (lower water,
+                better views)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Waterfall viewing, bungee jumping, white-water rafting</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$60-150 (adventure activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Bring rain gear, book activities ahead</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Victoria Falls bridge, Devil's Pool, helicopter flights</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Victoria Falls, Zambia/Zimbabwe'); closeDetails('victoria-falls')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Zanzibar -->
+    <div id="details-zanzibar" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Zanzibar, Tanzania</h4>
+          <button class="close-btn" onclick="closeDetails('zanzibar')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - September, December - February</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Beach relaxation, Stone Town tours, spice plantations</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-200 (beach resorts and cultural tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Respect local customs, try Zanzibar pizza</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Stone Town, Nungwi Beach, Prison Island</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Zanzibar, Tanzania'); closeDetails('zanzibar')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Kruger -->
+    <div id="details-kruger" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Kruger National Park, South Africa</h4>
+          <button class="close-btn" onclick="closeDetails('kruger')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (dry season, better animal viewing)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Self-drive safaris, guided walks, night drives</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-150 (rest camps to luxury lodges)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book accommodation early, bring binoculars</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Big Five viewing, diverse ecosystems, self-drive routes</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Kruger National Park, South Africa'); closeDetails('kruger')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Casablanca -->
+    <div id="details-casablanca" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Casablanca, Morocco</h4>
+          <button class="close-btn" onclick="closeDetails('casablanca')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Hassan II Mosque, coastal walks, art deco architecture</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-90 (modern hotels and dining)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit mosque during guided tours, explore Corniche</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Hassan II Mosque, Corniche, Old Medina</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Casablanca, Morocco'); closeDetails('casablanca')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: Nairobi -->
+    <div id="details-nairobi" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Nairobi, Kenya</h4>
+          <button class="close-btn" onclick="closeDetails('nairobi')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>January - March, July - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >David Sheldrick Elephant Orphanage, Giraffe Centre, National
+                Park</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$35-80 (city hotels and local experiences)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Karen Blixen Museum, try nyama choma</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Elephant orphanage, Nairobi National Park, cultural
+                centers</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Nairobi, Kenya'); closeDetails('nairobi')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Luxor -->
+    <div id="details-luxor" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Luxor, Egypt</h4>
+          <button class="close-btn" onclick="closeDetails('luxor')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (cooler temperatures)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Valley of Kings, temple visits, hot air balloons</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-70 (Nile view hotels, guided tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Early morning balloon rides, hire qualified guides</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Valley of Kings, Karnak Temple, Luxor Temple</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Luxor, Egypt'); closeDetails('luxor')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Fez -->
+    <div id="details-fez" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Fez, Morocco</h4>
+          <button class="close-btn" onclick="closeDetails('fez')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Medina exploration, traditional crafts, university visits</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$35-85 (riads and local experiences)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Hire local guide for medina, visit tanneries</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Fez el-Bali medina, Al Quaraouiyine, Bou Inania Madrasa</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Fez, Morocco'); closeDetails('fez')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Masai Mara -->
+    <div id="details-masai-mara" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Masai Mara, Kenya</h4>
+          <button class="close-btn" onclick="closeDetails('masai-mara')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>July - October (Great Migration), January - March</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Game drives, Masai village visits, hot air balloons</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$150-600 (safari camps and lodges)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book migration season early, respect Masai culture</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Wildebeest migration, Big Five, Masai culture</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Masai Mara, Kenya'); closeDetails('masai-mara')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Sahara -->
+    <div id="details-sahara" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Sahara Desert, Morocco</h4>
+          <button class="close-btn" onclick="closeDetails('sahara')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (comfortable temperatures)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Camel trekking, desert camping, sandboarding</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-150 (desert camps and tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Bring warm clothes for nights, book reputable tours</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Erg Chebbi dunes, camel trekking, stargazing</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Sahara Desert, Morocco'); closeDetails('sahara')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Johannesburg -->
+    <div id="details-johannesburg" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Johannesburg, South Africa</h4>
+          <button class="close-btn" onclick="closeDetails('johannesburg')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Apartheid Museum, Soweto tours, Constitution Hill</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-100 (city hotels, cultural tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take guided Soweto tours, visit Gold Reef City</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Apartheid Museum, Soweto, Carlton Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Johannesburg, South Africa'); closeDetails('johannesburg')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Kilimanjaro -->
+    <div id="details-kilimanjaro" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Mount Kilimanjaro, Tanzania</h4>
+          <button class="close-btn" onclick="closeDetails('kilimanjaro')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>January - March, June - October (dry seasons)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Mountain climbing, trekking routes, cultural tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$200-400 (climbing packages and guides)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Train physically, acclimatize properly, hire certified
+                guides</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Uhuru Peak, diverse climate zones, stunning views</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Mount Kilimanjaro, Tanzania'); closeDetails('kilimanjaro')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Ngorongoro -->
+    <div id="details-ngorongoro" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Ngorongoro Crater, Tanzania</h4>
+          <button class="close-btn" onclick="closeDetails('ngorongoro')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - September, January - March</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Crater floor safaris, Masai village visits, flamingo
+                viewing</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$200-700 (luxury crater lodges)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Early morning crater descents, book crater rim lodges</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >World's largest volcanic caldera, Big Five, flamingos</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Ngorongoro Crater, Tanzania'); closeDetails('ngorongoro')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Sossusvlei -->
+    <div id="details-sossusvlei" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Sossusvlei, Namibia</h4>
+          <button class="close-btn" onclick="closeDetails('sossusvlei')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - October (cooler, clear skies)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Dune climbing, photography, desert landscapes</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-400 (desert lodges and camping)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Early morning dune climbs, bring plenty of water</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Big Daddy dune, Deadvlei, red sand landscapes</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Sossusvlei, Namibia'); closeDetails('sossusvlei')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Okavango -->
+    <div id="details-okavango" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Okavango Delta, Botswana</h4>
+          <button class="close-btn" onclick="closeDetails('okavango')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (dry season, water levels high)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Mokoro canoe safaris, game drives, bird watching</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$300-1000 (luxury safari camps)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book water-based camps, bring camera gear</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Mokoro rides, pristine wetlands, diverse wildlife</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Okavango Delta, Botswana'); closeDetails('okavango')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Addis Ababa -->
+    <div id="details-addis-ababa" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Addis Ababa, Ethiopia</h4>
+          <button class="close-btn" onclick="closeDetails('addis-ababa')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - March (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Coffee ceremonies, National Museum, Orthodox churches</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-60 (local hotels, Ethiopian cuisine)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try Ethiopian coffee, visit Lucy fossil</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>National Museum, Merkato market, Trinity Cathedral</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Addis Ababa, Ethiopia'); closeDetails('addis-ababa')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Essaouira -->
+    <div id="details-essaouira" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Essaouira, Morocco</h4>
+          <button class="close-btn" onclick="closeDetails('essaouira')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - October (warmer beach weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Wind surfing, medina walks, seafood dining</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-100 (coastal riads, fresh seafood)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try fresh seafood, learn about Gnawa music</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Medina ramparts, fishing port, Gnawa music</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Essaouira, Morocco'); closeDetails('essaouira')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: Kigali -->
+    <div id="details-kigali" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Kigali, Rwanda</h4>
+          <button class="close-btn" onclick="closeDetails('kigali')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - September, December - February</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Genocide memorials, gorilla trekking, city tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-120 (modern hotels, gorilla permits)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book gorilla permits early, respect memorial sites</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Genocide Memorial, mountain gorillas, clean city</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Kigali, Rwanda'); closeDetails('kigali')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Accra -->
+    <div id="details-accra" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Accra, Ghana</h4>
+          <button class="close-btn" onclick="closeDetails('accra')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Cape Coast Castle, vibrant markets, cultural sites</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (city hotels, local experiences)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit slave castles, try jollof rice</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Independence Square, Labadi Beach, Makola Market</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Accra, Ghana'); closeDetails('accra')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Tunis -->
+    <div id="details-tunis" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Tunis, Tunisia</h4>
+          <button class="close-btn" onclick="closeDetails('tunis')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Carthage ruins, Sidi Bou Said, medina exploration</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$25-65 (affordable Mediterranean destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit Carthage ruins, explore blue and white Sidi Bou
+                Said</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Ancient Carthage, medina, Sidi Bou Said</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Tunis, Tunisia'); closeDetails('tunis')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Dakar -->
+    <div id="details-dakar" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Dakar, Senegal</h4>
+          <button class="close-btn" onclick="closeDetails('dakar')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - May (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Gorée Island, music venues, cultural centers</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$35-90 (ocean-view hotels, local cuisine)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Gorée Island, experience live music</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Gorée Island, IFAN Museum, vibrant markets</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Dakar, Senegal'); closeDetails('dakar')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: Lagos -->
+    <div id="details-lagos" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Lagos, Nigeria</h4>
+          <button class="close-btn" onclick="closeDetails('lagos')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - March (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Lagos Island, Nollywood studios, vibrant nightlife</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-100 (city hotels, entertainment)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Experience Afrobeat music, visit Lagos Island</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Victoria Island, Tafawa Balewa Square, Lekki Beach</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Lagos, Nigeria'); closeDetails('lagos')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: Durban -->
+    <div id="details-durban" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Durban, South Africa</h4>
+          <button class="close-btn" onclick="closeDetails('durban')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - September (mild winter)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Beach activities, Indian Quarter, curry mile</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$45-110 (beachfront hotels, Indian cuisine)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try bunny chow, visit Golden Mile</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Golden Mile, Victoria Street Market, Indian culture</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Durban, South Africa'); closeDetails('durban')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Alexandria -->
+    <div id="details-alexandria" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Alexandria, Egypt</h4>
+          <button class="close-btn" onclick="closeDetails('alexandria')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (Mediterranean climate)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Bibliotheca Alexandrina, Pompey's Pillar, coastal walks</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-75 (coastal hotels, seafood)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit modern library, explore Greek heritage</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Bibliotheca Alexandrina, Qaitbay Citadel, Corniche</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Alexandria, Egypt'); closeDetails('alexandria')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+      document.querySelector(".cta-btn").addEventListener("click", () => {
+        document.getElementById("popular").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

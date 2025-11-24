@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Australia - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source
+          src="continents videos/australia_intro.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.php" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="7wonders/7_wonders/Machu Picchu.jpeg"
+                  alt="South America"
+                />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.php">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+        <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login/Register</a>
+        <a href="booking.php">Book Your Trips</a>
+        <a href="mytrips.php">My Trips</a>
+        <a href="aboutus.php">About</a>
+        <a href="contactus.php">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. Sydney, Australia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'sydney')">
+        <div class="video-card" data-video="sydney-opera-house.webm">
+          <img
+            src="continents/images/australia images/sydney.avif"
+            alt="Sydney Opera House"
+          />
+          <div class="card-content">
+            <h3>Sydney</h3>
+            <p>
+              Iconic Opera House, Harbour Bridge, Bondi Beach, and vibrant city
+              life.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Sydney')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'sydney')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Melbourne, Australia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'melbourne')">
+        <div class="video-card" data-video="melbourne-laneways.webm">
+          <img
+            src="continents/images/australia images/mebourne.avif"
+            alt="Melbourne Laneways"
+          />
+          <div class="card-content">
+            <h3>Melbourne</h3>
+            <p>
+              Street art laneways, coffee culture, cultural festivals, and
+              culinary excellence.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag food">Cuisine</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Melbourne')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'melbourne')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Great Barrier Reef -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'great-barrier-reef')"
+      >
+        <div class="video-card" data-video="great-barrier-reef.webm">
+          <img
+            src="continents/images/australia images/great_barrier_reef.avif"
+            alt="Great Barrier Reef"
+          />
+          <div class="card-content">
+            <h3>Great Barrier Reef</h3>
+            <p>
+              World’s largest coral reef system with incredible snorkeling and
+              diving.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Great Barrier Reef')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'great-barrier-reef')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Tasmania -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'tasmania')">
+        <div class="video-card" data-video="tasmania-cradle-mountain.webm">
+          <img
+            src="continents/images/australia images/tasmania.avif"
+            alt="Cradle Mountain, Tasmania"
+          />
+          <div class="card-content">
+            <h3>Tasmania</h3>
+            <p>
+              Pristine wilderness, Cradle Mountain, unique wildlife, and
+              colonial heritage.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Tasmania')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'tasmania')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Perth -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'perth')">
+        <div class="video-card" data-video="perth-kings-park.webm">
+          <img
+            src="continents/images/australia images/perth.avif"
+            alt="Kings Park, Perth"
+          />
+          <div class="card-content">
+            <h3>Perth</h3>
+            <p>
+              Sunny riverfront, Kings Park gardens, and gateway to Western
+              Australia’s beaches.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Perth')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'perth')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Canberra -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'canberra')">
+        <div class="video-card" data-video="canberra-parliament-house.webm">
+          <img
+            src="continents/images/australia images/canbera.avif"
+            alt="Parliament House, Canberra"
+          />
+          <div class="card-content">
+            <h3>Canberra</h3>
+            <p>
+              Australia’s capital with national museums, lakefront walks, and
+              leafy parks.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Canberra')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'canberra')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Hobart -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'hobart')">
+        <div class="video-card" data-video="hobart-museum.webm">
+          <img
+            src="continents/images/australia images/hobart.avif"
+            alt="MONA, Hobart"
+          />
+          <div class="card-content">
+            <h3>Hobart</h3>
+            <p>
+              Historic waterfront, MONA art museum, Salamanca Market, and Mount
+              Wellington.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Hobart')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'hobart')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Gold Coast -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'gold-coast')">
+        <div class="video-card" data-video="gold-coast-surfers.webm">
+          <img
+            src="continents/images/australia images/gold coast.avif"
+            alt="Gold Coast surfers"
+          />
+          <div class="card-content">
+            <h3>Gold Coast</h3>
+            <p>
+              Surf beaches, theme parks, nightlife, and vibrant coastal
+              lifestyle.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Gold Coast')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'gold-coast')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. Brisbane -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'brisbane')">
+        <div class="video-card" data-video="brisbane-cityscape.webm">
+          <img
+            src="continents/images/australia images/brisbane.avif"
+            alt="Brisbane cityscape"
+          />
+          <div class="card-content">
+            <h3>Brisbane</h3>
+            <p>
+              Riverside city, South Bank Parklands, cultural precincts, and
+              river cruises.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Brisbane')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'brisbane')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Cairns -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cairns')">
+        <div class="video-card" data-video="cairns-reef.webm">
+          <img
+            src="continents/images/australia images/cairns.avif"
+            alt="Cairns and Outer Great Barrier Reef"
+          />
+          <div class="card-content">
+            <h3>Cairns</h3>
+            <p>
+              Gateway to the Great Barrier Reef, rainforest adventures, and
+              waterfront esplanade.
+            </p>
+            <div class="card-tags">
+              <span class="tag reef">Reef</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cairns')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'cairns')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 11. Alice Springs -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'alice-springs')"
+      >
+        <div class="video-card" data-video="alice-springs-outback.webm">
+          <img
+            src="continents/images/australia images/alice_springs.avif"
+            alt="Alice Springs desert outback"
+          />
+          <div class="card-content">
+            <h3>Alice Springs</h3>
+            <p>
+              Heart of the Red Centre, desert landscapes, Aboriginal culture,
+              and outback experiences.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Alice Springs')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'alice-springs')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Newcastle -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'newcastle')">
+        <div class="video-card" data-video="newcastle-beach.webm">
+          <img
+            src="continents/images/australia images/newcastle.avif"
+            alt="Newcastle beach"
+          />
+          <div class="card-content">
+            <h3>Newcastle</h3>
+            <p>
+              Coastal city with surf beaches, historic sites, and creative arts
+              scene.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Newcastle')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'newcastle')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Broome -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'broome')">
+        <div class="video-card" data-video="broome-horizontalfalls.webm">
+          <img
+            src="continents/images/australia images/broome.avif"
+            alt="Broome Horizontal Falls"
+          />
+          <div class="card-content">
+            <h3>Broome</h3>
+            <p>
+              Gateway to the Kimberley, Horizontal Falls, Cable Beach sunsets,
+              and pearling history.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag beach">Beach</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Broome')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'broome')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Hobart (Mt. Wellington) -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'hobart')">
+        <div class="video-card" data-video="hobart-mtwellington.webm">
+          <img
+            src="continents/images/australia images/hobart.avif"
+            alt="Mount Wellington, Hobart"
+          />
+          <div class="card-content">
+            <h3>Hobart (Mt. Wellington)</h3>
+            <p>
+              Panoramic city and harbour views, historic Botanic Gardens, and
+              summit hikes.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Hobart (Mt. Wellington)')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'hobart')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Gold Coast Hinterland -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'gold-coast-hinterland')"
+      >
+        <div class="video-card" data-video="hinterland-waterfalls.webm">
+          <img
+            src="continents/images/australia images/gold_cost_hinderland.avif"
+            alt="Gold Coast Hinterland Waterfalls"
+          />
+          <div class="card-content">
+            <h3>Gold Coast Hinterland</h3>
+            <p>
+              Subtropical rainforests, waterfalls, charming villages, and scenic
+              lookouts.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Gold Coast Hinterland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'gold-coast-hinterland')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- New Zealand Destinations (8 cards) -->
+
+      <!-- 16. Auckland, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'auckland')">
+        <div class="video-card" data-video="auckland-harbour.webm">
+          <img
+            src="continents/images/australia images/auckland.avif"
+            alt="Auckland Harbour and Sky Tower"
+          />
+          <div class="card-content">
+            <h3>Auckland</h3>
+            <p>
+              City of sails, Sky Tower, volcanic islands, world-class dining,
+              and waterfront beaches.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Auckland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'auckland')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Wellington, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'wellington')">
+        <div class="video-card" data-video="wellington-harbour.webm">
+          <img
+            src="continents/images/australia images/wellington.avif"
+            alt="Wellington Harbour and Te Papa Museum"
+          />
+          <div class="card-content">
+            <h3>Wellington</h3>
+            <p>
+              Capital city, Te Papa museum, craft beer scene, cable car, and
+              vibrant waterfront.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag food">Cuisine</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Wellington')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'wellington')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Christchurch, New Zealand -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'christchurch')"
+      >
+        <div class="video-card" data-video="christchurch-botanic.webm">
+          <img
+            src="continents/images/australia images/christchurch.avif"
+            alt="Christchurch Botanic Gardens and Avon River"
+          />
+          <div class="card-content">
+            <h3>Christchurch</h3>
+            <p>
+              Garden city, historic trams, punting on Avon River, and botanic
+              gardens.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Christchurch')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'christchurch')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Queenstown, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'queenstown')">
+        <div class="video-card" data-video="queenstown-alpine.webm">
+          <img
+            src="continents/images/australia images/queenstown.avif"
+            alt="Queenstown and Lake Wakatipu"
+          />
+          <div class="card-content">
+            <h3>Queenstown</h3>
+            <p>
+              Adventure capital, bungee jumping, skiing, lake cruises, and
+              alpine scenery.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag mountains">Mountains</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Queenstown')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'queenstown')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Rotorua, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'rotorua')">
+        <div class="video-card" data-video="rotorua-geysers.webm">
+          <img
+            src="continents/images/australia images/rotorua.avif"
+            alt="Rotorua geothermal geysers and mud pools"
+          />
+          <div class="card-content">
+            <h3>Rotorua</h3>
+            <p>
+              Geothermal wonders, Maori cultural performances, bubbling mud
+              pools, and hot springs.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Rotorua')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'rotorua')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 21. Hamilton, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'hamilton')">
+        <div class="video-card" data-video="hamilton-gardens.webm">
+          <img
+            src="continents/images/australia images/hamilton.avif"
+            alt="Hamilton Gardens and Waikato River"
+          />
+          <div class="card-content">
+            <h3>Hamilton</h3>
+            <p>
+              Riverside city, themed gardens, river cruises, and vibrant arts
+              festivals.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Hamilton')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'hamilton')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Tauranga, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'tauranga')">
+        <div class="video-card" data-video="tauranga-mount-maunganui.webm">
+          <img
+            src="continents/images/australia images/tauranga.avif"
+            alt="Mount Maunganui and Tauranga harbour"
+          />
+          <div class="card-content">
+            <h3>Tauranga</h3>
+            <p>
+              Coastal city, Mount Maunganui beach, harbour views, and seafood
+              dining.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag food">Cuisine</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Tauranga')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'tauranga')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Dunedin, New Zealand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'dunedin')">
+        <div class="video-card" data-video="dunedin-railway.webm">
+          <img
+            src="continents/images/australia images/dunedin.avif"
+            alt="Dunedin railway station and Otago Peninsula"
+          />
+          <div class="card-content">
+            <h3>Dunedin</h3>
+            <p>
+              Victorian architecture, wildlife on Otago Peninsula, historic
+              railway tours.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Dunedin')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'dunedin')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Pacific Islands Destinations (5 cards) -->
+
+      <!-- 24. Fiji -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'fiji')">
+        <div class="video-card" data-video="fiji-coral-coast.webm">
+          <img
+            src="continents/images/australia images/fiji.avif"
+            alt="Fiji Coral Coast and beaches"
+          />
+          <div class="card-content">
+            <h3>Fiji</h3>
+            <p>
+              Tropical paradise, clear waters, coral reefs, luxury resorts, and
+              cultural villages.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Fiji')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'fiji')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Vanuatu -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'vanuatu')">
+        <div class="video-card" data-video="vanuatu-volcanoes.webm">
+          <img
+            src="continents/images/australia images/vanuata.avif"
+            alt="Vanuatu volcanoes and tribal culture"
+          />
+          <div class="card-content">
+            <h3>Vanuatu</h3>
+            <p>
+              Active volcanoes, tribal customs, lush rainforests, and
+              world-class diving.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Vanuatu')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'vanuatu')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. New Caledonia -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'new-caledonia')"
+      >
+        <div class="video-card" data-video="new-caledonia-lagoon.webm">
+          <img
+            src="continents/images/australia images/new_caledonia.avif"
+            alt="New Caledonia lagoon and culture"
+          />
+          <div class="card-content">
+            <h3>New Caledonia</h3>
+            <p>
+              World’s largest lagoon, French culture, unique wildlife, and
+              luxury island resorts.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'New Caledonia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'new-caledonia')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Samoa -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'samoa')">
+        <div class="video-card" data-video="samoa-waterfalls.webm">
+          <img
+            src="continents/images/australia images/samao.avif"
+            alt="Samoa waterfalls and culture"
+          />
+          <div class="card-content">
+            <h3>Samoa</h3>
+            <p>
+              Waterfalls, traditional fa’a Samoa culture, pristine beaches, and
+              village life.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Samoa')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'samoa')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 28. Tonga -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'tonga')">
+        <div class="video-card" data-video="tonga-whale-watching.webm">
+          <img
+            src="continents/images/australia images/tonga.avif"
+            alt="Tonga whale watching and reefs"
+          />
+          <div class="card-content">
+            <h3>Tonga</h3>
+            <p>
+              Swim with whales, untouched reefs, Polynesian tradition, and
+              remote island paradise.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Tonga')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'tonga')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 28. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/australia images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect Asian
+              adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ALL POPUPS STARTs HERE -->
+
+    <!-- Popup 1: Sydney -->
+    <div id="details-sydney" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Sydney, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('sydney')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (Summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Opera House tours, Harbour bridge climb, Bondi Beach surfing,
+                city cruises</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$150-400 AUD (accommodation, meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book bridge climb early, visit beaches on weekdays</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Harbour Bridge, Opera House, Royal Botanic Gardens, The Rocks,
+                Bondi Beach</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Sydney'); closeDetails('sydney')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Melbourne -->
+    <div id="details-melbourne" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Melbourne, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('melbourne')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Coffee tours, laneway street art walks, cultural festivals,
+                shopping</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$120-350 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Use public transport with Myki card, visit rooftop bars</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Laneways, Royal Botanic Gardens, Federation Square, St. Kilda
+                Beach</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Melbourne'); closeDetails('melbourne')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Great Barrier Reef -->
+    <div
+      id="details-great-barrier-reef"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Great Barrier Reef, Australia</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('great-barrier-reef')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Scuba diving, snorkeling, island hopping, helicopter
+                tours</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$200-600 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book reef tours in advance, avoid wet season</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Diverse coral reefs, Whitsunday Islands, marine life</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Great Barrier Reef'); closeDetails('great-barrier-reef')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: Tasmania -->
+    <div id="details-tasmania" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Tasmania, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('tasmania')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (Summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Cradle Mountain hikes, wine tasting, museum visits, wildlife
+                spotting</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$100-280 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Pack layers, check weather for mountain hikes</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Cradle Mountain, Salamanca Market, Freycinet National
+                Park</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Tasmania'); closeDetails('tasmania')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Perth -->
+    <div id="details-perth" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Perth, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('perth')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>September - November, March - May</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Kings Park, Swan River Cruises, Cottesloe Beach, Fremantle
+                Markets</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$110-300 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit Kings Park at sunset, explore local markets on
+                weekends</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Kings Park, Swan River, Cottesloe Beach</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Perth'); closeDetails('perth')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Canberra -->
+    <div id="details-canberra" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Canberra, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('canberra')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Parliament House, National Gallery, Australian War Memorial,
+                Lake Burley Griffin</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$90-250 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Walk around lake, book museum entry tickets online</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Parliament House, National Gallery of Australia</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Canberra'); closeDetails('canberra')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Hobart -->
+    <div id="details-hobart" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Hobart, Tasmania</h4>
+          <button class="close-btn" onclick="closeDetails('hobart')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (Summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >MONA museum, Salamanca Market, Mount Wellington hikes</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$95-270 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Check ferry schedules, dress in layers for hikes</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>MONA, Salamanca Market, Mount Wellington</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Hobart'); closeDetails('hobart')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Gold Coast -->
+    <div id="details-gold-coast" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Gold Coast, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('gold-coast')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Surf beaches, theme parks, nightlife, Currumbin Wildlife
+                Sanctuary</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$120-320 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit early morning for best surf, book theme parks
+                online</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Surfers Paradise, Currumbin Wildlife Sanctuary, SkyPoint</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Gold Coast'); closeDetails('gold-coast')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: Brisbane -->
+    <div id="details-brisbane" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Brisbane, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('brisbane')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - September (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >South Bank Parklands, Story Bridge, cultural precincts, river
+                cruises</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$100-280 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Use CityCat ferries for best views, visit during Riverfire
+                Festival</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>South Bank, Story Bridge, Lone Pine Koala Sanctuary</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Brisbane'); closeDetails('brisbane')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Cairns -->
+    <div id="details-cairns" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cairns, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('cairns')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Great Barrier Reef tours, Daintree Rainforest, Kuranda scenic
+                railway</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$130-380 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Book reef tours early, bring sunscreen and reef-safe
+                products</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Great Barrier Reef, Daintree National Park, Cairns
+                Esplanade</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cairns'); closeDetails('cairns')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Alice Springs -->
+    <div id="details-alice-springs" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Alice Springs, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('alice-springs')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - September (Cooler months)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Uluru day trips, Desert Park, Telegraph Station, MacDonnell
+                Ranges</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$80-220 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Carry water, book tours in advance, wear sun protection</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Uluru-Kata Tjuta National Park, Aboriginal culture, Outback
+                landscapes</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Alice Springs'); closeDetails('alice-springs')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Newcastle -->
+    <div id="details-newcastle" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Newcastle, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('newcastle')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>September - May (Warmer months)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Newcastle Beach, Fort Scratchley, Hunter Valley day trips</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$85-230 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit off-peak for quieter beaches, explore local
+                wineries</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Historic site visits, surf beaches, coastal walking
+                tracks</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Newcastle'); closeDetails('newcastle')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Broome -->
+    <div id="details-broome" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Broome, Australia</h4>
+          <button class="close-btn" onclick="closeDetails('broome')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (Dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Cable Beach, Horizontal Falls, Pearling tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$120-350 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take sunset camel rides, book boat tours early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Pearl farms, Broome's history, stunning beaches</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Broome'); closeDetails('broome')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Gold Coast Hinterland -->
+    <div
+      id="details-gold-coast-hinterland"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Gold Coast Hinterland, Australia</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('gold-coast-hinterland')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - September (Cooler and drier)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Hiking, waterfalls, scenic lookouts, nature walks</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$90-250 AUD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Bring hiking shoes, check weather before long walks</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Lamington National Park, Springbrook, natural bridges</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Gold Coast Hinterland'); closeDetails('gold-coast-hinterland')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Auckland -->
+    <div id="details-auckland" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Auckland, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('auckland')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (Summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Sky Tower, Waiheke Island, Auckland Harbour Bridge</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-300 NZD (accommodation and meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit the islands by ferry, explore local vineyards</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Sky Tower, Viaduct Harbour, Auckland Domain</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Auckland'); closeDetails('auckland')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Wellington -->
+    <div id="details-wellington" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Wellington, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('wellington')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - April (Warmer months)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Te Papa Museum, Cable Car, Weta Workshop</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$100-280 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit Cuba Street for cafes, book museum tickets online</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Te Papa, Zealandia Wildlife Sanctuary, Wellington
+                Waterfront</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Wellington'); closeDetails('wellington')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Christchurch -->
+    <div id="details-christchurch" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Christchurch, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('christchurch')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - March (Spring to Summer)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Botanic Gardens, Avon River, Canterbury Museum</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$90-250 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Try punting on Avon River, visit Re:START container mall</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Botanic Gardens, Cardboard Cathedral, Hagley Park</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Christchurch'); closeDetails('christchurch')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Queenstown -->
+    <div id="details-queenstown" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Queenstown, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('queenstown')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - February, June - August</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Bungee jumping, skiing, hiking, lake cruises</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$150-400 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book adventure sports early, dress warm in winter</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Lake Wakatipu, The Remarkables, Milford Sound tours</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Queenstown'); closeDetails('queenstown')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Rotorua -->
+    <div id="details-rotorua" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Rotorua, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('rotorua')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong><span>October - April</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Geothermal parks, Māori cultural performances, Redwood
+                forests</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$85-240 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Bring warm clothes, visit geothermal parks early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Te Puia, Whakarewarewa Village, Lake Rotorua</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Rotorua'); closeDetails('rotorua')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Hamilton -->
+    <div id="details-hamilton" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Hamilton, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('hamilton')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong><span>October - March</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Hamilton Gardens, river cruises, tea estate tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$75-200 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit themed gardens across seasons</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Hamilton Gardens, Waikato River, Hamilton Zoo</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Hamilton'); closeDetails('hamilton')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: Tauranga -->
+    <div id="details-tauranga" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Tauranga, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('tauranga')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong><span>November - March</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Mount Maunganui beach, harbor cruises, seafood dining</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$90-250 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit beaches early, book fishing tours</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Mount Maunganui, Tauranga Harbor, McLaren Falls Park</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Tauranga'); closeDetails('tauranga')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Dunedin -->
+    <div id="details-dunedin" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Dunedin, New Zealand</h4>
+          <button class="close-btn" onclick="closeDetails('dunedin')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong><span>November - March</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Historic railway, Otago Peninsula wildlife, Victorian
+                architecture</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$80-220 NZD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Travel early to see wildlife, book railway tours ahead</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Otago Peninsula, Larnach Castle, Botanical Gardens</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Dunedin'); closeDetails('dunedin')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Fiji -->
+    <div id="details-fiji" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Fiji Islands</h4>
+          <button class="close-btn" onclick="closeDetails('fiji')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Snorkeling, cultural village visits, spa treatments, island
+                hopping</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$100-500 FJD</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Respect local customs, use reef-safe sunscreen</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Coral Coast, Mamanuca Islands, traditional villages</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Fiji'); closeDetails('fiji')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Vanuatu -->
+    <div id="details-vanuatu" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Vanuatu</h4>
+          <button class="close-btn" onclick="closeDetails('vanuatu')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Volcano tours, cultural experiences, diving, rainforest
+                trekking</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$80-300 VUV</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Wear sturdy shoes for volcano trekking, respect tribal
+                customs</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Mount Yasur volcano, tribal villages, pristine beaches</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Vanuatu'); closeDetails('vanuatu')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: New Caledonia -->
+    <div id="details-new-caledonia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>New Caledonia</h4>
+          <button class="close-btn" onclick="closeDetails('new-caledonia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Snorkeling in lagoon, French cuisine, cultural tours, luxury
+                resorts</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$150-450 XPF</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Ile des Pins, try local seafood dishes</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>World Heritage Lagoon, Nouméa, Isle of Pines</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'New Caledonia'); closeDetails('new-caledonia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: Samoa -->
+    <div id="details-samoa" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Samoa</h4>
+          <button class="close-btn" onclick="closeDetails('samoa')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span
+                >Waterfalls, traditional fa’a Samoa culture, snorkeling</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$70-250 WST</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Attend local festivals, respect cultural traditions</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >To Sua Ocean Trench, Lalomanu Beach, traditional villages</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Samoa'); closeDetails('samoa')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Tonga -->
+    <div id="details-tonga" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Tonga</h4>
+          <button class="close-btn" onclick="closeDetails('tonga')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (Dry Season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Whale watching, snorkeling, cultural tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong><span>$60-200 TOP</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Best months for whale watching: July - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Kingdom of Tonga, pristine reefs, coral islands</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Tonga'); closeDetails('tonga')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

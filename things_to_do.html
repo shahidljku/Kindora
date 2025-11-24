@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Things To Do | Kindora</title>
+    <link href="7wonders.css" rel="stylesheet" />
+    <link href="common_nav_footer.css" rel="stylesheet" />
+    <link rel="icon" href="kindora-logo.ico" type="image/png" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        color: #003366;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-header {
+        background-color: #003366;
+        color: #fff;
+        padding: 2rem 1rem;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+        margin-top: 8%;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(5, 5, 5, 0.6); /* updated color */
+        text-transform: uppercase;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        background: #fff;
+        padding: 1rem 1.5rem;
+        max-width: 1200px;
+        margin: 2rem auto 3rem;
+        box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+      }
+
+      .tabs button {
+        background: #eee;
+        border: none;
+        border-radius: 30px;
+        padding: 0.75rem 2.25rem;
+        color: #003366;
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .tabs button:hover,
+      .tabs button.active {
+        background-color: #ffbb33; /* replaced */
+        color: #fff;
+        box-shadow: 0 6px 22px rgba(255, 187, 51, 0.85); /* updated shadow color */
+      }
+
+      .category {
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+        display: none;
+        animation: fadeIn 0.5s ease forwards;
+      }
+
+      .category.active {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      article.card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 6px 20px rgba(0, 51, 102, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+      }
+
+      article.card:hover {
+        box-shadow: 0 14px 40px rgba(255, 187, 51, 0.4); /* replaced */
+        transform: translateY(-10px);
+      }
+
+      article.card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 5px solid #ffbb33; /* replaced */
+        transition: transform 0.4s ease;
+      }
+
+      article.card:hover img {
+        transform: scale(1.05);
+      }
+
+      .card-content {
+        padding: 1.5rem 1.75rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+      }
+
+      .card-content h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #003366;
+        margin-bottom: 1rem;
+      }
+
+      .card-content p {
+        flex-grow: 1;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #444;
+        margin-bottom: 1.5rem;
+      }
+
+      .card-content button {
+        background-color: #ffbb33; /* replaced */
+        color: white;
+        padding: 16px 0;
+        border: none;
+        border-radius: 30px;
+        font-weight: 800;
+        font-size: 1.1rem;
+        cursor: pointer;
+        letter-spacing: 0.05em;
+        transition: background-color 0.3s ease;
+      }
+
+      .card-content button:hover {
+        background-color: #d1a832;
+      }
+
+      footer {
+        background: linear-gradient(135deg, #003366, #001a33);
+        color: white;
+        padding: 4rem 2rem 3rem;
+        font-family: Arial, sans-serif;
+        text-align: left;
+      }
+
+      .footer-container h3,
+      .footer-container h4 {
+        color: #ffbb33; /* replaced */
+      }
+
+      .footer-bottom {
+        color: #ffbb33; /* replaced */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="nav1">
+      <a href="home.html" id="logo-link"><div id="logo">Kindora</div></a>
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div
+            class="scroll-container1"
+            id="inspireScroll"
+            style="display: none"
+          >
+            <a data-href="asia.html"
+              ><div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div></a
+            >
+            <a data-href="europe.html"
+              ><div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div></a
+            >
+            <a data-href="africa.html"
+              ><div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div></a
+            >
+            <a data-href="north_america.html"
+              ><div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div></a
+            >
+            <a data-href="south_america.html"
+              ><div class="image-wrapper1">
+                <img src="7 wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div></a
+            >
+            <a data-href="australia.html"
+              ><div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div></a
+            >
+            <a data-href="antarctica.html"
+              ><div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div></a
+            >
+          </div>
+        </div>
+        <a class="a1" href="explore.html">Places to go</a>
+        <a class="a1 active" href="things_to_do.html">Things to do</a>
+        <a class="a1" href="booking.html">Plan your trip</a>
+      </div>
+      <button class="menu" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <button class="closebtn" onclick="toggleMenu()">×</button>
+      <a href="home.html">Home</a>
+      <a href="login.html">Login/Register</a>
+      <a href="booking.html">Book your trips</a>
+      <a href="mytrips.html">My trips</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">Things To Do</header>
+
+    <!-- Tabs -->
+    <div class="tabs" role="tablist">
+      <button
+        class="tablink active"
+        role="tab"
+        aria-selected="true"
+        aria-controls="cultural"
+        id="tab-cultural"
+        onclick="openCategory(event, 'cultural')"
+      >
+        Cultural Experiences
+      </button>
+      <button
+        class="tablink"
+        role="tab"
+        aria-selected="false"
+        aria-controls="adventure"
+        id="tab-adventure"
+        onclick="openCategory(event, 'adventure')"
+      >
+        Adventure Activities
+      </button>
+      <button
+        class="tablink"
+        role="tab"
+        aria-selected="false"
+        aria-controls="nature"
+        id="tab-nature"
+        onclick="openCategory(event, 'nature')"
+      >
+        Nature & Wildlife
+      </button>
+      <button
+        class="tablink"
+        role="tab"
+        aria-selected="false"
+        aria-controls="relaxation"
+        id="tab-relaxation"
+        onclick="openCategory(event, 'relaxation')"
+      >
+        Relax & Wellness
+      </button>
+      <button
+        class="tablink"
+        role="tab"
+        aria-selected="false"
+        aria-controls="family"
+        id="tab-family"
+        onclick="openCategory(event, 'family')"
+      >
+        Family Fun
+      </button>
+      <button
+        class="tablink"
+        role="tab"
+        aria-selected="false"
+        aria-controls="unique"
+        id="tab-unique"
+        onclick="openCategory(event, 'unique')"
+      >
+        Unique Experiences
+      </button>
+    </div>
+
+    <!-- Categories -->
+
+    <section
+      id="cultural"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-cultural"
+      style="display: block"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img src="things_to_do images/old temple.jpg" alt="Ancient temples" />
+          <div class="card-content">
+            <h3>Ancient Temples</h3>
+            <p>Explore breathtaking ancient temples rich with history.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1461842413167-b7c2e2627dcf"
+            alt="Festival"
+          />
+          <div class="card-content">
+            <h3>Global Festivals</h3>
+            <p>
+              Experience vibrant festivals that celebrate culture and heritage.
+            </p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1520305531377-ab4bb6babc10"
+            alt="Food market"
+          />
+          <div class="card-content">
+            <h3>Culinary Tours</h3>
+            <p>Discover authentic tastes on guided food tours worldwide.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="adventure"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-adventure"
+      tabindex="-1"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1508919801845-c3bd7d4d08a7"
+            alt="Hiking Trail"
+          />
+          <div class="card-content">
+            <h3>Mountain Hiking</h3>
+            <p>Challenge yourself on scenic mountain trails worldwide.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507537509458-b8312e4e7449"
+            alt="River rafting"
+          />
+          <div class="card-content">
+            <h3>River Rafting</h3>
+            <p>Navigate exhilarating rapids on world-class rivers.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1500109176208-166bc4b106f7"
+            alt="Skydiving"
+          />
+          <div class="card-content">
+            <h3>Skydiving</h3>
+            <p>Feel the adrenaline with tandem skydiving jumps.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="nature"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-nature"
+      tabindex="-1"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1506748686214-4e9bad1baedf"
+            alt="National Park"
+          />
+          <div class="card-content">
+            <h3>National Parks</h3>
+            <p>Discover diverse ecosystems in preserved natural parks.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1519431458144-fae3adfab108"
+            alt="Wildlife"
+          />
+          <div class="card-content">
+            <h3>Wildlife Safari</h3>
+            <p>
+              Experience safaris and see exotic animals in their natural
+              habitat.
+            </p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1500109176645-ddebd8d04e0d"
+            alt="Coral reef"
+          />
+          <div class="card-content">
+            <h3>Coral Reefs</h3>
+            <p>Explore stunning coral reefs via snorkeling and diving.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="relaxation"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-relaxation"
+      tabindex="-1"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1506748709754-36cb1bbbe3b8"
+            alt="Spa"
+          />
+          <div class="card-content">
+            <h3>Spa & Wellness</h3>
+            <p>Rejuvenate with world-class spa and wellness treatments.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1506748709752-235a0a9ebd3d"
+            alt="Yoga"
+          />
+          <div class="card-content">
+            <h3>Yoga & Meditation</h3>
+            <p>Practice yoga and meditation in serene beautiful locations.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1506748709750-a471aa24cd1e"
+            alt="Beach"
+          />
+          <div class="card-content">
+            <h3>Relaxing Beaches</h3>
+            <p>Unwind on pristine white sand beaches worldwide.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="family"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-family"
+      tabindex="-1"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507537509455-fbe370f29c0f"
+            alt="Theme park"
+          />
+          <div class="card-content">
+            <h3>Theme Parks</h3>
+            <p>Enjoy fun-filled theme parks and family attractions.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507537509456-f4afa38a498e"
+            alt="Aquarium"
+          />
+          <div class="card-content">
+            <h3>Zoos & Aquariums</h3>
+            <p>Discover amazing wildlife and aquatic exhibits.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1506748709746-ae68216dbf94"
+            alt="Camping"
+          />
+          <div class="card-content">
+            <h3>Camping Sites</h3>
+            <p>Explore nature with family camping experiences.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="unique"
+      class="category"
+      role="tabpanel"
+      aria-labelledby="tab-unique"
+      tabindex="-1"
+    >
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507541675617-0f005d4cc771"
+            alt="Balloon"
+          />
+          <div class="card-content">
+            <h3>Hot Air Balloon Rides</h3>
+            <p>Soar high for breathtaking views during balloon flights.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507541675741-9d278b0bea09"
+            alt="Overwater bungalow"
+          />
+          <div class="card-content">
+            <h3>Overwater Bungalows</h3>
+            <p>Stay in stunning overwater bungalows in tropical paradises.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507541675854-9713f07c5eb8"
+            alt="Desert safari"
+          />
+          <div class="card-content">
+            <h3>Desert Safaris</h3>
+            <p>Experience thrilling desert safaris and off-road adventures.</p>
+            <button>Add to Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.html">Places to Go</a></li>
+            <li><a href="things_to_do.html">Things to Do</a></li>
+            <li><a href="booking.html">Plan Your Trip</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const tabs = document.querySelectorAll(".tablink");
+      const categories = document.querySelectorAll(".category");
+
+      function openCategory(evt, categoryName) {
+        categories.forEach((cat) => {
+          cat.style.display = "none";
+          cat.setAttribute("aria-hidden", "true");
+        });
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        document.getElementById(categoryName).style.display = "block";
+        document
+          .getElementById(categoryName)
+          .setAttribute("aria-hidden", "false");
+        evt.currentTarget.classList.add("active");
+      }
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

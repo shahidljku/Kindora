@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sydney Opera House - Visitor Guide</title>
+    <link href="../7wonders.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../kindora-logo.ico" />
+    <link href="../common_nav_footer.css" rel="stylesheet" />
+    <style>
+      #nav1 {
+        height: 16%;
+      }
+      .image-heading {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        background: #003366;
+        color: white;
+        margin-top: 10%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h3 {
+        color: #1e40af;
+        margin-bottom: 10px;
+      }
+      .book-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 28px;
+        background: linear-gradient(135deg, #ffcc00, #ff9900);
+        color: #003366;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .book-btn:hover {
+        background: linear-gradient(135deg, #ffd633, #ffb84d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      }
+      .book-btn:active {
+        transform: scale(0.97);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="../home.html" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="../asia.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div></a
+            >
+            <a data-href="../europe.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div></a
+            >
+            <a data-href="../africa.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div></a
+            >
+            <a data-href="../north_america.html"
+              ><div class="image-wrapper1">
+                <img
+                  src="../web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div></a
+            >
+            <a data-href="../south_america.html"
+              ><div class="image-wrapper1">
+                <img src="../7 wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div></a
+            >
+            <a data-href="../australia.html"
+              ><div class="image-wrapper1">
+                <img src="../web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div></a
+            >
+            <a data-href="../antarctica.html"
+              ><div class="image-wrapper1">
+                <img
+                  src="../web images/banner/antarctica.jpeg"
+                  alt="Antarctica"
+                />
+                <div class="overlay-text">Antarctica</div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="../explore.html">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.html">Things to do</a>
+        <a class="a1 dropbtn" href="../booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="../home.html">Home</a>
+        <a href="../login.php">Login/Register</a>
+        <a href="../booking.php">Book Your Trips</a>
+        <a href="../mytrips.html">My Trips</a>
+        <a href="../aboutus.html">About</a>
+        <a href="../contactus.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="image-heading">Sydney Opera House - Sydney, Australia</div>
+    <img src="../places/Sydney_Opera_House.jpeg" alt="Sydney Opera House" />
+
+    <section>
+      <h3>Introduction:</h3>
+      <p>
+        The Sydney Opera House is one of the most recognizable buildings in the
+        world and a UNESCO World Heritage Site. Located on Sydney Harbour, it
+        hosts performances in opera, ballet, theatre, and concerts.
+      </p>
+    </section>
+
+    <section>
+      <h3>Overview / History:</h3>
+      <p>
+        Designed by Danish architect Jørn Utzon, construction began in 1959 and
+        was completed in 1973. Despite challenges, it became a global
+        architectural masterpiece and a symbol of Australia.
+      </p>
+    </section>
+
+    <section>
+      <h3>Architecture & Design:</h3>
+      <p>
+        The Opera House is famous for its sail-like shells and innovative
+        design. Built on Bennelong Point, it combines modern engineering with
+        unique aesthetics and overlooks Sydney Harbour Bridge.
+      </p>
+    </section>
+
+    <section>
+      <h3>Cultural Significance:</h3>
+      <p>
+        The Opera House is a symbol of creativity and culture, representing
+        modern Australia. It hosts more than 1,500 performances each year and
+        attracts over 8 million visitors annually.
+      </p>
+    </section>
+
+    <section>
+      <h3>Things to Do:</h3>
+      <ul>
+        <li>Take a guided Opera House tour.</li>
+        <li>Attend live performances in music, theatre, and dance.</li>
+        <li>Dine at the Opera Bar with harbour views.</li>
+        <li>Enjoy night views with the Harbour Bridge as backdrop.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>How to Reach:</h3>
+      <p>
+        Nearest airport: Sydney Kingsford Smith International Airport.<br />
+        Take a train, bus, or ferry to Circular Quay, just a short walk to the
+        Opera House.
+      </p>
+    </section>
+
+    <section>
+      <h3>Tourist Information:</h3>
+      <p>
+        <strong>Location:</strong> Bennelong Point, Sydney Harbour, Australia
+      </p>
+      <p>
+        <strong>Best time to visit:</strong> September to November, March to May
+      </p>
+      <p>
+        <strong>Entry fee:</strong> Free entry to exterior; guided tours from
+        AUD $42
+      </p>
+      <p>
+        <strong>Nearby attractions:</strong> Sydney Harbour Bridge, Royal
+        Botanic Garden, Circular Quay
+      </p>
+      <a href="../booking.php" class="book-btn">Book Now</a>
+    </section>
+
+    <section>
+      <h3>Visitor Tips:</h3>
+      <p>
+        Book guided tours in advance. Sunset views from the Opera Bar are
+        stunning. Check the performance calendar for unique cultural
+        experiences.
+      </p>
+    </section>
+
+    <section>
+      <h3>360° View of Sydney Opera House – Australia</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1698765432100!6m8!1m7!1sCAoSLEFGMVFpcE9GdldGb05qOFRkYm9UQlZ0WW9jVjhHZ2o5X2g3VkZPSm5vZlNB!2m2!1d-33.856784!2d151.215297!3f90!4f0!5f0.7820865974627469"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />Explore,
+            travel, and create unforgettable memories with us.
+          </p>
+        </div>
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="../explore.html">Places to Go</a></li>
+            <li><a href="#">Things to Do</a></li>
+            <li><a href="../booking.php">Plan Your Trip</a></li>
+            <li><a href="../contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="../icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"
+              ><img src="../icons/instagram.jpeg" alt="Instagram"
+            /></a>
+            <a href="#"><img src="../icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+    <script src="../common_nav_footer.js"></script>
+  </body>
+</html>

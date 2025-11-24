@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Europe - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="continents videos/europe_intro.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.php" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.avif" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.avif" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.avif"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.php">
+              <div class="image-wrapper1">
+                <img src="7 wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.avif" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.php">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+        <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login/Register</a>
+        <a href="booking.php">Book Your Trips</a>
+        <a href="mytrips.php">My Trips</a>
+        <a href="aboutus.php">About</a>
+        <a href="contactus.php">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. Paris, France -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'paris')">
+        <div class="video-card" data-video="01 - Paris.webm">
+          <img
+            src="continents/images/europe images/1.avif"
+            alt="Paris, France"
+          />
+          <div class="card-content">
+            <h3>Paris, France</h3>
+            <p>
+              Eiffel Tower, Louvre Museum, charming cafés, and romantic Seine
+              riverbanks.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Paris, France')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'paris')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Rome, Italy -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'rome')">
+        <div class="video-card" data-video="02 - Rome.webm">
+          <img src="continents/images/europe images/2.avif" alt="Rome, Italy" />
+          <div class="card-content">
+            <h3>Rome, Italy</h3>
+            <p>
+              Colosseum, Vatican City, ancient Roman Forum, and authentic
+              Italian cuisine.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Rome, Italy')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'rome')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. London, United Kingdom -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'london')">
+        <div class="video-card" data-video="03 - London.webm">
+          <img
+            src="continents/images/europe images/3.avif"
+            alt="London, United Kingdom"
+          />
+          <div class="card-content">
+            <h3>London, United Kingdom</h3>
+            <p>Big Ben, Tower Bridge, British Museum, and royal palaces.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'London, United Kingdom')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'london')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Barcelona, Spain -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'barcelona')">
+        <div class="video-card" data-video="04 - Barcelona.webm">
+          <img
+            src="continents/images/europe images/4.avif"
+            alt="Barcelona, Spain"
+          />
+          <div class="card-content">
+            <h3>Barcelona, Spain</h3>
+            <p>
+              Sagrada Família, Park Güell, Gothic Quarter, and Mediterranean
+              beaches.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Barcelona, Spain')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'barcelona')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Amsterdam, Netherlands -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'amsterdam')">
+        <div class="video-card" data-video="05 - Amsterdam.webm">
+          <img
+            src="continents/images/europe images/5.avif"
+            alt="Amsterdam, Netherlands"
+          />
+          <div class="card-content">
+            <h3>Amsterdam, Netherlands</h3>
+            <p>
+              Canal cruises, Anne Frank House, vibrant nightlife, and
+              bike-friendly streets.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Amsterdam, Netherlands')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'amsterdam')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Vienna, Austria -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'vienna')">
+        <div class="video-card" data-video="06 - Vienna.webm">
+          <img
+            src="continents/images/europe images/6.avif"
+            alt="Vienna, Austria"
+          />
+          <div class="card-content">
+            <h3>Vienna, Austria</h3>
+            <p>
+              Schönbrunn Palace, classical music heritage, coffeehouse culture,
+              and imperial architecture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Vienna, Austria')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'vienna')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Prague, Czech Republic -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'prague')">
+        <div class="video-card" data-video="07 - Prague.webm">
+          <img
+            src="continents/images/europe images/7.avif"
+            alt="Prague, Czech Republic"
+          />
+          <div class="card-content">
+            <h3>Prague, Czech Republic</h3>
+            <p>
+              Prague Castle, Charles Bridge, Old Town Square, and medieval
+              charm.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Prague, Czech Republic')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'prague')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Santorini, Greece -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'santorini')">
+        <div class="video-card" data-video="08 - Santorini.webm">
+          <img
+            src="continents/images/europe images/8.avif"
+            alt="Santorini, Greece"
+          />
+          <div class="card-content">
+            <h3>Santorini, Greece</h3>
+            <p>
+              Whitewashed buildings, stunning sunsets, volcanic beaches, and
+              Greek island life.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Santorini, Greece')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'santorini')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. Swiss Alps, Switzerland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'swiss-alps')">
+        <div class="video-card" data-video="09 - Swiss Alps.webm">
+          <img
+            src="continents/images/europe images/9.avif"
+            alt="Swiss Alps, Switzerland"
+          />
+          <div class="card-content">
+            <h3>Swiss Alps, Switzerland</h3>
+            <p>
+              Matterhorn, Jungfraujoch, alpine skiing, and breathtaking mountain
+              scenery.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Swiss Alps, Switzerland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'swiss-alps')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Florence, Italy -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'florence')">
+        <div class="video-card" data-video="10 - Florence.webm">
+          <img
+            src="continents/images/europe images/10.avif"
+            alt="Florence, Italy"
+          />
+          <div class="card-content">
+            <h3>Florence, Italy</h3>
+            <p>
+              Renaissance art, Uffizi Gallery, Duomo cathedral, and Tuscan
+              countryside.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Florence, Italy')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'florence')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 11. Venice, Italy -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'venice')">
+        <div class="video-card" data-video="11 - Venice.webm">
+          <img
+            src="continents/images/europe images/11.avif"
+            alt="Venice, Italy"
+          />
+          <div class="card-content">
+            <h3>Venice, Italy</h3>
+            <p>
+              Grand Canal, St. Mark's Square, gondola rides, and unique floating
+              city.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Venice, Italy')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'venice')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Edinburgh, Scotland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'edinburgh')">
+        <div class="video-card" data-video="12 - Edinburgh.webm">
+          <img
+            src="continents/images/europe images/12.avif"
+            alt="Edinburgh, Scotland"
+          />
+          <div class="card-content">
+            <h3>Edinburgh, Scotland</h3>
+            <p>
+              Edinburgh Castle, Royal Mile, Scottish Highland culture, and
+              historic festivals.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Edinburgh, Scotland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'edinburgh')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Lisbon, Portugal -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'lisbon')">
+        <div class="video-card" data-video="13 - Lisbon.webm">
+          <img
+            src="continents/images/europe images/13.avif"
+            alt="Lisbon, Portugal"
+          />
+          <div class="card-content">
+            <h3>Lisbon, Portugal</h3>
+            <p>
+              Colorful neighborhoods, historic trams, fado music, and Atlantic
+              coastline.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Lisbon, Portugal')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'lisbon')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Berlin, Germany -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'berlin')">
+        <div class="video-card" data-video="14 - Berlin.webm">
+          <img
+            src="continents/images/europe images/14.avif"
+            alt="Berlin, Germany"
+          />
+          <div class="card-content">
+            <h3>Berlin, Germany</h3>
+            <p>
+              Brandenburg Gate, Berlin Wall history, vibrant art scene, and
+              modern culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Berlin, Germany')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'berlin')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Stockholm, Sweden -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'stockholm')">
+        <div class="video-card" data-video="15 - Stockholm.webm">
+          <img
+            src="continents/images/europe images/15.avif"
+            alt="Stockholm, Sweden"
+          />
+          <div class="card-content">
+            <h3>Stockholm, Sweden</h3>
+            <p>
+              Archipelago islands, Gamla Stan old town, ABBA Museum, and Nordic
+              design.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Stockholm, Sweden')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'stockholm')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Budapest, Hungary -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'budapest')">
+        <div class="video-card" data-video="16 - Budapest.webm">
+          <img
+            src="continents/images/europe images/16.avif"
+            alt="Budapest, Hungary"
+          />
+          <div class="card-content">
+            <h3>Budapest, Hungary</h3>
+            <p>
+              Danube River views, thermal baths, Parliament building, and ruin
+              bars.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Budapest, Hungary')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'budapest')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Copenhagen, Denmark -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'copenhagen')">
+        <div class="video-card" data-video="17 - Copenhagen.webm">
+          <img
+            src="continents/images/europe images/17.avif"
+            alt="Copenhagen, Denmark"
+          />
+          <div class="card-content">
+            <h3>Copenhagen, Denmark</h3>
+            <p>
+              Nyhavn harbor, Tivoli Gardens, bike culture, and Danish hygge
+              lifestyle.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Copenhagen, Denmark')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'copenhagen')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Dubrovnik, Croatia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'dubrovnik')">
+        <div class="video-card" data-video="18 - Dubrovnik.webm">
+          <img
+            src="continents/images/europe images/18.avif"
+            alt="Dubrovnik, Croatia"
+          />
+          <div class="card-content">
+            <h3>Dubrovnik, Croatia</h3>
+            <p>
+              Medieval city walls, Adriatic Sea views, Game of Thrones filming
+              locations.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Dubrovnik, Croatia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'dubrovnik')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Reykjavik, Iceland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'reykjavik')">
+        <div class="video-card" data-video="19 - Reykjavik.webm">
+          <img
+            src="continents/images/europe images/19.avif"
+            alt="Reykjavik, Iceland"
+          />
+          <div class="card-content">
+            <h3>Reykjavik, Iceland</h3>
+            <p>
+              Northern Lights, Blue Lagoon, geysers, glaciers, and volcanic
+              landscapes.
+            </p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Reykjavik, Iceland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'reykjavik')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Oslo, Norway -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'oslo')">
+        <div class="video-card" data-video="20 - Oslo.webm">
+          <img
+            src="continents/images/europe images/20.avif"
+            alt="Oslo, Norway"
+          />
+          <div class="card-content">
+            <h3>Oslo, Norway</h3>
+            <p>
+              Viking Ship Museum, fjords, midnight sun, and Scandinavian design.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Oslo, Norway')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'oslo')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 21. Milan, Italy -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'milan')">
+        <div class="video-card" data-video="21 - Milan.webm">
+          <img
+            src="continents/images/europe images/21.avif"
+            alt="Milan, Italy"
+          />
+          <div class="card-content">
+            <h3>Milan, Italy</h3>
+            <p>
+              Fashion capital, Gothic Duomo, La Scala opera house, and designer
+              shopping.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Milan, Italy')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'milan')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Athens, Greece -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'athens')">
+        <div class="video-card" data-video="22 - Athens.webm">
+          <img
+            src="continents/images/europe images/22.avif"
+            alt="Athens, Greece"
+          />
+          <div class="card-content">
+            <h3>Athens, Greece</h3>
+            <p>
+              Acropolis, Parthenon, ancient history, Mediterranean cuisine, and
+              Greek islands nearby.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Athens, Greece')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'athens')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Bruges, Belgium -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'bruges')">
+        <div class="video-card" data-video="23 - Bruges.webm">
+          <img
+            src="continents/images/europe images/23.avif"
+            alt="Bruges, Belgium"
+          />
+          <div class="card-content">
+            <h3>Bruges, Belgium</h3>
+            <p>
+              Medieval canals, chocolate shops, historic market squares, and
+              fairy-tale architecture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Bruges, Belgium')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'bruges')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 24. Monaco -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'monaco')">
+        <div class="video-card" data-video="24 - Monaco.webm">
+          <img src="continents/images/europe images/24.avif" alt="Monaco" />
+          <div class="card-content">
+            <h3>Monaco</h3>
+            <p>
+              Monte Carlo Casino, luxury yachts, Formula 1 circuit, and French
+              Riviera glamour.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag beach">Beach</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Monaco')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'monaco')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Krakow, Poland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'krakow')">
+        <div class="video-card" data-video="25 - Krakow.webm">
+          <img
+            src="continents/images/europe images/25.avif"
+            alt="Krakow, Poland"
+          />
+          <div class="card-content">
+            <h3>Krakow, Poland</h3>
+            <p>
+              Historic Old Town, Wawel Castle, Jewish Quarter, and Polish
+              cultural heritage.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Krakow, Poland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'krakow')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. Helsinki, Finland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'helsinki')">
+        <div class="video-card" data-video="26 - Helsinki.webm">
+          <img
+            src="continents/images/europe images/26.avif"
+            alt="Helsinki, Finland"
+          />
+          <div class="card-content">
+            <h3>Helsinki, Finland</h3>
+            <p>
+              Baltic Sea archipelago, saunas, design districts, and Finnish
+              minimalism.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Helsinki, Finland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'helsinki')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Zurich, Switzerland -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'zurich')">
+        <div class="video-card" data-video="27 - Zurich.webm">
+          <img
+            src="continents/images/europe images/27.avif"
+            alt="Zurich, Switzerland"
+          />
+          <div class="card-content">
+            <h3>Zurich, Switzerland</h3>
+            <p>
+              Lake Zurich, financial district, nearby Alps, and Swiss precision
+              culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Zurich, Switzerland')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'zurich')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 28. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/europe images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect European
+              adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ALL POPUPS START HERE -->
+
+    <!-- Popup 1: Paris -->
+    <div id="details-paris" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Paris, France</h4>
+          <button class="close-btn" onclick="closeDetails('paris')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Eiffel Tower, Louvre, Seine cruises, café culture</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€80-200 (mid-range accommodation)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book museum tickets online, visit early morning</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Eiffel Tower, Notre-Dame, Champs-Élysées, Montmartre</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Paris, France'); closeDetails('paris')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Rome -->
+    <div id="details-rome" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Rome, Italy</h4>
+          <button class="close-btn" onclick="closeDetails('rome')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Colosseum tours, Vatican City, Roman Forum</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€60-150 (including attractions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book skip-the-line tickets, try authentic pizza</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Colosseum, Vatican, Trevi Fountain, Pantheon</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Rome, Italy'); closeDetails('rome')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: London -->
+    <div id="details-london" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>London, United Kingdom</h4>
+          <button class="close-btn" onclick="closeDetails('london')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (warmer weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Big Ben, Tower Bridge, British Museum, royal palaces</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>£70-180 (including transport)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Use Oyster card, visit free museums</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Big Ben, Tower of London, Buckingham Palace</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'London, United Kingdom'); closeDetails('london')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: Barcelona -->
+    <div id="details-barcelona" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Barcelona, Spain</h4>
+          <button class="close-btn" onclick="closeDetails('barcelona')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Sagrada Família, Park Güell, beach walks</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€50-120 (mid-range options)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book Gaudí attractions early, try tapas</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Sagrada Família, Gothic Quarter, Las Ramblas</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Barcelona, Spain'); closeDetails('barcelona')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Amsterdam -->
+    <div id="details-amsterdam" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Amsterdam, Netherlands</h4>
+          <button class="close-btn" onclick="closeDetails('amsterdam')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - September (canal season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Canal cruises, Anne Frank House, cycling</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€60-140 (including bike rental)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Rent a bike, book Anne Frank House ahead</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Canal ring, Rijksmuseum, Vondelpark</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Amsterdam, Netherlands'); closeDetails('amsterdam')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Vienna -->
+    <div id="details-vienna" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Vienna, Austria</h4>
+          <button class="close-btn" onclick="closeDetails('vienna')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Schönbrunn Palace, classical concerts, coffehouses</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€65-150 (including cultural activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try Sachertorte, attend classical concerts</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Schönbrunn, St. Stephen's Cathedral, Belvedere</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Vienna, Austria'); closeDetails('vienna')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Prague -->
+    <div id="details-prague" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Prague, Czech Republic</h4>
+          <button class="close-btn" onclick="closeDetails('prague')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (pleasant weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Prague Castle, Charles Bridge, Old Town Square</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€40-100 (affordable destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try Czech beer, visit at sunrise</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Prague Castle, Astronomical Clock, Jewish Quarter</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Prague, Czech Republic'); closeDetails('prague')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Santorini -->
+    <div id="details-santorini" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Santorini, Greece</h4>
+          <button class="close-btn" onclick="closeDetails('santorini')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Sunset watching, wine tasting, volcanic beaches</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€80-250 (luxury island destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book sunset dinner early, visit Oia</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Oia sunset, Fira town, Red Beach, wineries</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Santorini, Greece'); closeDetails('santorini')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: Swiss Alps -->
+    <div id="details-swiss-alps" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Swiss Alps, Switzerland</h4>
+          <button class="close-btn" onclick="closeDetails('swiss-alps')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - March (skiing), June - September (hiking)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Skiing, hiking, mountain railways, scenic views</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CHF 150-400 (expensive but worth it)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Buy Swiss Travel Pass, dress warmly</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Matterhorn, Jungfraujoch, Interlaken, Zermatt</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Swiss Alps, Switzerland'); closeDetails('swiss-alps')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Florence -->
+    <div id="details-florence" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Florence, Italy</h4>
+          <button class="close-btn" onclick="closeDetails('florence')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Uffizi Gallery, Duomo, Ponte Vecchio</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€55-130 (art and culture focus)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book Uffizi tickets ahead, climb the Duomo</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Uffizi, Duomo, Ponte Vecchio, Palazzo Pitti</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Florence, Italy'); closeDetails('florence')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Venice -->
+    <div id="details-venice" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Venice, Italy</h4>
+          <button class="close-btn" onclick="closeDetails('venice')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Gondola rides, St. Mark's Square, Murano glass</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€70-180 (unique floating city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Avoid peak summer, book restaurants early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>St. Mark's Square, Doge's Palace, Grand Canal</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Venice, Italy'); closeDetails('venice')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Edinburgh -->
+    <div id="details-edinburgh" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Edinburgh, Scotland</h4>
+          <button class="close-btn" onclick="closeDetails('edinburgh')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (festival season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Edinburgh Castle, Royal Mile, Highland tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>£50-120 (Scottish culture)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit during Edinburgh Festival, try haggis</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Edinburgh Castle, Arthur's Seat, Royal Mile</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Edinburgh, Scotland'); closeDetails('edinburgh')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Lisbon -->
+    <div id="details-lisbon" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Lisbon, Portugal</h4>
+          <button class="close-btn" onclick="closeDetails('lisbon')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Tram rides, fado music, coastal day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€45-110 (affordable European capital)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Take Tram 28, try pastéis de nata</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Belém Tower, Alfama district, Sintra</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Lisbon, Portugal'); closeDetails('lisbon')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Berlin -->
+    <div id="details-berlin" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Berlin, Germany</h4>
+          <button class="close-btn" onclick="closeDetails('berlin')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (outdoor activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Brandenburg Gate, museums, street art tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€50-120 (great value for money)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit free museums on Sundays, try currywurst</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Brandenburg Gate, Berlin Wall, Museum Island</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Berlin, Germany'); closeDetails('berlin')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Stockholm -->
+    <div id="details-stockholm" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Stockholm, Sweden</h4>
+          <button class="close-btn" onclick="closeDetails('stockholm')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (white nights season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Gamla Stan, archipelago tours, museums</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>SEK 800-1500 (Scandinavian prices)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Buy Stockholm Pass, visit archipelago</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Gamla Stan, Vasa Museum, archipelago</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Stockholm, Sweden'); closeDetails('stockholm')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Budapest -->
+    <div id="details-budapest" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Budapest, Hungary</h4>
+          <button class="close-btn" onclick="closeDetails('budapest')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Thermal baths, Danube cruises, ruin bars</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€35-90 (excellent value)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit thermal baths, explore ruin bars</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Parliament, Széchenyi Baths, Fisherman's Bastion</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Budapest, Hungary'); closeDetails('budapest')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Copenhagen -->
+    <div id="details-copenhagen" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Copenhagen, Denmark</h4>
+          <button class="close-btn" onclick="closeDetails('copenhagen')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - August (cycling season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Nyhavn, Tivoli Gardens, cycling tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>DKK 700-1400 (Scandinavian pricing)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Rent a bike, visit Tivoli at night</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Nyhavn, Little Mermaid, Tivoli Gardens</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Copenhagen, Denmark'); closeDetails('copenhagen')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Dubrovnik -->
+    <div id="details-dubrovnik" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Dubrovnik, Croatia</h4>
+          <button class="close-btn" onclick="closeDetails('dubrovnik')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>City walls, Game of Thrones tours, island hopping</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€50-130 (Adriatic destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Walk city walls early, avoid cruise crowds</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Old Town, city walls, Lokrum Island</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Dubrovnik, Croatia'); closeDetails('dubrovnik')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Reykjavik -->
+    <div id="details-reykjavik" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Reykjavik, Iceland</h4>
+          <button class="close-btn" onclick="closeDetails('reykjavik')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >June - August (lupine season), September - March (Northern
+                Lights)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Northern Lights, Blue Lagoon, Golden Circle</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>ISK 15,000-30,000 (expensive but unique)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book Blue Lagoon early, chase Northern Lights</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Blue Lagoon, Northern Lights, geysers</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Reykjavik, Iceland'); closeDetails('reykjavik')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Oslo -->
+    <div id="details-oslo" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Oslo, Norway</h4>
+          <button class="close-btn" onclick="closeDetails('oslo')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (white nights)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Viking museums, fjord tours, modern architecture</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>NOK 1000-2000 (Norwegian prices)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Use Oslo Pass, visit free sculpture park</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Viking Ship Museum, Vigeland Park, Opera House</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Oslo, Norway'); closeDetails('oslo')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: Milan -->
+    <div id="details-milan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Milan, Italy</h4>
+          <button class="close-btn" onclick="closeDetails('milan')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Fashion shopping, Duomo, La Scala opera</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€70-160 (fashion capital)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Quadrilatero for shopping, book La Scala</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Duomo, La Scala, Quadrilatero della Moda</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Milan, Italy'); closeDetails('milan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Athens -->
+    <div id="details-athens" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Athens, Greece</h4>
+          <button class="close-btn" onclick="closeDetails('athens')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Acropolis, ancient sites, Greek island day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€40-100 (affordable ancient history)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Acropolis early, try moussaka</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Acropolis, Parthenon, Ancient Agora</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Athens, Greece'); closeDetails('athens')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Bruges -->
+    <div id="details-bruges" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Bruges, Belgium</h4>
+          <button class="close-btn" onclick="closeDetails('bruges')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Canal cruises, chocolate tours, medieval sites</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€55-130 (medieval charm)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try Belgian chocolate, take canal boat</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Market Square, Belfry Tower, canals</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Bruges, Belgium'); closeDetails('bruges')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Monaco -->
+    <div id="details-monaco" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Monaco</h4>
+          <button class="close-btn" onclick="closeDetails('monaco')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Monte Carlo Casino, yacht watching, F1 circuit</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€150-400 (luxury destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Dress smartly for casino, visit during F1</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Monte Carlo Casino, Prince's Palace, Monaco Grand Prix</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Monaco'); closeDetails('monaco')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: Krakow -->
+    <div id="details-krakow" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Krakow, Poland</h4>
+          <button class="close-btn" onclick="closeDetails('krakow')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (pleasant weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Old Town, Wawel Castle, Jewish Quarter tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€30-80 (great value destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit salt mines, try pierogi</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Main Market Square, Wawel Castle, Kazimierz</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Krakow, Poland'); closeDetails('krakow')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: Helsinki -->
+    <div id="details-helsinki" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Helsinki, Finland</h4>
+          <button class="close-btn" onclick="closeDetails('helsinki')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (white nights season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Design district, sauna culture, archipelago tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>€75-170 (Nordic pricing)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try Finnish sauna, visit Suomenlinna</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Suomenlinna, Design District, Market Square</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Helsinki, Finland'); closeDetails('helsinki')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Zurich -->
+    <div id="details-zurich" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Zurich, Switzerland</h4>
+          <button class="close-btn" onclick="closeDetails('zurich')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - October</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Lake cruises, Old Town, nearby Alps day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CHF 120-300 (expensive Swiss city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Buy day passes, visit free lookouts</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Lake Zurich, Old Town, Uetliberg mountain</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Zurich, Switzerland'); closeDetails('zurich')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+      document.querySelector(".cta-btn").addEventListener("click", () => {
+        document.getElementById("popular").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

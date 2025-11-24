@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore – Kindora</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div id="nav1">
+        <a href="home.php" id="logo-link">
+          <div id="logo">Kindora</div>
+        </a>
+
+        <div id="nav2">
+          <div class="inspire-wrapper">
+            <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+            <div class="scroll-container1" id="inspireScroll">
+              <a data-href="asia.php">
+                <div class="image-wrapper1">
+                  <img src="web images/banner/asia.avif" alt="Asia" />
+                  <div class="overlay-text">Asia</div>
+                </div>
+              </a>
+
+              <a data-href="europe.php">
+                <div class="image-wrapper1">
+                  <img src="web images/banner/europe.jpeg" alt="Europe" />
+                  <div class="overlay-text">Europe</div>
+                </div>
+              </a>
+
+              <a data-href="africa.php">
+                <div class="image-wrapper1">
+                  <img src="web images/banner/africa.avif" alt="Africa" />
+                  <div class="overlay-text">Africa</div>
+                </div>
+              </a>
+
+              <a data-href="north_america.php">
+                <div class="image-wrapper1">
+                  <img
+                    src="web images/banner/north america.avif"
+                    alt="North America"
+                  />
+                  <div class="overlay-text">North America</div>
+                </div>
+              </a>
+
+              <a data-href="south_america.php">
+                <div class="image-wrapper1">
+                  <img src="7 wonders/Machu Picchu.jpeg" alt="South America" />
+                  <div class="overlay-text">South America</div>
+                </div>
+              </a>
+
+              <a data-href="australia.php">
+                <div class="image-wrapper1">
+                  <img src="web images/banner/australia.avif" alt="Australia" />
+                  <div class="overlay-text">Australia</div>
+                </div>
+              </a>
+
+              <a data-href="antarctica.php">
+                <div class="image-wrapper1">
+                  <img
+                    src="web images/banner/antarctica.jpeg"
+                    alt="Antarctica"
+                  />
+                  <div class="overlay-text">Antarctica</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a class="a1 dropbtn" href="#">Places to go</a>
+          <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+          <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+        </div>
+
+        <button class="menu" onclick="toggleMenu()">☰</button>
+
+        <div id="sidebar" class="sidebar">
+          <button class="closebtn" onclick="toggleMenu()">×</button>
+          <a href="home.php">Home</a>
+          <a href="login.php">Login/Register</a>
+          <a href="booking.php">Book your trips</a>
+          <a href="mytrips.php">My trips</a>
+          <a href="about.php">About</a>
+          <a href="contact.php">Contact</a>
+        </div>
+      </div>
+
+      <!-- Hero Section with Image Background -->
+
+      <div class="hero-content">
+        <h1>Explore the World 🌍</h1>
+        <p>Find your next adventure with Kindora</p>
+        <div class="filters">
+          <select>
+            <option>All Continents</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Africa</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Australia</option>
+          </select>
+          <select>
+            <option>All Categories</option>
+            <option>Beaches</option>
+            <option>Mountains</option>
+            <option>Historical</option>
+            <option>Modern Cities</option>
+          </select>
+          <input type="text" placeholder="Search destinations..." />
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="seven-wonders">
+      <h2>7 Wonders of the World</h2>
+      <div class="wonders-container">
+        <div class="wonder-card">
+          <img src="7 wonders/Great Wall of China.avif" />
+          <h3>Great Wall of China</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Petra (Jordan).jpeg" />
+          <h3>Petra, Jordan</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Christ the Redeemer.jpeg" />
+          <h3>Christ the Redeemer</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Machu Picchu.jpeg" />
+          <h3>Machu Picchu</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Chichen Itza (Mexico).avif" />
+          <h3>Chichen Itza</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Roman Colosseum (Italy).jpeg" />
+          <h3>Colosseum</h3>
+        </div>
+        <div class="wonder-card">
+          <img src="7 wonders/Taj-Mahal.avif" />
+          <h3>Taj Mahal</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <h2>Popular Destinations</h2>
+      <div class="grid-gallery">
+        <img src="places/paris.avif" alt="Paris" />
+        <img src="places/rome.avif" alt="Rome" />
+        <img src="places/bali.avif" alt="Bali" />
+        <img src="places/dubai.avif" alt="Dubai" />
+        <img src="places/tokyo.avif" alt="Tokyo" />
+        <img src="places/cape-town.avif" alt="Cape Town" />
+      </div>
+    </section>
+
+    <section id="packages">
+      <h2>Special Travel Packages</h2>
+      <div class="packages">
+        <div class="package-card">
+          <img src="our packages/summer.avif" alt="Summer" />
+          <h3>Summer Escape</h3>
+          <p>Sunny beaches, islands & adventures.</p>
+          <a href="#" class="package-btn">Book Now</a>
+        </div>
+        <div class="package-card">
+          <img src="our packages/winter.avif" alt="Winter" />
+          <h3>Winter Wonderland</h3>
+          <p>Snowy mountains & cozy retreats.</p>
+          <a href="#" class="package-btn">Book Now</a>
+        </div>
+        <div class="package-card">
+          <img src="our packages/monsoon.avif" alt="Monsoon" />
+          <h3>Monsoon Magic</h3>
+          <p>Lush greenery & waterfalls.</p>
+          <a href="#" class="package-btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

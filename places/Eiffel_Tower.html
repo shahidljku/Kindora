@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eiffel Tower - Visitor Guide</title>
+    <link href="../7wonders.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../kindora-logo.ico" />
+    <link href="../common_nav_footer.css" rel="stylesheet" />
+    <style>
+      #nav1 {
+        height: 16%;
+      }
+      .image-heading {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        background: #003366;
+        color: white;
+        margin-top: 10%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      h3 {
+        color: #1e40af;
+        margin-bottom: 10px;
+      }
+      .book-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 28px;
+        background: linear-gradient(135deg, #ffcc00, #ff9900);
+        color: #003366;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .book-btn:hover {
+        background: linear-gradient(135deg, #ffd633, #ffb84d);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      }
+      .book-btn:active {
+        transform: scale(0.97);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="../home.html" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+        </div>
+        <a class="a1 dropbtn" href="../explore.html">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.html">Things to do</a>
+        <a class="a1 dropbtn" href="../booking.php">Plan Your Trip</a>
+      </div>
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="../home.html">Home</a>
+        <a href="../login.php">Login/Register</a>
+        <a href="../booking.php">Book Your Trips</a>
+        <a href="../mytrips.html">My Trips</a>
+        <a href="../aboutus.html">About</a>
+        <a href="../contactus.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="image-heading">EIFFEL TOWER - Paris, France</div>
+    <img src="Eiffel Tower.avif" alt="Eiffel Tower in Paris" />
+
+    <section>
+      <h3>Introduction:</h3>
+      <p>
+        The Eiffel Tower is one of the most recognizable landmarks in the world,
+        located in Paris, France. Built in 1889 for the Exposition Universelle
+        (World's Fair), it has become a global cultural icon of France and a top
+        tourist attraction.
+      </p>
+    </section>
+
+    <section>
+      <h3>Overview / History:</h3>
+      <p>
+        Designed by engineer Gustave Eiffel, the tower was initially criticized
+        but soon became a beloved symbol. Standing at 330 meters, it was the
+        tallest structure in the world until 1930.
+      </p>
+    </section>
+
+    <section>
+      <h3>Architecture & Design:</h3>
+      <p>
+        The Eiffel Tower is made of wrought iron and features three levels
+        accessible to visitors. Its lattice structure is both functional and
+        aesthetic, making it one of the most impressive engineering feats of its
+        time.
+      </p>
+    </section>
+
+    <section>
+      <h3>Cultural Significance:</h3>
+      <p>
+        Beyond being a tourist attraction, the tower is a symbol of romance,
+        innovation, and French culture. Millions of people visit it every year.
+      </p>
+    </section>
+
+    <section>
+      <h3>Things to do:</h3>
+      <ul>
+        <li>Take an elevator or climb stairs to observation decks.</li>
+        <li>Enjoy panoramic views of Paris.</li>
+        <li>Dine at restaurants inside the tower.</li>
+        <li>See the Eiffel Tower illuminated at night.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>How to reach:</h3>
+      <p>
+        Nearest airport: Charles de Gaulle International Airport.<br />
+        Accessible by Paris Metro (Bir-Hakeim station) or RER train (Champ de
+        Mars-Tour Eiffel station).
+      </p>
+    </section>
+
+    <section>
+      <h3>Tourist Information:</h3>
+      <p><strong>Location:</strong> Paris, France</p>
+      <p>
+        <strong>Best time to visit:</strong> April to June, September to
+        November
+      </p>
+      <p><strong>Entry fee:</strong> €10 – €26 depending on level access</p>
+      <p>
+        <strong>Nearby attractions:</strong> Louvre Museum, Seine River Cruise,
+        Arc de Triomphe
+      </p>
+      <a href="../booking.php" class="book-btn">Book Now</a>
+    </section>
+
+    <section>
+      <h3>Visitor Tips:</h3>
+      <p>
+        Book tickets online to avoid queues, visit early morning or evening for
+        fewer crowds, and don’t miss the sparkling light show after sunset.
+      </p>
+    </section>
+
+    <section>
+      <h3>360° View of Eiffel Tower – Paris</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1698765432100!6m8!1m7!1sCAoSLEFGMVFpcE5tZ09Bb1lpR0tVdlhhVzdDUnhhd2pPZkhzRmlmUm13UExQZDRl!2m2!1d48.85837!2d2.294481!3f0!4f0!5f0.7820865974627469"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />Explore,
+            travel, and create unforgettable memories with us.
+          </p>
+        </div>
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="../explore.html">Places to Go</a></li>
+            <li><a href="#">Things to Do</a></li>
+            <li><a href="../booking.php">Plan Your Trip</a></li>
+            <li><a href="../contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="../icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"
+              ><img src="../icons/instagram.jpeg" alt="Instagram"
+            /></a>
+            <a href="#"><img src="../icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+    <script src="../common_nav_footer.js"></script>
+  </body>
+</html>

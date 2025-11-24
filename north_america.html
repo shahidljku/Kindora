@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North America - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source
+          src="continents videos/north_america_intro.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.html" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.avif" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.avif" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.html">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.avif"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.html">
+              <div class="image-wrapper1">
+                <img
+                  src="7wonders/7_wonders/Machu Picchu.jpeg"
+                  alt="South America"
+                />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.avif" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.html">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.html">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.html">Things to do</a>
+        <a class="a1 dropbtn" href="booking.html">Plan Your Trip</a>
+      </div>
+
+      <button class="menu" onclick="toggleMenu()">☰</button>
+
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login/Register</a>
+        <a href="booking.html">Book Your Trips</a>
+        <a href="mytrips.html">My Trips</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+    </div>
+    <div class="card-grid">
+      <!-- 1. New York City, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'new-york')">
+        <div class="video-card" data-video="01 - New York.webm">
+          <img
+            src="continents/images/north_america images/1.avif"
+            alt="New York City, USA"
+          />
+          <div class="card-content">
+            <h3>New York City, USA</h3>
+            <p>
+              Times Square, Central Park, Statue of Liberty, Broadway shows, and
+              iconic skyline.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'New York City, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'new-york')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Los Angeles, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'los-angeles')">
+        <div class="video-card" data-video="02 - Los Angeles.webm">
+          <img
+            src="continents/images/north_america images/2.avif"
+            alt="Los Angeles, USA"
+          />
+          <div class="card-content">
+            <h3>Los Angeles, USA</h3>
+            <p>
+              Hollywood, Beverly Hills, Santa Monica beaches, and entertainment
+              capital.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Los Angeles, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'los-angeles')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Toronto, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'toronto')">
+        <div class="video-card" data-video="03 - Toronto.webm">
+          <img
+            src="continents/images/north_america images/3.avif"
+            alt="Toronto, Canada"
+          />
+          <div class="card-content">
+            <h3>Toronto, Canada</h3>
+            <p>
+              CN Tower, diverse neighborhoods, Niagara Falls nearby, and
+              multicultural cuisine.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Toronto, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'toronto')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Vancouver, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'vancouver')">
+        <div class="video-card" data-video="04 - Vancouver.webm">
+          <img
+            src="continents/images/north_america images/4.avif"
+            alt="Vancouver, Canada"
+          />
+          <div class="card-content">
+            <h3>Vancouver, Canada</h3>
+            <p>
+              Mountain views, Stanley Park, Granville Island, and Pacific
+              coastline.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Vancouver, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'vancouver')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Las Vegas, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'las-vegas')">
+        <div class="video-card" data-video="05 - Las Vegas.webm">
+          <img
+            src="continents/images/north_america images/5.avif"
+            alt="Las Vegas, USA"
+          />
+          <div class="card-content">
+            <h3>Las Vegas, USA</h3>
+            <p>
+              The Strip, world-class shows, casinos, luxury resorts, and desert
+              adventures.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Las Vegas, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'las-vegas')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. San Francisco, USA -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'san-francisco')"
+      >
+        <div class="video-card" data-video="06 - San Francisco.webm">
+          <img
+            src="continents/images/north_america images/6.avif"
+            alt="San Francisco, USA"
+          />
+          <div class="card-content">
+            <h3>San Francisco, USA</h3>
+            <p>
+              Golden Gate Bridge, Alcatraz Island, steep hills, and tech
+              innovation hub.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'San Francisco, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'san-francisco')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. Mexico City, Mexico -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'mexico-city')">
+        <div class="video-card" data-video="07 - Mexico City.webm">
+          <img
+            src="continents/images/north_america images/7.avif"
+            alt="Mexico City, Mexico"
+          />
+          <div class="card-content">
+            <h3>Mexico City, Mexico</h3>
+            <p>
+              Ancient Aztec ruins, colorful murals, vibrant markets, and
+              authentic Mexican cuisine.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Mexico City, Mexico')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'mexico-city')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Chicago, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'chicago')">
+        <div class="video-card" data-video="08 - Chicago.webm">
+          <img
+            src="continents/images/north_america images/8.avif"
+            alt="Chicago, USA"
+          />
+          <div class="card-content">
+            <h3>Chicago, USA</h3>
+            <p>
+              Deep-dish pizza, stunning architecture, Millennium Park, and
+              lakefront views.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Chicago, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'chicago')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. Montreal, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'montreal')">
+        <div class="video-card" data-video="09 - Montreal.webm">
+          <img
+            src="continents/images/north_america images/9.avif"
+            alt="Montreal, Canada"
+          />
+          <div class="card-content">
+            <h3>Montreal, Canada</h3>
+            <p>
+              French culture, Old Montreal cobblestones, bagels, and vibrant
+              festivals.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Montreal, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'montreal')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Grand Canyon, USA -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'grand-canyon')"
+      >
+        <div class="video-card" data-video="10 - Grand Canyon.webm">
+          <img
+            src="continents/images/north_america images/10.avif"
+            alt="Grand Canyon, USA"
+          />
+          <div class="card-content">
+            <h3>Grand Canyon, USA</h3>
+            <p>
+              Breathtaking vistas, hiking trails, Colorado River rafting, and
+              geological wonder.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Grand Canyon, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'grand-canyon')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 11. Miami, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'miami')">
+        <div class="video-card" data-video="11 - Miami.webm">
+          <img
+            src="continents/images/north_america images/11.avif"
+            alt="Miami, USA"
+          />
+          <div class="card-content">
+            <h3>Miami, USA</h3>
+            <p>
+              South Beach, Art Deco architecture, vibrant nightlife, and Cuban
+              culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Miami, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'miami')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Yellowstone, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'yellowstone')">
+        <div class="video-card" data-video="12 - Yellowstone.webm">
+          <img
+            src="continents/images/north_america images/12.avif"
+            alt="Yellowstone, USA"
+          />
+          <div class="card-content">
+            <h3>Yellowstone, USA</h3>
+            <p>
+              Geysers, hot springs, wildlife viewing, and America's first
+              national park.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag mountains">Mountains</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Yellowstone, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'yellowstone')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Seattle, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'seattle')">
+        <div class="video-card" data-video="13 - Seattle.webm">
+          <img
+            src="continents/images/north_america images/13.avif"
+            alt="Seattle, USA"
+          />
+          <div class="card-content">
+            <h3>Seattle, USA</h3>
+            <p>
+              Space Needle, Pike Place Market, coffee culture, and Pacific
+              Northwest nature.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Seattle, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'seattle')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Cancún, Mexico -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'cancun')">
+        <div class="video-card" data-video="14 - Cancun.webm">
+          <img
+            src="continents/images/north_america images/14.avif"
+            alt="Cancún, Mexico"
+          />
+          <div class="card-content">
+            <h3>Cancún, Mexico</h3>
+            <p>
+              Mayan ruins, turquoise Caribbean waters, all-inclusive resorts,
+              and cenotes.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cancún, Mexico')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'cancun')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Banff, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'banff')">
+        <div class="video-card" data-video="15 - Banff.webm">
+          <img
+            src="continents/images/north_america images/15.avif"
+            alt="Banff, Canada"
+          />
+          <div class="card-content">
+            <h3>Banff, Canada</h3>
+            <p>
+              Rocky Mountains, pristine lakes, winter sports, and stunning
+              alpine scenery.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Banff, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'banff')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Washington DC, USA -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'washington-dc')"
+      >
+        <div class="video-card" data-video="16 - Washington DC.webm">
+          <img
+            src="continents/images/north_america images/16.avif"
+            alt="Washington DC, USA"
+          />
+          <div class="card-content">
+            <h3>Washington DC, USA</h3>
+            <p>
+              Capitol Building, Smithsonian museums, Lincoln Memorial, and
+              political history.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Washington DC, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'washington-dc')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Boston, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'boston')">
+        <div class="video-card" data-video="17 - Boston.webm">
+          <img
+            src="continents/images/north_america images/17.avif"
+            alt="Boston, USA"
+          />
+          <div class="card-content">
+            <h3>Boston, USA</h3>
+            <p>
+              Freedom Trail, Harvard University, historic charm, and New England
+              culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Boston, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'boston')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Quebec City, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'quebec-city')">
+        <div class="video-card" data-video="18 - Quebec City.webm">
+          <img
+            src="continents/images/north_america images/18.avif"
+            alt="Quebec City, Canada"
+          />
+          <div class="card-content">
+            <h3>Quebec City, Canada</h3>
+            <p>
+              Old World European charm, fortified city walls, French culture,
+              and historic streets.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Quebec City, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'quebec-city')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Nashville, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'nashville')">
+        <div class="video-card" data-video="19 - Nashville.webm">
+          <img
+            src="continents/images/north_america images/19.avif"
+            alt="Nashville, USA"
+          />
+          <div class="card-content">
+            <h3>Nashville, USA</h3>
+            <p>
+              Country music capital, Grand Ole Opry, honky-tonk bars, and
+              Southern hospitality.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Nashville, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'nashville')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Havana, Cuba -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'havana')">
+        <div class="video-card" data-video="20 - Havana.webm">
+          <img
+            src="continents/images/north_america images/20.avif"
+            alt="Havana, Cuba"
+          />
+          <div class="card-content">
+            <h3>Havana, Cuba</h3>
+            <p>
+              Classic cars, colonial architecture, salsa music, and Caribbean
+              island culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Havana, Cuba')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'havana')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- 21. New Orleans, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'new-orleans')">
+        <div class="video-card" data-video="21 - New Orleans.webm">
+          <img
+            src="continents/images/north_america images/21.avif"
+            alt="New Orleans, USA"
+          />
+          <div class="card-content">
+            <h3>New Orleans, USA</h3>
+            <p>
+              Jazz music, French Quarter, Mardi Gras, Creole cuisine, and unique
+              culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'New Orleans, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'new-orleans')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Alaska, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'alaska')">
+        <div class="video-card" data-video="22 - Alaska.webm">
+          <img
+            src="continents/images/north_america images/22.avif"
+            alt="Alaska, USA"
+          />
+          <div class="card-content">
+            <h3>Alaska, USA</h3>
+            <p>
+              Northern Lights, glaciers, wildlife viewing, fishing, and untamed
+              wilderness.
+            </p>
+            <div class="card-tags">
+              <span class="tag nature">Nature</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Alaska, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'alaska')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Austin, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'austin')">
+        <div class="video-card" data-video="23 - Austin.webm">
+          <img
+            src="continents/images/north_america images/23.avif"
+            alt="Austin, USA"
+          />
+          <div class="card-content">
+            <h3>Austin, USA</h3>
+            <p>
+              Live music scene, SXSW festival, food trucks, and "Keep Austin
+              Weird" culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Austin, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'austin')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 24. Portland, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'portland')">
+        <div class="video-card" data-video="24 - Portland.webm">
+          <img
+            src="continents/images/north_america images/24.avif"
+            alt="Portland, USA"
+          />
+          <div class="card-content">
+            <h3>Portland, USA</h3>
+            <p>
+              Craft beer culture, food scene, eco-friendly lifestyle, and
+              Pacific Northwest charm.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag nature">Nature</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Portland, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'portland')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Calgary, Canada -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'calgary')">
+        <div class="video-card" data-video="25 - Calgary.webm">
+          <img
+            src="continents/images/north_america images/25.avif"
+            alt="Calgary, Canada"
+          />
+          <div class="card-content">
+            <h3>Calgary, Canada</h3>
+            <p>
+              Calgary Stampede, gateway to Rockies, cowboy culture, and outdoor
+              adventures.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag mountains">Mountains</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Calgary, Canada')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'calgary')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. San Diego, USA -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'san-diego')">
+        <div class="video-card" data-video="26 - San Diego.webm">
+          <img
+            src="continents/images/north_america images/26.avif"
+            alt="San Diego, USA"
+          />
+          <div class="card-content">
+            <h3>San Diego, USA</h3>
+            <p>
+              Perfect weather, beautiful beaches, Balboa Park, and laid-back
+              California vibe.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'San Diego, USA')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'san-diego')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Guadalajara, Mexico -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'guadalajara')">
+        <div class="video-card" data-video="27 - Guadalajara.webm">
+          <img
+            src="continents/images/north_america images/27.avif"
+            alt="Guadalajara, Mexico"
+          />
+          <div class="card-content">
+            <h3>Guadalajara, Mexico</h3>
+            <p>
+              Mariachi music birthplace, tequila tours, colonial architecture,
+              and authentic Mexican culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Guadalajara, Mexico')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'guadalajara')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 28. My Trip Planner -->
+      <a class="card-link" href="#" onclick="showMyTrip(event)">
+        <div class="video-card">
+          <img
+            src="continents/images/north_america images/28th card.avif"
+            alt="My Trip Planner"
+          />
+          <div class="card-content">
+            <h3>My Trip Planner</h3>
+            <p>
+              Review your selected destinations and plan your perfect North
+              American adventure.
+            </p>
+            <div class="card-tags">
+              <span class="tag luxury">Planning</span>
+              <span class="tag culture">Itinerary</span>
+              <span class="tag adventure">Personal</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="showMyTrip(event)">
+                📋 View My Selections
+              </button>
+              <button class="info-btn" onclick="showMyTrip(event)">
+                ✈️ Plan Trip
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- ALL POPUPS START HERE -->
+
+    <!-- Popup 1: New York -->
+    <div id="details-new-york" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>New York City, USA</h4>
+          <button class="close-btn" onclick="closeDetails('new-york')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Broadway shows, museums, Central Park, shopping</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$150-400 (hotels, dining, attractions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book shows early, use subway, walk everywhere</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Times Square, Statue of Liberty, Empire State Building</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'New York City, USA'); closeDetails('new-york')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Los Angeles -->
+    <div id="details-los-angeles" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Los Angeles, USA</h4>
+          <button class="close-btn" onclick="closeDetails('los-angeles')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Hollywood tours, beach activities, theme parks</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-300 (car rental essential)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Rent a car, visit Griffith Observatory at sunset</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Hollywood sign, Venice Beach, Beverly Hills</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Los Angeles, USA'); closeDetails('los-angeles')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Toronto -->
+    <div id="details-toronto" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Toronto, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('toronto')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (mild weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>CN Tower, Distillery District, island ferry</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 100-250 (diverse neighborhoods)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Use TTC day pass, visit Kensington Market</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>CN Tower, Casa Loma, Harbourfront</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Toronto, Canada'); closeDetails('toronto')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: Vancouver -->
+    <div id="details-vancouver" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Vancouver, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('vancouver')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - August (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Stanley Park, Granville Island, mountain activities</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 120-280 (outdoor activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Rent bikes for Stanley Park, visit Capilano Bridge</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Stanley Park, Granville Island, North Shore mountains</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Vancouver, Canada'); closeDetails('vancouver')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Las Vegas -->
+    <div id="details-las-vegas" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Las Vegas, USA</h4>
+          <button class="close-btn" onclick="closeDetails('las-vegas')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Shows, casinos, Grand Canyon day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-500 (varies by hotel and activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book shows early, stay hydrated, set gambling limits</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>The Strip, Bellagio fountains, Fremont Street</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Las Vegas, USA'); closeDetails('las-vegas')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: San Francisco -->
+    <div id="details-san-francisco" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>San Francisco, USA</h4>
+          <button class="close-btn" onclick="closeDetails('san-francisco')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>September - November (warmest weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Golden Gate Bridge, Alcatraz tours, cable cars</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$150-350 (expensive but iconic)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Layer clothing, book Alcatraz early, use public transport</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >Golden Gate Bridge, Fisherman's Wharf, Lombard Street</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'San Francisco, USA'); closeDetails('san-francisco')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Mexico City -->
+    <div id="details-mexico-city" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Mexico City, Mexico</h4>
+          <button class="close-btn" onclick="closeDetails('mexico-city')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, October - April</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Museums, Teotihuacan pyramids, food tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$30-80 (excellent value destination)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try street tacos, visit Frida Kahlo Museum</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Teotihuacan, Zócalo, Coyoacán neighborhood</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Mexico City, Mexico'); closeDetails('mexico-city')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Chicago -->
+    <div id="details-chicago" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Chicago, USA</h4>
+          <button class="close-btn" onclick="closeDetails('chicago')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (summer season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Architecture tours, deep-dish pizza, museums</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-250 (affordable major city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Take architecture boat tour, try Chicago-style hot dog</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Millennium Park, Navy Pier, Willis Tower</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Chicago, USA'); closeDetails('chicago')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: Montreal -->
+    <div id="details-montreal" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Montreal, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('montreal')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - October (festival season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Old Montreal walks, bagel tours, festivals</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 80-200 (French culture, affordable)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Learn basic French, try poutine and bagels</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Old Montreal, Notre-Dame Basilica, Mount Royal</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Montreal, Canada'); closeDetails('montreal')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Grand Canyon -->
+    <div id="details-grand-canyon" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Grand Canyon, USA</h4>
+          <button class="close-btn" onclick="closeDetails('grand-canyon')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Hiking, helicopter tours, sunrise/sunset viewing</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-200 (park lodging, tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book lodging early, bring plenty of water</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span
+                >South Rim viewpoints, Bright Angel Trail, Desert View</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Grand Canyon, USA'); closeDetails('grand-canyon')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Miami -->
+    <div id="details-miami" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Miami, USA</h4>
+          <button class="close-btn" onclick="closeDetails('miami')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Beach activities, art galleries, nightlife</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-300 (beach hotels, dining)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Explore Little Havana, visit Wynwood Walls</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>South Beach, Art Deco District, Everglades</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Miami, USA'); closeDetails('miami')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Yellowstone -->
+    <div id="details-yellowstone" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Yellowstone, USA</h4>
+          <button class="close-btn" onclick="closeDetails('yellowstone')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>May - September (roads open, wildlife active)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Geyser watching, wildlife viewing, hiking</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-250 (park lodges, camping)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book lodging a year early, bring bear spray</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Old Faithful, Grand Prismatic Spring, wildlife</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Yellowstone, USA'); closeDetails('yellowstone')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Seattle -->
+    <div id="details-seattle" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Seattle, USA</h4>
+          <button class="close-btn" onclick="closeDetails('seattle')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>July - September (driest months)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Space Needle, Pike Place Market, coffee tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-280 (coffee culture, tech city)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try original Starbucks, visit during summer</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Space Needle, Pike Place Market, waterfront</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Seattle, USA'); closeDetails('seattle')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Cancún -->
+    <div id="details-cancun" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cancún, Mexico</h4>
+          <button class="close-btn" onclick="closeDetails('cancun')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>December - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Beach relaxation, Mayan ruins, cenote swimming</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-250 (all-inclusive resorts)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Chichen Itza, swim in cenotes</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Mayan ruins, turquoise waters, all-inclusive resorts</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cancún, Mexico'); closeDetails('cancun')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Banff -->
+    <div id="details-banff" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Banff, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('banff')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - August (hiking), December - March (skiing)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Hiking, skiing, lake activities, scenic drives</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 150-350 (mountain lodges, activities)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book accommodations early, rent a car</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Lake Louise, Moraine Lake, Icefields Parkway</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Banff, Canada'); closeDetails('banff')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Washington DC -->
+    <div id="details-washington-dc" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Washington DC, USA</h4>
+          <button class="close-btn" onclick="closeDetails('washington-dc')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May (cherry blossoms), September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Smithsonian museums, monuments, Capitol tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-220 (many free attractions)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Most museums are free, book Capitol tours early</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Lincoln Memorial, Smithsonian, White House tours</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Washington DC, USA'); closeDetails('washington-dc')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Boston -->
+    <div id="details-boston" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Boston, USA</h4>
+          <button class="close-btn" onclick="closeDetails('boston')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>April - June, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Freedom Trail, Harvard tours, harbor activities</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-250 (historic hotels, New England cuisine)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Walk the Freedom Trail, try clam chowder</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Freedom Trail, Fenway Park, Boston Tea Party site</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Boston, USA'); closeDetails('boston')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Quebec City -->
+    <div id="details-quebec-city" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Quebec City, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('quebec-city')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >May - October (mild weather), December - March (winter
+                charm)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Old Town walks, French culture, fortified walls</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 100-220 (European atmosphere)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Practice French phrases, visit Château Frontenac</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Old Quebec, Château Frontenac, Plains of Abraham</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Quebec City, Canada'); closeDetails('quebec-city')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Nashville -->
+    <div id="details-nashville" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Nashville, USA</h4>
+          <button class="close-btn" onclick="closeDetails('nashville')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Live music venues, Grand Ole Opry, country tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-180 (music city, affordable)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit Broadway honky-tonks, try hot chicken</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Grand Ole Opry, Country Music Hall of Fame, Broadway</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Nashville, USA'); closeDetails('nashville')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Havana -->
+    <div id="details-havana" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Havana, Cuba</h4>
+          <button class="close-btn" onclick="closeDetails('havana')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>November - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Classic car tours, salsa dancing, historic walks</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$50-120 (casa particulares, local experiences)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Bring cash, stay in casa particulares, learn salsa</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Old Havana, Malecón, classic American cars</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Havana, Cuba'); closeDetails('havana')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: New Orleans -->
+    <div id="details-new-orleans" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>New Orleans, USA</h4>
+          <button class="close-btn" onclick="closeDetails('new-orleans')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>February - May (pre-hurricane season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Jazz clubs, French Quarter tours, food experiences</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-220 (unique culture, great food)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Try beignets at Café du Monde, listen to street jazz</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>French Quarter, Bourbon Street, Garden District</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'New Orleans, USA'); closeDetails('new-orleans')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Alaska -->
+    <div id="details-alaska" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Alaska, USA</h4>
+          <button class="close-btn" onclick="closeDetails('alaska')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span
+                >May - September (summer), September - March (Northern
+                Lights)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Glacier tours, wildlife viewing, Northern Lights</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$200-500 (remote location, expensive)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Book cruise packages, pack warm clothes</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Denali National Park, Glacier Bay, Northern Lights</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Alaska, USA'); closeDetails('alaska')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Austin -->
+    <div id="details-austin" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Austin, USA</h4>
+          <button class="close-btn" onclick="closeDetails('austin')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Live music, food trucks, SXSW festival</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$80-180 (music scene, food trucks)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Experience live music on Sixth Street, try BBQ</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Sixth Street, South by Southwest, food truck culture</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Austin, USA'); closeDetails('austin')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Portland -->
+    <div id="details-portland" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Portland, USA</h4>
+          <button class="close-btn" onclick="closeDetails('portland')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - September (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Brewery tours, food scene, Powell's Books</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$100-220 (craft beer culture, foodie scene)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit food carts, explore neighborhoods by bike</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Food trucks, craft breweries, Powell's Books</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Portland, USA'); closeDetails('portland')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: Calgary -->
+    <div id="details-calgary" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Calgary, Canada</h4>
+          <button class="close-btn" onclick="closeDetails('calgary')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>June - August (summer), July (Stampede)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Calgary Stampede, Rocky Mountain day trips</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>CAD 100-250 (gateway to Rockies)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit during Stampede, use as base for Rockies</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Calgary Stampede, Calgary Tower, Heritage Park</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Calgary, Canada'); closeDetails('calgary')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: San Diego -->
+    <div id="details-san-diego" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>San Diego, USA</h4>
+          <button class="close-btn" onclick="closeDetails('san-diego')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>March - May, September - November</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Beach activities, Balboa Park, zoo visits</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$120-280 (perfect weather, beach lifestyle)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span
+                >Visit world-famous zoo, enjoy year-round perfect weather</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>San Diego Zoo, Balboa Park, La Jolla beaches</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'San Diego, USA'); closeDetails('san-diego')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Guadalajara -->
+    <div id="details-guadalajara" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Guadalajara, Mexico</h4>
+          <button class="close-btn" onclick="closeDetails('guadalajara')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong
+              ><span>October - April (dry season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong
+              ><span>Tequila tours, mariachi performances, cultural sites</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong
+              ><span>$40-90 (authentic Mexican culture)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong
+              ><span>Visit tequila region, listen to mariachi in plazas</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong
+              ><span>Historic center, tequila tours, mariachi culture</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Guadalajara, Mexico'); closeDetails('guadalajara')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>
+            Your gateway to dream destinations around the globe.<br />
+            Explore, travel, and create unforgettable memories with us.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.html">Places to Go</a></li>
+            <li><a href="things_to_do.html">Things to Do</a></li>
+            <li><a href="booking.html">Plan Your Trip</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+      document.querySelector(".cta-btn").addEventListener("click", () => {
+        document.getElementById("popular").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script src="common_nav_footer.js"></script>
+  </body>
+</html>

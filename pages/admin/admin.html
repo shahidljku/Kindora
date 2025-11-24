@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kindora Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="kindora-logo.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        min-height: 100vh;
+        background: #f4f6f9;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 240px;
+        background: #1e2a38;
+        color: white;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+      }
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .menu {
+        list-style: none;
+      }
+      .menu li {
+        padding: 12px 20px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .menu li:hover,
+      .menu li.active {
+        background: #007acc;
+      }
+
+      /* Main content */
+      .main {
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .topbar h1 {
+        font-size: 24px;
+        color: #2c3e50;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      button {
+        background: #007acc;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background: #005fa3;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      table th,
+      table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      table th {
+        background: #007acc;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">Kindora Admin</div>
+      <ul class="menu">
+        <li class="active" onclick="showSection('home', event)">🏠 Home</li>
+        <li onclick="showSection('users', event)">👥 User Management</li>
+        <li onclick="showSection('bookings', event)">📖 Booking Management</li>
+        <li onclick="showSection('tours', event)">🗺️ Tour Management</li>
+        <li onclick="showSection('feedback', event)">💬 Feedback</li>
+        <li onclick="logoutUser(); window.location='login.php'">🚪 Logout</li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <div class="topbar">
+        <h1 id="sectionTitle">Home</h1>
+      </div>
+
+      <!-- Home Section -->
+      <div id="home" class="card">
+        <h2>Welcome to Admin Dashboard</h2>
+        <p>Manage users, bookings, tours, and feedback here.</p>
+      </div>
+
+      <!-- User Management Section -->
+      <div id="users" class="card" style="display: none">
+        <h2>User Management</h2>
+        <button onclick="loadUsers()">Refresh Users</button>
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Booking Management Section -->
+      <div id="bookings" class="card" style="display: none">
+        <h2>Booking Management</h2>
+        <button>Add Booking</button>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Tour</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Taj Mahal Tour</td>
+            <td>Confirmed</td>
+            <td><button>Edit</button> <button>Delete</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Tour Management Section -->
+      <div id="tours" class="card" style="display: none">
+        <h2>Tour Management</h2>
+        <button>Add Tour</button>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Tour Name</th>
+            <th>Location</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Great Wall</td>
+            <td>China</td>
+            <td><button>Edit</button> <button>Delete</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Feedback Section -->
+      <div id="feedback" class="card" style="display: none">
+        <h2>Feedback</h2>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Message</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>Loved the Taj Mahal Tour!</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Include scripts -->
+    <script>
+      function showSection(sec, e) {
+        document
+          .querySelectorAll(".card")
+          .forEach((c) => (c.style.display = "none"));
+        document.getElementById(sec).style.display = "block";
+        document.getElementById("sectionTitle").innerText =
+          sec.charAt(0).toUpperCase() + sec.slice(1);
+        document
+          .querySelectorAll(".menu li")
+          .forEach((li) => li.classList.remove("active"));
+        e.target.classList.add("active");
+      }
+
+      function loadUsers() {
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const tbody = document.querySelector("#usersTable tbody");
+        tbody.innerHTML = "";
+        users.forEach((u, i) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${i + 1}</td>
+            <td>${u.fullName}</td>
+            <td>${u.email}</td>
+            <td>${u.role}</td>
+            <td>
+              <button onclick="editUser(${i})">Edit</button>
+              <button onclick="deleteUser(${i})">Delete</button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+
+      function editUser(i) {
+        alert("Edit user: " + i);
+      }
+      function deleteUser(i) {
+        if (!confirm("Delete this user?")) return;
+        const arr = JSON.parse(localStorage.getItem("users")) || [];
+        arr.splice(i, 1);
+        localStorage.setItem("users", JSON.stringify(arr));
+        loadUsers();
+      }
+
+      function logoutUser() {
+        localStorage.removeItem("currentUser");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2618 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asia - Kindora</title>
+    <link href="asia.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="kindora-logo.ico">
+  </head>
+  <body>
+    <!-- Background Video -->
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="continents videos/asia-intro.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- Navbar -->
+    <div id="nav1">
+      <a href="home.php" id="logo-link">
+        <div id="logo">Kindora</div>
+      </a>
+
+      <div id="nav2">
+        <div class="inspire-wrapper">
+          <a class="a1 dropbtn" id="inspireBtn" href="#">Be Inspired</a>
+          <div class="scroll-container1" id="inspireScroll">
+            <a data-href="asia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/asia.jpg" alt="Asia" />
+                <div class="overlay-text">Asia</div>
+              </div>
+            </a>
+
+            <a data-href="europe.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/europe.jpeg" alt="Europe" />
+                <div class="overlay-text">Europe</div>
+              </div>
+            </a>
+
+            <a data-href="africa.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/africa.jpg" alt="Africa" />
+                <div class="overlay-text">Africa</div>
+              </div>
+            </a>
+
+            <a data-href="north_america.php">
+              <div class="image-wrapper1">
+                <img
+                  src="web images/banner/north america.jpg"
+                  alt="North America"
+                />
+                <div class="overlay-text">North America</div>
+              </div>
+            </a>
+
+            <a data-href="south_america.php">
+              <div class="image-wrapper1">
+                <img src="7wonders/7_wonders/Machu Picchu.jpeg" alt="South America" />
+                <div class="overlay-text">South America</div>
+              </div>
+            </a>
+
+            <a data-href="australia.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/australia.jpg" alt="Australia" />
+                <div class="overlay-text">Australia</div>
+              </div>
+            </a>
+
+            <a data-href="antarctica.php">
+              <div class="image-wrapper1">
+                <img src="web images/banner/antarctica.jpeg" alt="Antarctica" />
+                <div class="overlay-text">Antarctica</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="a1 dropbtn" href="explore.php">Places to go</a>
+        <a class="a1 dropbtn" href="things_to_do.php">Things to do</a>
+        <a class="a1 dropbtn" href="booking.php">Plan Your Trip</a>
+        
+        
+      </div>
+    
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      
+      
+      <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login/Register</a>
+        <a href="booking.php">Book Your Trips</a>
+        <a href="mytrips.php">My Trips</a>
+        <a href="aboutus.php">About</a>
+        <a href="contactus.php">Contact</a>
+        
+      </div>
+
+
+
+    </div>
+
+    <div class="card-grid">
+      <!-- 1. Tian Shan, Kyrgyzstan -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'tian-shan')">
+        <div class="video-card" data-video="02 - Tian Shan, Kyrgyzstan.webm">
+          <img
+            src="continents/images/asia images/02 - tian-shan-kyrgyzstan.jpg"
+            alt="Tian Shan, Kyrgyzstan"
+          />
+          <div class="card-content">
+            <h3>Tian Shan, Kyrgyzstan</h3>
+            <p>
+              Experience breathtaking mountain ranges with alpine lakes and
+              nomadic culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Tian Shan, Kyrgyzstan')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'tian-shan')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Japan -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'japan')">
+        <div class="video-card" data-video="03 - Japan.webm">
+          <img src="continents/images/asia images/03 - japan.jpg" alt="Japan" />
+          <div class="card-content">
+            <h3>Japan</h3>
+            <p>
+              Tokyo (Shibuya, Senso-ji), Kyoto (Fushimi Inari, Arashiyama),
+              Mount Fuji.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Japan')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'japan')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Altai Mountains -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'altai')">
+        <div class="video-card" data-video="04 - Altai Mountains.webm">
+          <img
+            src="continents/images/asia images/04 - altai-mountains.jpg"
+            alt="Altai Mountains"
+          />
+          <div class="card-content">
+            <h3>Altai Mountains</h3>
+            <p>
+              Discover rugged landscapes, wild rivers, and untouched beauty
+              across Central Asia.
+            </p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Altai Mountains')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'altai')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. China -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'china')">
+        <div class="video-card" data-video="05 - China.webm">
+          <img src="continents/images/asia images/05 - china.jpg" alt="China" />
+          <div class="card-content">
+            <h3>China</h3>
+            <p>Great Wall, Forbidden City, The Bund.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'China')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'china')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Myanmar & Sri Lanka -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'myanmar-sri-lanka')"
+      >
+        <div class="video-card" data-video="06 - Myanmar & Sri Lanka.webm">
+          <img
+            src="continents/images/asia images/06 - myanmar - sri-lanka.jpg"
+            alt="Myanmar & Sri Lanka"
+          />
+          <div class="card-content">
+            <h3>Myanmar & Sri Lanka</h3>
+            <p>
+              From Bagan's plains to Sri Lanka's tea country and coastlines.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Myanmar & Sri Lanka')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'myanmar-sri-lanka')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Indonesia & Philippines -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'indonesia-philippines')"
+      >
+        <div class="video-card" data-video="07 - Indonesia & Philippines.webm">
+          <img
+            src="continents/images/asia images/24 - indonesia.jpg"
+            alt="Indonesia & Philippines"
+          />
+          <div class="card-content">
+            <h3>Indonesia & Philippines</h3>
+            <p>
+              Island-hop through turquoise waters, beaches, and coral reefs.
+            </p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Indonesia & Philippines')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'indonesia-philippines')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. South Korea -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'south-korea')">
+        <div class="video-card" data-video="08 - South Korea.webm">
+          <img src="continents/images/asia images/08 - south-korea.jpg" alt="South Korea" />
+          <div class="card-content">
+            <h3>South Korea</h3>
+            <p>Seoul's palaces, Busan's beaches, and volcanic Jeju.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'South Korea')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'south-korea')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Mongolia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'mongolia')">
+        <div class="video-card" data-video="09 - Mongolia.webm">
+          <img src="continents/images/asia images/09 - mongolia.jpg" alt="Mongolia" />
+          <div class="card-content">
+            <h3>Mongolia</h3>
+            <p>Vast steppes, Gobi Desert adventures, and nomadic culture.</p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Mongolia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'mongolia')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. India -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'india')">
+        <div class="video-card" data-video="10 - India.webm">
+          <img src="continents/images/asia images/27 - india.jpg" alt="India" />
+          <div class="card-content">
+            <h3>India</h3>
+            <p>
+              From iconic monuments to vibrant cities, deserts, and beaches.
+            </p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'India')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'india')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Nepal -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'nepal')">
+        <div class="video-card" data-video="11 - Nepal.webm">
+          <img src="continents/images/asia images/28 - himalayas-nepal.jpg" alt="Nepal" />
+          <div class="card-content">
+            <h3>Nepal</h3>
+            <p>Himalayan panoramas, trekking trails, and mountain culture.</p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button class="save-btn" onclick="addToItinerary(event, 'Nepal')">
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'nepal')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 11. Kyrgyzstan -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'kyrgyzstan')">
+        <div class="video-card" data-video="12 - Kyrgyzstan.webm">
+          <img src="continents/images/asia images/11 - kyrgyzstan.jpg" alt="Kyrgyzstan" />
+          <div class="card-content">
+            <h3>Kyrgyzstan</h3>
+            <p>Issyk-Kul shores, alpine meadows, and high passes.</p>
+            <div class="card-tags">
+              <span class="tag mountains">Mountains</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Kyrgyzstan')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'kyrgyzstan')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. Palawan, Philippines -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'palawan')">
+        <div class="video-card" data-video="13 - Palawan, Philippines.webm">
+          <img
+            src="continents/images/asia images/12 - palawan-philippines.jpg"
+            alt="Palawan, Philippines"
+          />
+          <div class="card-content">
+            <h3>Palawan, Philippines</h3>
+            <p>Karst lagoons, secret beaches, and emerald waters.</p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Palawan, Philippines')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'palawan')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. Sri Lanka -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'sri-lanka')">
+        <div class="video-card" data-video="14 - Sri Lanka.webm">
+          <img src="continents/images/asia images/13 - sri-lanka.jpg" alt="Sri Lanka" />
+          <div class="card-content">
+            <h3>Sri Lanka</h3>
+            <p>Sigiriya, golden coasts, tea hills, and wildlife.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Sri Lanka')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'sri-lanka')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. Vietnam -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'vietnam')">
+        <div class="video-card" data-video="15 - Vietnam.webm">
+          <img src="continents/images/asia images/14 - vietnam.jpg" alt="Vietnam" />
+          <div class="card-content">
+            <h3>Vietnam</h3>
+            <p>Hạ Long Bay sails, lantern-lit Hoi An, and Saigon vibes.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Vietnam')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'vietnam')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Bali & Raja Ampat -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'bali-raja-ampat')"
+      >
+        <div class="video-card" data-video="16 - Bali & Raja Ampat.webm">
+          <img
+            src="continents/images/asia images/15 - bali - raja-ampat.jpg"
+            alt="Bali & Raja Ampat"
+          />
+          <div class="card-content">
+            <h3>Bali & Raja Ampat</h3>
+            <p>Wave-filled shores and biodiverse reefs.</p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Bali & Raja Ampat')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'bali-raja-ampat')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. Hong Kong -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'hong-kong')">
+        <div class="video-card" data-video="17 - Hong Kong.webm">
+          <img src="continents/images/asia images/17 - hong-kong.jpg" alt="Hong Kong" />
+          <div class="card-content">
+            <h3>Hong Kong</h3>
+            <p>Skyline vistas, harbor ferries, and hillside trails.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Hong Kong')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'hong-kong')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Shanghai & Guangzhou -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'shanghai-guangzhou')"
+      >
+        <div class="video-card" data-video="18 - Shanghai & Guangzhou.webm">
+          <img src="continents/images/asia images/34 - shanghai.jpg" alt="Shanghai & Guangzhou" />
+          <div class="card-content">
+            <h3>Shanghai & Guangzhou</h3>
+            <p>Neon skylines, riverfronts, and culinary scenes.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Shanghai & Guangzhou')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'shanghai-guangzhou')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 18. Singapore -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'singapore')">
+        <div class="video-card" data-video="19 - Singapore.webm">
+          <img src="continents/images/asia images/19 - singapore.jpg" alt="Singapore" />
+          <div class="card-content">
+            <h3>Singapore</h3>
+            <p>Gardens by the Bay, Marina Bay Sands, and Sentosa.</p>
+            <div class="card-tags">
+              <span class="tag luxury">Luxury</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Singapore')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'singapore')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 19. Taiwan -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'taiwan')">
+        <div class="video-card" data-video="20 - Taiwan.webm">
+          <img src="continents/images/asia images/20 - taiwan.jpg" alt="Taiwan" />
+          <div class="card-content">
+            <h3>Taiwan</h3>
+            <p>Taipei 101, Taroko Gorge, and mountain towns.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Taiwan')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'taiwan')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 20. Indonesia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'indonesia')">
+        <div class="video-card" data-video="24 - Indonesia.webm">
+          <img src="continents/images/asia images/24 - indonesia.jpg" alt="Indonesia" />
+          <div class="card-content">
+            <h3>Indonesia</h3>
+            <p>Bali temples, Java heritage, and Komodo islands.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag beach">Beach</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Indonesia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'indonesia')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 21. Vietnam & Laos -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'vietnam-laos')"
+      >
+        <div class="video-card" data-video="25 - Vietnam & Laos.webm">
+          <img src="continents/images/asia images/14 - vietnam.jpg" alt="Vietnam & Laos" />
+          <div class="card-content">
+            <h3>Vietnam & Laos</h3>
+            <p>Mekong journeys, karst valleys, and quiet towns.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Vietnam & Laos')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'vietnam-laos')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 22. Ishigaki Island, Japan -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'ishigaki-japan')"
+      >
+        <div class="video-card" data-video="26 - Ishigaki Island, Japan.webm">
+          <img
+            src="continents/images/asia images/26 - ishigaki-island-japan.jpg"
+            alt="Ishigaki Island, Japan"
+          />
+          <div class="card-content">
+            <h3>Ishigaki Island, Japan</h3>
+            <p>Coral reefs, clear seas, and island charm.</p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Ishigaki Island, Japan')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'ishigaki-japan')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 23. Yardang, China -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'yardang-china')"
+      >
+        <div class="video-card" data-video="30 - Yardang, China.webm">
+          <img src="continents/images/asia images/30 - yardang-china.jpg" alt="Yardang, China" />
+          <div class="card-content">
+            <h3>Yardang, China</h3>
+            <p>Wind-sculpted rock forms in stark deserts.</p>
+            <div class="card-tags">
+              <span class="tag adventure">Adventure</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Yardang, China')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'yardang-china')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 24. Thailand -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'thailand')">
+        <div class="video-card" data-video="32 - Thailand.webm">
+          <img src="continents/images/asia images/32 - thailand.jpg" alt="Thailand" />
+          <div class="card-content">
+            <h3>Thailand</h3>
+            <p>Bangkok canals, northern hills, and island bays.</p>
+            <div class="card-tags">
+              <span class="tag beach">Beach</span>
+              <span class="tag culture">Culture</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Thailand')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'thailand')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 25. Cambodia & Myanmar -->
+      <a
+        class="card-link"
+        href="#"
+        onclick="showDetails(event, 'cambodia-myanmar')"
+      >
+        <div class="video-card" data-video="33 - Cambodia & Myanmar.webm">
+          <img
+            src="continents/images/asia images/33 - cambodia - myanmar.jpg"
+            alt="Cambodia & Myanmar"
+          />
+          <div class="card-content">
+            <h3>Cambodia & Myanmar</h3>
+            <p>From Angkor's temples to lake villages and plains.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag budget-friendly">Budget-friendly</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Cambodia & Myanmar')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'cambodia-myanmar')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 26. Shanghai -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'shanghai')">
+        <div class="video-card" data-video="34 - Shanghai.webm">
+          <img src="continents/images/asia images/34 - shanghai.jpg" alt="Shanghai" />
+          <div class="card-content">
+            <h3>Shanghai</h3>
+            <p>Riverside walks, skyline lights, and historic lanes.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag luxury">Luxury</span>
+              <span class="tag adventure">Adventure</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Shanghai')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button class="info-btn" onclick="showDetails(event, 'shanghai')">
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 27. Across Asia -->
+      <a class="card-link" href="#" onclick="showDetails(event, 'across-asia')">
+        <div class="video-card" data-video="35 - Across Asia.webm">
+          <img src="continents/images/asia images/35 - across-asia.jpg" alt="Across Asia" />
+          <div class="card-content">
+            <h3>Across Asia</h3>
+            <p>A sweeping montage across cities, coasts, and peaks.</p>
+            <div class="card-tags">
+              <span class="tag culture">Culture</span>
+              <span class="tag adventure">Adventure</span>
+              <span class="tag luxury">Luxury</span>
+            </div>
+            <div class="card-actions">
+              <button
+                class="save-btn"
+                onclick="addToItinerary(event, 'Across Asia')"
+              >
+                ❤️ Add to Trip
+              </button>
+              <button
+                class="info-btn"
+                onclick="showDetails(event, 'across-asia')"
+              >
+                ℹ️ More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+       <!-- 28. My Trip Planner -->
+        <a class="card-link" href="#" onclick="showMyTrip(event)">
+          <div class="video-card">
+            <img src="continents/images/asia images/28th card.avif" alt="My Trip Planner" />
+            <div class="card-content">
+              <h3>My Trip Planner</h3>
+              <p>
+                Review your selected destinations and plan your perfect Asian
+                adventure.
+              </p>
+              <div class="card-tags">
+                <span class="tag luxury">Planning</span>
+                <span class="tag culture">Itinerary</span>
+                <span class="tag adventure">Personal</span>
+              </div>
+              <div class="card-actions">
+                <button class="save-btn" onclick="showMyTrip(event)">
+                  📋 View My Selections
+                </button>
+                <button class="info-btn" onclick="showMyTrip(event)">
+                  ✈️ Plan Trip
+                </button>
+              </div>
+            </div>
+          </div>
+          </a>
+    </div>
+
+    <!-- ALL POPUPS STARTs HERE -->
+
+    <!-- Popup 1: Tian Shan, Kyrgyzstan -->
+    <div id="details-tian-shan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Tian Shan, Kyrgyzstan</h4>
+          <button class="close-btn" onclick="closeDetails('tian-shan')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>June - September (warm weather, accessible trails)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Hiking, horseback riding, yurt stays, eagle hunting</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$30-50 (including accommodation & meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Bring warm layers, hire local guides, respect nomadic
+                customs</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Song-Kul Lake, Tash Rabat caravanserai, Jailoo
+                experiences</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Tian Shan, Kyrgyzstan'); closeDetails('tian-shan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 2: Japan -->
+    <div id="details-japan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Japan</h4>
+          <button class="close-btn" onclick="closeDetails('japan')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >March-May & September-November (cherry blossoms & autumn)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Temple visits, hot springs, bullet train rides, traditional
+                dining</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$80-150 (mid-range accommodation & meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Learn basic phrases, carry cash, respect bowing customs</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Tokyo Skyline, Kyoto Temples, Mount Fuji, Cherry Blossoms</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Japan'); closeDetails('japan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 3: Altai Mountains -->
+    <div id="details-altai" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Altai Mountains</h4>
+          <button class="close-btn" onclick="closeDetails('altai')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>June - August (short summer season, snow-free passes)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Trekking, river rafting, horseback riding, wildlife
+                watching</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$25-40 (basic guesthouses & local meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Pack warm gear, arrange permits, bring insect repellent</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Belukha Peak, Katun River, pristine lakes, nomadic
+                culture</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Altai Mountains'); closeDetails('altai')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 4: China -->
+    <div id="details-china" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>China</h4>
+          <button class="close-btn" onclick="closeDetails('china')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >April-June & September-October (mild weather, clear
+                skies)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Great Wall hiking, Forbidden City tours, Yangtze cruises</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$50-100 (mid-range hotels & authentic dining)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Get VPN for internet, learn basic Mandarin, carry translation
+                app</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Great Wall, Forbidden City, Terracotta Warriors, Li River</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'China'); closeDetails('china')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Myanmar & Sri Lanka -->
+    <div
+      id="details-myanmar-sri-lanka"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Myanmar & Sri Lanka</h4>
+          <button class="close-btn" onclick="closeDetails('myanmar-sri-lanka')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>November-March (dry season, cooler temperatures)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Temple exploration, tea plantation tours, wildlife
+                safaris</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$30-60 (guesthouses, local transportation)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect religious sites, dress conservatively, try local
+                cuisine</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Bagan temples, Sigiriya Rock, tea country, golden beaches</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Myanmar & Sri Lanka'); closeDetails('myanmar-sri-lanka')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Indonesia & Philippines -->
+    <div
+      id="details-indonesia-philippines"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Indonesia & Philippines</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('indonesia-philippines')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >April-October (dry season, perfect for island hopping)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Diving, snorkeling, volcano hiking, beach relaxation</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$25-50 (beachside bungalows, fresh seafood)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Island hop carefully, respect marine life, try local street
+                food</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Bali temples, Palawan lagoons, Komodo dragons, coral
+                reefs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Indonesia & Philippines'); closeDetails('indonesia-philippines')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: South Korea -->
+    <div id="details-south-korea" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>South Korea</h4>
+          <button class="close-btn" onclick="closeDetails('south-korea')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >April-June & September-November (mild weather, beautiful
+                seasons)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Palace tours, K-pop experiences, hiking, spa visits</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$60-120 (modern hotels, Korean BBQ, shopping)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Learn basic Korean phrases, try street food, respect
+                elderly</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span>Seoul palaces, Jeju Island, Busan beaches, DMZ tours</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'South Korea'); closeDetails('south-korea')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Mongolia -->
+    <div id="details-mongolia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Mongolia</h4>
+          <button class="close-btn" onclick="closeDetails('mongolia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>June-August (warm summer, Naadam Festival season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Horseback riding, ger stays, desert camping, eagle
+                hunting</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$40-70 (ger camps, guided tours, traditional meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect nomadic traditions, pack warm clothes, hire local
+                guides</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Gobi Desert, wild horses, Ulaanbaatar, nomadic culture</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Mongolia'); closeDetails('mongolia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 9: India -->
+    <div id="details-india" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>India</h4>
+          <button class="close-btn" onclick="closeDetails('india')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>October-March (cooler weather, festival season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Monument tours, spiritual journeys, spice markets, yoga
+                retreats</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$20-50 (heritage hotels, authentic cuisine, rickshaw
+                rides)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Stay hydrated, respect religious customs, bargain at
+                markets</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Taj Mahal, Golden Triangle, Kerala backwaters, Rajasthan
+                palaces</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'India'); closeDetails('india')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 10: Nepal -->
+    <div id="details-nepal" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Nepal</h4>
+          <button class="close-btn" onclick="closeDetails('nepal')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>October-December & March-May (clear mountain views)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Trekking, mountaineering, temple visits, meditation
+                retreats</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$25-45 (teahouses, local guides, mountain meals)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Acclimatize properly, hire certified guides, respect mountain
+                culture</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Everest Base Camp, Annapurna Circuit, Kathmandu temples</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Nepal'); closeDetails('nepal')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 11: Kyrgyzstan -->
+    <div id="details-kyrgyzstan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Kyrgyzstan</h4>
+          <button class="close-btn" onclick="closeDetails('kyrgyzstan')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>June-September (summer pastures, warm lake waters)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Lake swimming, yurt stays, horseback adventures, hiking</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$25-40 (guesthouses, local transport, traditional meals)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Learn Russian phrases, respect nomadic customs, pack
+                layers</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Issyk-Kul Lake, Ala-Archa National Park, Silk Road
+                history</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Kyrgyzstan'); closeDetails('kyrgyzstan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 12: Palawan, Philippines -->
+    <div id="details-palawan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Palawan, Philippines</h4>
+          <button class="close-btn" onclick="closeDetails('palawan')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>November-April (dry season, calm seas)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Island hopping, underground river tours, diving, beach
+                lounging</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$30-60 (beach resorts, fresh seafood, boat tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Book tours early, protect marine life, try local
+                specialties</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span>El Nido lagoons, Coron lakes, Puerto Princesa river</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Palawan, Philippines'); closeDetails('palawan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 13: Sri Lanka -->
+    <div id="details-sri-lanka" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Sri Lanka</h4>
+          <button class="close-btn" onclick="closeDetails('sri-lanka')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>December-March (dry season, perfect weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Ancient site tours, tea plantation visits, wildlife
+                safaris</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$25-50 (colonial hotels, curry meals, train rides)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Try local curry, respect Buddhist sites, take scenic
+                trains</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Sigiriya Rock Fortress, Kandy Temple, tea country,
+                elephants</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Sri Lanka'); closeDetails('sri-lanka')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 14: Vietnam -->
+    <div id="details-vietnam" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Vietnam</h4>
+          <button class="close-btn" onclick="closeDetails('vietnam')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>November-April (cooler, less humid weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Cruise Hạ Long Bay, explore Hoi An, street food tours</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$25-45 (boutique hotels, pho meals, motorcycle tours)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Try street food, learn basic Vietnamese, haggle politely</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Hạ Long Bay, Hoi An lanterns, Sapa terraces, Ho Chi Minh
+                City</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Vietnam'); closeDetails('vietnam')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 15: Bali & Raja Ampat -->
+    <div
+      id="details-bali-raja-ampat"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Bali & Raja Ampat</h4>
+          <button class="close-btn" onclick="closeDetails('bali-raja-ampat')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>April-October (dry season, best diving conditions)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Temple hopping, world-class diving, yoga retreats,
+                surfing</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$50-120 (beachfront villas, spa treatments, diving trips)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect temple dress codes, book dive trips early, try local
+                warungs</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Ubud rice terraces, Raja Ampat marine life, sunset
+                temples</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Bali & Raja Ampat'); closeDetails('bali-raja-ampat')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 16: Hong Kong -->
+    <div id="details-hong-kong" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Hong Kong</h4>
+          <button class="close-btn" onclick="closeDetails('hong-kong')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>October-April (cooler weather, clear skies)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Skyline views, dim sum tours, shopping, hiking trails</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$80-150 (luxury hotels, fine dining, premium shopping)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span>Use Octopus card, try street food, take Star Ferry</span>
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span>Victoria Peak, Star Ferry, dim sum, night markets</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Hong Kong'); closeDetails('hong-kong')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 17: Shanghai & Guangzhou -->
+    <div
+      id="details-shanghai-guangzhou"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Shanghai & Guangzhou</h4>
+          <button
+            class="close-btn"
+            onclick="closeDetails('shanghai-guangzhou')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >March-May & September-November (comfortable temperatures)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Skyline photography, culinary tours, river cruises,
+                shopping</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$60-120 (modern hotels, diverse cuisine, high-speed
+                trains)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Download translation apps, try regional specialties, use
+                metro</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span>The Bund, Yu Garden, Canton Tower, Pearl River cruise</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Shanghai & Guangzhou'); closeDetails('shanghai-guangzhou')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 18: Singapore -->
+    <div id="details-singapore" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Singapore</h4>
+          <button class="close-btn" onclick="closeDetails('singapore')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>February-April (Chinese New Year season, less humid)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Gardens exploration, hawker food tours, shopping, theme
+                parks</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span>$80-160 (luxury accommodations, world-class dining)</span>
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Try hawker centers, respect local laws, use public
+                transport</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span>Gardens by the Bay, Marina Bay Sands, Sentosa Island</span>
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Singapore'); closeDetails('singapore')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 19: Taiwan -->
+    <div id="details-taiwan" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Taiwan</h4>
+          <button class="close-btn" onclick="closeDetails('taiwan')">✕</button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>October-April (cooler weather, typhoon-free season)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Night market tours, mountain hiking, hot springs, temple
+                visits</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$40-80 (mid-range hotels, street food, efficient
+                transport)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Try bubble tea origin, use easy card, respect queue
+                culture</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Taipei 101, Taroko Gorge, Sun Moon Lake, night markets</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Taiwan'); closeDetails('taiwan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 20: Indonesia -->
+    <div id="details-indonesia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Indonesia</h4>
+          <button class="close-btn" onclick="closeDetails('indonesia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>April-October (dry season, ideal for temple visits)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Temple tours, volcano trekking, cultural performances,
+                diving</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$30-70 (traditional hotels, local cuisine, guided tours)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect temple customs, try local specialties, bargain
+                respectfully</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Borobudur temple, Komodo dragons, Java culture,
+                Yogyakarta</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Indonesia'); closeDetails('indonesia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 21: Vietnam & Laos -->
+    <div id="details-vietnam-laos" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Vietnam & Laos</h4>
+          <button class="close-btn" onclick="closeDetails('vietnam-laos')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >November-March (cool, dry weather across both countries)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Mekong river cruises, temple visits, village stays,
+                cycling</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$25-50 (guesthouses, local transport, authentic meals)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect Buddhist culture, try river fish specialties, learn
+                basics</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Mekong Delta, Luang Prabang temples, ethnic minority
+                villages</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Vietnam & Laos'); closeDetails('vietnam-laos')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 22: Ishigaki Island, Japan -->
+    <div
+      id="details-ishigaki-japan"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Ishigaki Island, Japan</h4>
+          <button class="close-btn" onclick="closeDetails('ishigaki-japan')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >April-October (warm weather, perfect for water
+                activities)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span>Snorkeling, diving, beach relaxation, island hopping</span>
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$80-150 (resort accommodations, fresh sashimi, boat
+                tours)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Try Ishigaki beef, respect coral reefs, book water tours
+                early</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Blue coral reefs, pristine beaches, traditional Okinawan
+                culture</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Ishigaki Island, Japan'); closeDetails('ishigaki-japan')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 23: Yardang, China -->
+    <div id="details-yardang-china" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Yardang, China</h4>
+          <button class="close-btn" onclick="closeDetails('yardang-china')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>April-June & September-October (mild desert weather)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Geological tours, photography, desert camping, stargazing</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$30-60 (desert lodges, guided tours, local
+                transportation)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Bring sun protection, hire local guides, respect fragile
+                formations</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Unique wind-carved rocks, desert landscapes, geological
+                wonders</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Yardang, China'); closeDetails('yardang-china')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 24: Thailand -->
+    <div id="details-thailand" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Thailand</h4>
+          <button class="close-btn" onclick="closeDetails('thailand')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>November-April (cool, dry season across the country)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Temple visits, island hopping, Thai cooking classes,
+                massages</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$25-60 (beachfront bungalows, street food, tuk-tuk rides)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect Buddhist customs, try authentic pad thai, learn basic
+                Thai</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Bangkok temples, Phi Phi islands, Chiang Mai culture, floating
+                markets</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Thailand'); closeDetails('thailand')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 25: Cambodia & Myanmar -->
+    <div
+      id="details-cambodia-myanmar"
+      class="details-popup"
+      style="display: none"
+    >
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Cambodia & Myanmar</h4>
+          <button class="close-btn" onclick="closeDetails('cambodia-myanmar')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span>November-March (dry season, cooler temperatures)</span>
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Ancient temple exploration, village visits, cultural
+                performances</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$25-50 (guesthouses, local cuisine, tuk-tuk transport)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Respect temple etiquette, support local communities, learn
+                history</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Angkor Wat temples, Bagan pagodas, floating villages, local
+                markets</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Cambodia & Myanmar'); closeDetails('cambodia-myanmar')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 26: Shanghai -->
+    <div id="details-shanghai" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Shanghai</h4>
+          <button class="close-btn" onclick="closeDetails('shanghai')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >March-May & September-November (pleasant weather, clear
+                skies)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Bund walks, skyscraper views, shopping, culinary tours</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$60-120 (luxury hotels, fine dining, premium shopping)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Use metro system, try xiaolongbao, visit both old and new
+                areas</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >The Bund waterfront, Yu Garden, French Concession, Pearl
+                Tower</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Shanghai'); closeDetails('shanghai')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 27: Across Asia -->
+    <div id="details-across-asia" class="details-popup" style="display: none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4>Across Asia</h4>
+          <button class="close-btn" onclick="closeDetails('across-asia')">
+            ✕
+          </button>
+        </div>
+        <div class="popup-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>🗓️ Best Time:</strong>
+              <span
+                >October-April (varies by region, optimal multi-country
+                travel)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🏃 Activities:</strong>
+              <span
+                >Multi-city tours, cultural immersion, diverse cuisines,
+                adventure mix</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💰 Daily Budget:</strong>
+              <span
+                >$40-100 (varies by country, mixed accommodation levels)</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>💡 Tips:</strong>
+              <span
+                >Plan visa requirements, pack versatile clothes, try local
+                specialties</span
+              >
+            </div>
+            <div class="info-item">
+              <strong>🌟 Highlights:</strong>
+              <span
+                >Greatest hits tour: temples, beaches, mountains, cities,
+                cultures</span
+              >
+            </div>
+          </div>
+        </div>
+        </a>
+       
+
+        <div class="popup-footer">
+          <button
+            class="popup-save-btn"
+            onclick="addToItinerary(event, 'Across Asia'); closeDetails('across-asia')"
+          >
+            Add to Trip & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Kindora</h3>
+          <p>Your gateway to dream destinations around the globe.<br>
+          Explore, travel, and create unforgettable memories with us.</p>
+        </div>
+      
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+         <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="#">Be Inspired</a></li>
+            <li><a href="explore.php">Places to Go</a></li>
+            <li><a href="things_to_do.php">Things to Do</a></li>
+            <li><a href="booking.php">Plan Your Trip</a></li>
+            <li><a href="contactus.php">Contact</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-right">
+          <h4>Stay Connected</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.jpeg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.jpeg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/twitter.avif" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kindora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar dropdown functionality
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (scrollContainer.style.display === "flex") {
+          scrollContainer.style.display = "none";
+        } else {
+          scrollContainer.style.display = "flex";
+        }
+      });
+      
+      // Double-click navigation for scroll container
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", (e) => {
+          const href = a.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Enhanced card functionality
+      function showDetails(event, destinationId) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "flex";
+        }
+      }
+
+      function closeDetails(destinationId) {
+        const popup = document.getElementById("details-" + destinationId);
+        if (popup) {
+          popup.style.display = "none";
+        }
+      }
+
+      
+      // Close popup when clicking outside
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("details-popup")) {
+          event.target.style.display = "none";
+        }
+      });
+
+      // Add to Trip notification enhancement
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 500;
+          animation: slideIn 0.3s ease-out;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          notification.style.animation = "slideOut 0.3s ease-in";
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Add CSS animations for notification
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+          from { transform: translateX(0); opacity: 1; }
+          to { transform: translateX(100%); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // My Trip Planner functionality
+      function showMyTrip(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let itinerary = JSON.parse(
+          localStorage.getItem("kindora-itinerary") || "[]"
+        );
+
+        if (itinerary.length === 0) {
+          alert(
+            '🗺️ Your trip planner is empty!\n\nStart by clicking "❤️ Add to Trip" on destinations you love.'
+          );
+          return;
+        }
+
+        let tripList = itinerary
+          .map((destination) => `• ${destination}`)
+          .join("\n");
+        let message = `✈️ Your Asian Adventure Plan:\n\n${tripList}\n\n🌟 ${itinerary.length} amazing destinations selected!`;
+
+        alert(message);
+      }
+      
+    </script> 
+    <script>
+  document.querySelectorAll('.scroll-container1 a').forEach((a) => {
+    a.addEventListener('dblclick', (e) => {
+      const href = a.getAttribute('data-href');
+      if (href) {
+        window.location.href = href;
+      }
+    });
+    
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
+  });
+
+function toggleMenu() {
+  document.getElementById("sidebar").classList.toggle("open");
+}
+document.querySelector(".cta-btn").addEventListener("click", () => {
+  document.getElementById("popular").scrollIntoView({ 
+    behavior: "smooth" 
+  });
+});
+
+
+
+</script>
+<script src="common_nav_footer.js"></script>
+
+  </body>
+</html>

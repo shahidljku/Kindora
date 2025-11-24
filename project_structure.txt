@@ -1,0 +1,460 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 3291-A90A
+E:.
+�   01 - Intro.webm
+�   aboutus.html
+�   aboutus.php
+�   admin.html
+�   admin.php
+�   adminkindora.php
+�   africa.html
+�   africa.php
+�   antarctica.html
+�   antarctica.php
+�   api-live-prices.php
+�   api-newsletter.php
+�   api-track-interaction.php
+�   api-update-preferences.php
+�   asia.css
+�   asia.html
+�   asia.php
+�   australia.html
+�   australia.php
+�   auto-fix-kindora.php
+�   bgvideo.mp4
+�   booking.css
+�   booking.html
+�   booking.php
+�   booking_confirmation.php
+�   common_nav_footer.css
+�   common_nav_footer.js
+�   confirmation.html
+�   confirmation.php
+�   connection.php
+�   contactus.html
+�   contactus.php
+�   europe.html
+�   europe.php
+�   explore-banner.avif
+�   explore.css
+�   explore.html
+�   explore.php
+�   faq.php
+�   get_destination_details.php
+�   guide.php
+�   home.html
+�   home.php
+�   homepage.css
+�   kindora-logo.ico
+�   kindora-logo.avif
+�   kindora.sql
+�   login.html
+�   login.php
+�   logout.php
+�   missing-tables.sql
+�   monsoon.html
+�   mytrips.html
+�   mytrips.php
+�   north-america.php
+�   north_america.html
+�   north_america.php
+�   project_structure.txt
+�   register.html
+�   register.php
+�   south-america.php
+�   south_america.html
+�   south_america.php
+�   summer.html
+�   taj_mahal.php
+�   temp all css.txt
+�   temp.html
+�   thingstodo.php
+�   things_to_do.html
+�   things_to_do.php
+�   users.js
+�   volunteer.php
+�   winter.html
+�   
++---7wonders
+�   �   7wonders.css
+�   �   Chichen Itza.html
+�   �   Chichen-itza.php
+�   �   christ the redeemer.html
+�   �   christ-redeeemer.php
+�   �   christ-redeemer.php
+�   �   Colosseum.html
+�   �   Colosseum.php
+�   �   Great Wall of China.html
+�   �   great-wall.php
+�   �   Machu Picchu.html
+�   �   machu-picchu.php
+�   �   machu-pichu.php
+�   �   Petra.html
+�   �   petra.php
+�   �   taj-mahal.php
+�   �   Taj_Mahal.html
+�   �   Taj_Mahal.php
+�   �   
+�   +---7_wonders
+�           Chichen Itza (Mexic.avifpg
+�           Christ the Redeemer.jpeg
+�           Great Wall of Chi.avifpg
+�           Machu Picchu.jpeg
+�           Petra (Jordan).jpeg
+�           Roman Colosseum (Italy).jpeg
+�           Taj-Mah.avifpg
+�           
++---api
+�       live-prices.php
+�       newsletter.php
+�       track-interaction.php
+�       update-preferences.php
+�       
++---continents
+�   �   africa.php
+�   �   antarctica.php
+�   �   asia.php
+�   �   australia.php
+�   �   europe.php
+�   �   north-america.php
+�   �   south-america.php
+�   �   
+�   +---css
+�   +---html
+�   +---images
+�       �   28th card.avif
+�       �   
+�       +---africa images
+�       �       1.avif
+�       �       10.avif
+�       �       11.avif
+�       �       12.avif
+�       �       13.avif
+�       �       14.avif
+�       �       15.avif
+�       �       16.avif
+�       �       17.avif
+�       �       18.avif
+�       �       19.avif
+�       �       2.avif
+�       �       20.avif
+�       �       21.avif
+�       �       22.avif
+�       �       23.avif
+�       �       24.avif
+�       �       25.avif
+�       �       26.avif
+�       �       27.avif
+�       �       28th card.avif
+�       �       3.avif
+�       �       4.avif
+�       �       5.avif
+�       �       6.avif
+�       �       7.avif
+�       �       8.avif
+�       �       9.avif
+�       �       
+�       +---antarctica images
+�       �       1.avif
+�       �       10.avif
+�       �       11.avif
+�       �       12.avif
+�       �       13.avif
+�       �       14.avif
+�       �       15.avif
+�       �       16.avif
+�       �       17.avif
+�       �       18.avif
+�       �       19.avif
+�       �       2.avif
+�       �       20.avif
+�       �       28th card.avif
+�       �       3.avif
+�       �       4.avif
+�       �       5.avif
+�       �       6.avif
+�       �       7.avif
+�       �       8.avif
+�       �       9.avif
+�       �       
+�       +---asia images
+�       �       01 - i.avif.jpg
+�       �       02 - tian-shan-kyrgyz.avif.jpg
+�       �       03 - j.avif.jpg
+�       �       04 - altai-mount.avif.jpg
+�       �       05 - c.avif.jpg
+�       �       06 - myanmar - sri-l.avif.jpg
+�       �       07 - indonesia - philipp.avif.jpg
+�       �       08 - south-k.avif.jpg
+�       �       09 - mong.avif.jpg
+�       �       10 - india - n.avif.jpg
+�       �       11 - kyrgyz.avif.jpg
+�       �       12 - palawan-philipp.avif.jpg
+�       �       13 - sri-l.avif.jpg
+�       �       14 - vie.avif.jpg
+�       �       15 - bali - raja-a.avif.jpg
+�       �       16 - j.avif.jpg
+�       �       17 - hong-.avif.jpg
+�       �       18 - shanghai - guang.avif.jpg
+�       �       19 - singa.avif.jpg
+�       �       20 - ta.avif.jpg
+�       �       21 - c.avif.jpg
+�       �       22 - mong.avif.jpg
+�       �       23 - palawan-philipp.avif.jpg
+�       �       24 - indon.avif.jpg
+�       �       25 - vietnam - .avif.jpg
+�       �       26 - ishigaki-island-j.avif.jpg
+�       �       27 - i.avif.jpg
+�       �       28 - himalayas-n.avif.jpg
+�       �       28th card.avif
+�       �       29 - altai-mount.avif.jpg
+�       �       30 - yardang-c.avif.jpg
+�       �       31 - sri-l.avif.jpg
+�       �       32 - thai.avif.jpg
+�       �       33 - cambodia - mya.avif.jpg
+�       �       34 - shan.avif.jpg
+�       �       35 - across-.avif.jpg
+�       �       36 - tian-shan-kyrgyz.avif.jpg
+�       �       37 - j.avif.jpg
+�       �       38 - altai-mount.avif.jpg
+�       �       39 - c.avif.jpg
+�       �       40 - myanmar - sri-l.avif.jpg
+�       �       41 - indonesia - philipp.avif.jpg
+�       �       42 - south-k.avif.jpg
+�       �       43 - mong.avif.jpg
+�       �       44 - o.avif.jpg
+�       �       
+�       +---australia images
+�       �       28th card.avif
+�       �       alice_springs.avif
+�       �       auckland.avif
+�       �       brisbane.avif
+�       �       broome.avif
+�       �       cairns.avif
+�       �       canbera.avif
+�       �       christchurch.avif
+�       �       dunedin.avif
+�       �       fiji.avif
+�       �       gold coast.avif
+�       �       gold_cost_hinderland.avif
+�       �       great_barrier_reef.avif
+�       �       hamilton.avif
+�       �       hobart.avif
+�       �       mebourne.avif
+�       �       newcastle.avif
+�       �       new_caledonia.avif
+�       �       perth.avif
+�       �       queenstown.avif
+�       �       rotorua.avif
+�       �       samao.avif
+�       �       sydney.avif
+�       �       tasmania.avif
+�       �       tauranga.avif
+�       �       tonga.avif
+�       �       uluru.avif
+�       �       vanuata.avif
+�       �       wellington.avif
+�       �       
+�       +---europe images
+�       �       1.avif
+�       �       10.avif
+�       �       11.avif
+�       �       12.avif
+�       �       13.avif
+�       �       14.avif
+�       �       15.avif
+�       �       16.avif
+�       �       17.avif
+�       �       18.avif
+�       �       19.avif
+�       �       2.avif
+�       �       20.avif
+�       �       21.avif
+�       �       22.avif
+�       �       23.avif
+�       �       24.avif
+�       �       25.avif
+�       �       26.avif
+�       �       27.avif
+�       �       28th card.avif
+�       �       3.avif
+�       �       4.avif
+�       �       5.avif
+�       �       6.avif
+�       �       7.avif
+�       �       8.avif
+�       �       9.avif
+�       �       
+�       +---north_america images
+�       �       1.avif
+�       �       10.avif
+�       �       11.avif
+�       �       12.avif
+�       �       13.avif
+�       �       14.avif
+�       �       15.avif
+�       �       16.avif
+�       �       17.avif
+�       �       18.avif
+�       �       19.avif
+�       �       2.avif
+�       �       20.avif
+�       �       21.avif
+�       �       22.avif
+�       �       23.avif
+�       �       24.avif
+�       �       25.avif
+�       �       26.avif
+�       �       27.avif
+�       �       28th card.avif
+�       �       3.avif
+�       �       4.avif
+�       �       5.avif
+�       �       6.avif
+�       �       7.avif
+�       �       8.avif
+�       �       9.avif
+�       �       
+�       +---south_america images
+�               1.avif
+�               10.avif
+�               11.avif
+�               12.avif
+�               13.avif
+�               14.avif
+�               15.avif
+�               16.avif
+�               17.avif
+�               18.avif
+�               19.avif
+�               2.avif
+�               20.avif
+�               21.avif
+�               22.avif
+�               23.avif
+�               24.avif
+�               25.avif
+�               26.avif
+�               27.avif
+�               28th card.avif
+�               3.avif
+�               4.avif
+�               5.avif
+�               6.avif
+�               7.avif
+�               8.avif
+�               9.avif
+�               
++---continents videos
+�       africa_intro.webm
+�       antarctica_intro.webm
+�       asia-intro.webm
+�       australia_intro.webm
+�       europe_intro.webm
+�       north_america_intro.webm
+�       south_america_intro.webm
+�       
++---Database
+�       127_0_0_1.sql
+�       
++---icons
+�       facebook.jpeg
+�       instagram.jpeg
+�       twitter.avif
+�       
++---images
+�       africa_safari.avif
+�       asia_adventure.avif
+�       egypt_mystical.avif
+�       europe_romantic.avif
+�       maldives_luxury.avif
+�       usa_roadtrip.avif
+�       
++---Images_videos
++---our_packages
+�       monsoon.avif
+�       monso.avifpg
+�       monsoon1.avif
+�       monsoon2.avif
+�       monsoon3.avif
+�       monsoon4.avif
+�       monsoon5.avif
+�       monsoon6.avif
+�       summer.avif
+�       summer1.avif
+�       summer2.avif
+�       summer3.avif
+�       summer4.avif
+�       summer5.avif
+�       summer6.avif
+�       winter.avif
+�       winter1.avif
+�       winter2.avif
+�       winter3.avif
+�       winter4.avif
+�       winter5.avif
+�       winter6.avif
+�       
++---PHP
+�       config.php
+�       index.php
+�       
++---places
+�       ba.avifpg
+�       Burj_Khalifa.html
+�       Burj_Khali.avifpg
+�       cape-to.avifpg
+�       dub.avifpg
+�       Eiffel Tow.avifpg
+�       Eiffel_Tower.html
+�       Grand Canyon.jpeg
+�       Grand_Canyon.html
+�       Great Pyramid of Gi.avifpg
+�       Great_Pyramid_of_Giza.html
+�       Mount Fu.avifpg
+�       Mount_Fuji.html
+�       par.avifpg
+�       ro.avifpg
+�       Santorini.html
+�       Santorini.avif
+�       Statue of Liberty.jpeg
+�       Statue_of_Liberty.html
+�       Stonehenge.html
+�       Stonehen.avifpg
+�       Sydney_Opera_House.html
+�       Sydney_Opera_House.jpeg
+�       Times Squa.avifpg
+�       Times_Square.html
+�       tok.avifpg
+�       
++---things_to_do images
+�       old temp.avifpg
+�       
++---web images
+    �   arif-khan-4hr8MStXT7s-unspla.avifpg
+    �   goa.jpeg
+    �   istockphoto-1220711391-612x6.avifpg
+    �   istockphoto-1692245547-612x612.jpeg
+    �   kerala first img.jpeg
+    �   kerala.jpeg
+    �   kera.avifpg
+    �   munn.avifpg
+    �   palolem goa.jpeg
+    �   praneet-kumar-H8dcf-v98mA-unspla.avifpg
+    �   premium_photo-1697730310113-e44fced8e86c.jpeg
+    �   saputara sunset.jpeg
+    �   saputa.avifpg
+    �   saputara1.jpeg
+    �   saputara3.jpeg
+    �   simon-english-48nerZQCHgo-unspla.avifpg
+    �   sourav-bhadra-ixfFZUj0BZA-unspla.avifpg
+    �   v2osk-1Z2niiBPg5A-unspla.avifpg
+    �   
+    +---banner
+            africa.avif
+            antarctica.jpeg
+            asia.avif
+            australia.avif
+            europe.jpeg
+            north_america.avif
+            

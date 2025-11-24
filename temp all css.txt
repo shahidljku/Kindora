@@ -1,0 +1,133 @@
+asia.html
+
+
+ <!-- <script>
+      const inspireBtn = document.getElementById("inspireBtn");
+      const scrollContainer = document.getElementById("inspireScroll");
+      inspireBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        scrollContainer.style.display =
+          scrollContainer.style.display === "flex" ? "none" : "flex";
+      });
+      function enableLeftClickDragScroll(containerSelector) {
+        const container = document.querySelector(containerSelector);
+        if (!container) return;
+        let isDragging = false,
+          startX = 0,
+          scrollLeft = 0,
+          moved = false;
+        container.addEventListener("mousedown", (e) => {
+          if (e.button !== 0) return;
+          isDragging = true;
+          startX = e.pageX;
+          scrollLeft = container.scrollLeft;
+          moved = false;
+        });
+        container.addEventListener("mousemove", (e) => {
+          if (!isDragging) return;
+          const walk = e.pageX - startX;
+          if (Math.abs(walk) > 5) moved = true;
+          container.scrollLeft = scrollLeft - walk;
+        });
+        ["mouseup", "mouseleave"].forEach((ev) => {
+          container.addEventListener(ev, () => {
+            isDragging = false;
+            setTimeout(() => (moved = false), 0);
+          });
+        });
+        container.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", (e) => {
+            if (moved) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+            }
+          });
+        });
+      }
+      enableLeftClickDragScroll(".scroll-container");
+      enableLeftClickDragScroll(".scroll-container1");
+      document.querySelectorAll(".scroll-container1 a").forEach((a) => {
+        a.addEventListener("dblclick", () => {
+          const href = a.getAttribute("data-href");
+          if (href) window.location.href = href;
+        });
+        a.addEventListener("click", (e) => e.preventDefault());
+      });
+      const fsVideo = document.createElement("video");
+      fsVideo.setAttribute("controls", "true");
+      fsVideo.setAttribute("autoplay", "true");
+      fsVideo.setAttribute("playsinline", "true");
+      fsVideo.preload = "metadata";
+      const fsSrc = document.createElement("source");
+      fsSrc.type = "video/webm";
+      fsVideo.appendChild(fsSrc);
+      document.body.appendChild(fsVideo);
+      fsVideo.style.position = "fixed";
+      fsVideo.style.left = "-99999px";
+      fsVideo.style.top = "-99999px";
+      function reqFS(el) {
+        if (el.requestFullscreen) return el.requestFullscreen();
+        if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
+        if (el.msRequestFullscreen) return el.msRequestFullscreen();
+        if (el.mozRequestFullScreen) return el.mozRequestFullScreen();
+        return Promise.reject(new Error("Fullscreen API not available"));
+      }
+      function exitFS() {
+        if (document.exitFullscreen) return document.exitFullscreen();
+        if (document.webkitExitFullscreen)
+          return document.webkitExitFullscreen();
+        if (document.msExitFullscreen) return document.msExitFullscreen();
+        if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+        return Promise.resolve();
+      }
+      function isFS() {
+        return (
+          document.fullscreenElement ||
+          document.webkitFullscreenElement ||
+          document.msFullscreenElement ||
+          document.mozFullScreenElement
+        );
+      }
+      function cleanup() {
+        fsVideo.pause();
+        fsSrc.src = "";
+        fsVideo.load();
+      }
+      document.querySelectorAll(".video-card").forEach((card) => {
+        card.addEventListener("click", async () => {
+          const file = card.getAttribute("data-video");
+          if (!file) return;
+          fsSrc.src = "asia videos/" + file;
+          fsVideo.load();
+          try {
+            await reqFS(fsVideo);
+          } catch (e) {
+            try {
+              await fsVideo.play();
+            } catch (_) {}
+          }
+          try {
+            await fsVideo.play();
+          } catch (_) {}
+        });
+      });
+      [
+        "fullscreenchange",
+        "webkitfullscreenchange",
+        "msfullscreenchange",
+        "mozfullscreenchange",
+      ].forEach((evt) => {
+        document.addEventListener(evt, () => {
+          if (!isFS()) {
+            cleanup();
+          }
+        });
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          cleanup();
+          exitFS();
+        }
+      });
+    </script>
+    -->
