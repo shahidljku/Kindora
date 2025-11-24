@@ -1,5 +1,5 @@
 
-# cursore
+
 # Kindora Travel Website
 
 A comprehensive travel website built with PHP, MySQL, HTML, CSS, and JavaScript. Kindora provides a platform for travelers to explore destinations, book packages, and share their experiences.
@@ -243,8 +243,6 @@ $smtp_password = 'your-app-password';
 5. Submit a pull request
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Support
 
